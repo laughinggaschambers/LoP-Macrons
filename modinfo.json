@@ -1,0 +1,11 @@
+{
+  "type": "content",
+  "modid": "macronaria",
+  "name": "Legacy of the Phanerozoic: Long Neck",
+  "author": "laughinggas",
+  "description": "Adds the family of Macronarians dinosaurs to Vintage Story",
+  "version": "1.0.0",
+  "dependency": {
+    "game": "1.5.3"
+  }
+}

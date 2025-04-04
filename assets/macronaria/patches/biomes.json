@@ -1,0 +1,113 @@
+[
+  {
+    "file": "ankylosauria:entities/land/ankylosauria.json",
+    "op": "addmerge",
+    "path": "/attributesByType",
+    "side": "Server",
+    "value": {
+            "*-argentinosaurus-*": {
+                      "biorealm": [
+                        "pacific neotropic",
+                        "atlantic neotropic",
+                      ]
+                    },
+
+            "*-patagotitan-*": {
+                      "biorealm": [
+                        "pacific neotropic",
+                        "atlantic neotropic",
+                      ]
+                    },
+
+            "*-dreadnoughtus-*": {
+                      "biorealm": [
+                        "pacific neotropic",
+                        "atlantic neotropic",
+                      ]
+                    },
+
+            "*-futalognkosaurus-*": {
+                      "biorealm": [
+                        "pacific neotropic",
+                        "atlantic neotropic",
+                      ]
+                    },
+
+            "*-brachiosaurus-*": {
+                      "biorealm": [
+                        "pacific nearctic",
+                        "atlantic nearctic",
+                      ]
+                    },
+
+            "*-giraffatitan-*": {
+                      "biorealm": [
+                        "eastern afrotropic",
+                      ]
+                    },
+
+            "*-diamantinasaurus-*": {
+                      "biorealm": [
+                        "australasian",
+                      ]
+                    },
+
+            "*-europatitan-*": {
+                      "biorealm": [
+                        "atlantic palearctic",
+                      ]
+                    },
+
+            "*-antarctosaurus-*": {
+                      "biorealm": [
+                        "pacific neotropic",
+                        "atlantic neotropic",
+                        "central palearctic",
+                      ]
+                    },
+
+            "*-ruyangosaurus-*": {
+                      "biorealm": [
+                        "eastern palearctic",
+                      ]
+                    },
+
+            "*-camarasaurus-*": {
+                      "biorealm": [
+                        "pacific nearctic",
+                        "atlantic nearctic",
+                      ]
+                    },
+
+            "*-bruhathkayosaurus-*": {
+                      "biorealm": [,
+                        "central palearctic",
+                      ]
+                    },
+
+            "*-malawisaurus-*": {
+                      "biorealm": [
+                        "eastern afrotropic",
+                      ]
+                    },
+
+            "*-rapetosaurus-*": {
+                      "biorealm": [
+                        "eastern afrotropic",
+                      ]
+                    },
+
+            "*-ampelosaurus-*": {
+                      "biorealm": [
+                        "atlantic palearctic",
+                      ]
+                    },
+
+    },
+    "dependsOn": [
+      {
+        "modid": "biomes"
+      }
+    ]
+  },
+]

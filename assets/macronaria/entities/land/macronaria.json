@@ -1,0 +1,1139 @@
+{
+    "code": "macronaria",
+    "class": "EntityAgent",
+    "variantgroups": [
+        {"code": "type","states": ["argentinosaurus","patagotitan","dreadnoughtus","futalognkosaurus","brachiosaurus","giraffatitan","diamantinasaurus","europatitan","antarctosaurus","ruyangosaurus","camarasaurus","bruhathkayosaurus","malawisaurus","rapetosaurus","ampelosaurus"]},
+        {"code": "age","states": [ "adult","baby"]},
+        {"code": "gender","states": ["male","female"]},
+    ],
+    "fallDamageMultiplierByType": { "*-baby-*" :2,"*-adult-*" :15},
+    "hitBoxSizeByType": {
+			"*-argentinosaurus-adult-male": {"x": 6,"y": 15},"*-argentinosaurus-adult-female": {"x": 6,"y": 15},"*-argentinosaurus-baby-*": {"x": 2.5,"y": 2.5},
+			"*-patagotitan-adult-male": {"x": 6,"y": 10},"*-patagotitan-adult-female": {"x": 6,"y": 10},"*-patagotitan-baby-*": {"x": 2.5,"y": 2.5},
+			"*-dreadnoughtus-adult-male": {"x": 6,"y": 10},"*-dreadnoughtus-adult-female": {"x": 6,"y": 10},"*-dreadnoughtus-baby-*": {"x": 2.5,"y": 2.5},
+			"*-futalognkosaurus-adult-male": {"x": 6,"y": 10},"*-futalognkosaurus-adult-female": {"x": 6,"y": 10},"*-futalognkosaurus-baby-*": {"x": 2.5,"y": 2.5},
+			"*-brachiosaurus-adult-male": {"x": 6,"y": 10},"*-brachiosaurus-adult-female": {"x": 6,"y": 10},"*-brachiosaurus-baby-*": {"x": 2.5,"y": 2.5},
+			"*-giraffatitan-adult-male": {"x": 6,"y": 10},"*-giraffatitan-adult-female": {"x": 6,"y": 10},"*-giraffatitan-baby-*": {"x": 2.5,"y": 2.5},
+			"*-diamantinasaurus-adult-male": {"x": 6,"y": 10},"*-diamantinasaurus-adult-female": {"x": 6,"y": 10},"*-diamantinasaurus-baby-*": {"x": 2.5,"y": 2.5},
+			"*-europatitan-adult-male": {"x": 6,"y": 10},"*-europatitan-adult-female": {"x": 6,"y": 10},"*-europatitan-baby-*": {"x": 2.5,"y": 2.5},
+			"*-antarctosaurus-adult-male": {"x": 5,"y": 7},"*-antarctosaurus-adult-female": {"x": 5,"y": 7},"*-antarctosaurus-baby-*": {"x": 1.5,"y": 1.5},
+			"*-ruyangosaurus-adult-male": {"x": 5,"y": 7},"*-ruyangosaurus-adult-female": {"x": 5,"y": 7},"*-ruyangosaurus-baby-*": {"x": 1.5,"y": 1.5},
+			"*-camarasaurus-adult-male": {"x": 5,"y": 7},"*-camarasaurus-adult-female": {"x": 5,"y": 7},"*-camarasaurus-baby-*": {"x": 1.5,"y": 1.5},
+			"*-bruhathkayosaurus-adult-male": {"x": 6,"y": 10},"*-bruhathkayosaurus-adult-female": {"x": 6,"y": 10},"*-bruhathkayosaurus-baby-*": {"x": 1.5,"y": 1.5},
+			"*-malawisaurus-adult-male": {"x": 4,"y": 5},"*-malawisaurus-adult-female": {"x": 4,"y": 5},"*-malawisaurus-baby-*": {"x": 1,"y": 1},
+			"*-rapetosaurus-adult-male": {"x": 4,"y": 4},"*-rapetosaurus-adult-female": {"x": 4,"y": 4},"*-rapetosaurus-baby-*": {"x": 1,"y": 1},
+			"*-ampelosaurus-adult-male": {"x": 4,"y": 5},"*-ampelosaurus-adult-female": {"x": 4,"y": 4},"*-ampelosaurus-baby-*": {"x": 1,"y": 1},
+		},
+
+    "deadhitBoxSizeByType": {
+		"*-adult-*": {"x": 3,"y": 3},"*-baby-*": {"x": 2.5,"y": 2.5},
+		},
+    "eyeHeightByType": {"*":1},
+    "weightByType": {"*-adult-*":4000,"*-baby-*":10},
+    "knockbackResistanceByType": {"*-adult-*": 1,"*-baby-*": 1	},
+
+    "drops": [],
+    "attributes": {
+		"tamedByType": {"*": false },
+		"killedByInfoText": "deadcreature-killed",
+		"handbook": {"groupcode": "creaturegroup-macronaria"},
+		"minGenerationToAllowHealing": 0,
+		"creatureDiet": {
+			"foodCategories": ["Fruit", "Vegetable", "Grain"],
+			"foodTags": ["fruitmash","nibblecrops", "sweetBerryBush", "grass"]
+			},
+		},
+	"behaviorConfigs": {
+		"rideableaccessories": {
+			"wearableSlots": [
+				{"code": "head", "forCategoryCodes": [], "attachmentPointCode": "HeadAP" },
+				{"code": "face", "forCategoryCodes": [], "attachmentPointCode": "FaceAP" },
+				{"code": "neck", "forCategoryCodes": [], "attachmentPointCode": "NeckAP" },
+				{"code": "middleback", "forCategoryCodes": [], "attachmentPointCode": "MidAP", },
+			]
+		},
+		"selectionboxes": {
+			"selectionBoxes": ["HeadAP","FaceAP", "NeckAP", "MidAP"]
+		},
+		"rideable": {
+			"interactMountAnySeat": true,
+			"seats": [
+				{ "apName": "Rider", "selectionBox": "NeckAP", "bodyYawLimit": 0.2, "controllable": true,
+					"mountOffsetByType": {
+						"*": {"x":0,"y":0.0,"z":0},
+					}
+				},
+			],
+			"controls": {
+				"idle": {
+					"weight": 1,
+					"riderAnim": {
+						"animation": "rideelk-idle",
+						"animationSpeed": 0.00000001,
+						"weight": 1,
+						"withFpVariant": true,
+						"blendMode": "Average",
+						"elementWeight": {
+							"LowerTorso": 80,
+							"UpperTorso": 80,
+							"UpperFootR": 80,
+							"UpperFootL": 80,
+							"LowerFootR": 80,
+							"LowerFootL": 80
+						},
+						"elementBlendMode": {
+							"LowerTorso": "Average",
+							"UpperTorso": "Average",
+							"UpperFootR": "Average",
+							"UpperFootL": "Average",
+							"LowerFootR": "Average",
+							"LowerFootL": "Average"
+						}
+					}
+				},
+				"swim": {
+					"animation": "Swim",
+					"movespeedByType": {
+							"*-adult-*": 0.001,
+						},
+						"animationSpeedByType": {
+							"*": 0.75
+						},
+					"weight": 10,
+					"blendMode": "Average",
+					"riderAnim": {
+						"animation": "rideelk-walk",
+						"animationSpeed": 1,
+						"weight": 1,
+						"withFpVariant": true,
+						"blendMode": "Average",
+						"elementWeight": {
+							"LowerTorso": 80,
+							"UpperTorso": 80,
+							"UpperFootR": 80,
+							"UpperFootL": 80,
+							"LowerFootR": 80,
+							"LowerFootL": 80
+						},
+						"elementBlendMode": {
+							"LowerTorso": "Average",
+							"UpperTorso": "Average",
+							"UpperFootR": "Average",
+							"UpperFootL": "Average",
+							"LowerFootR": "Average",
+							"LowerFootL": "Average"
+						}
+					}
+				},
+				"walk": {
+					"animation": "Walk",
+					"weight": 10,
+					"movespeedByType": {
+						"*-adult-*": 0.003,
+					},
+					"animationSpeedByType": {
+						"*": 1
+					},
+					"blendMode": "Average",
+					"riderAnim": {
+						"animation": "rideelk-walk",
+						"animationSpeed": 1,
+						"weight": 1,
+						"withFpVariant": true,
+						"blendMode": "Average",
+						"elementWeight": {
+							"LowerTorso": 80,
+							"UpperTorso": 80,
+							"UpperFootR": 80,
+							"UpperFootL": 80,
+							"LowerFootR": 80,
+							"LowerFootL": 80
+						},
+						"elementBlendMode": {
+							"LowerTorso": "Average",
+							"UpperTorso": "Average",
+							"UpperFootR": "Average",
+							"UpperFootL": "Average",
+							"LowerFootR": "Average",
+							"LowerFootL": "Average"
+						}
+					}
+				},
+				"walkback": {
+					"animation": "Walk",
+					"weight": 10,
+					"movespeedByType": {
+						"*-adult-*": 0.003,
+					},
+					"animationSpeedByType": {
+						"*": 1
+					},
+					"easeInSpeed": 1,
+					"easeOutSpeed": 3,
+					"blendMode": "Average",
+					"riderAnim": {
+						"animation": "rideelk-walk",
+						"animationSpeed": 1,
+						"weight": 1,
+						"withFpVariant": true,
+						"blendMode": "Average",
+						"elementWeight": {
+							"LowerTorso": 80,
+							"UpperTorso": 80,
+							"UpperFootR": 80,
+							"UpperFootL": 80,
+							"LowerFootR": 80,
+							"LowerFootL": 80
+						},
+						"elementBlendMode": {
+							"LowerTorso": "Average",
+							"UpperTorso": "Average",
+							"UpperFootR": "Average",
+							"UpperFootL": "Average",
+							"LowerFootR": "Average",
+							"LowerFootL": "Average"
+						}
+					}
+				},
+				"sprint": {
+					"animation": "Gallop",
+					"weight": 10,
+						"priority": 2.1,
+						"movespeedByType": {
+							"*-baby-*": 0.038,
+							"*-adult-*": 0.056,
+
+						},
+						"animationSpeedByType": {
+							"*-baby-*": 8,
+							"*-adult-*": 6
+						},
+					"blendMode": "Average",
+					"riderAnim": {
+						"animation": "rideelk-run",
+						"animationSpeed": 2,
+						"weight": 1,
+						"withFpVariant": true,
+						"blendMode": "Average",
+						"elementWeight": {
+							"LowerTorso": 80,
+							"UpperTorso": 80,
+							"UpperFootR": 80,
+							"UpperFootL": 80,
+							"LowerFootR": 80,
+							"LowerFootL": 80
+						},
+						"elementBlendMode": {
+							"LowerTorso": "Average",
+							"UpperTorso": "Average",
+							"UpperFootR": "Average",
+							"UpperFootL": "Average",
+							"LowerFootR": "Average",
+							"LowerFootL": "Average"
+						}
+					}
+				},
+				"jump": {
+					"animation": "Walk",
+					"weight": 50,
+					"easeOutSpeed": 40,
+					"blendMode": "Average",
+					"animationSpeed": 1,
+					"movespeed": 0.08,
+					"riderAnim": {
+						"animation": "rideelk-jump",
+						"animationSpeed": 1,
+						"weight": 10,
+						"withFpVariant": true,
+						"blendMode": "Average",
+						"elementWeight": {
+							"LowerTorso": 160,
+							"UpperTorso": 160,
+							"UpperFootR": 160,
+							"UpperFootL": 160,
+							"LowerFootR": 160,
+							"LowerFootL": 160
+						},
+						"elementBlendMode": {
+							"LowerTorso": "Average",
+							"UpperTorso": "Average",
+							"UpperFootR": "Average",
+							"UpperFootL": "Average",
+							"LowerFootR": "Average",
+							"LowerFootL": "Average"
+						}
+					}
+				}
+			}
+		},
+		"ownable": {
+			"groupCode": "mountableanimal"
+		}
+
+	},
+    "client": {
+        "renderer": "Shape",
+        "shapeByType": {
+			"*-argentinosaurus-adult-*":{"base": "entity/land/macronaria/argentinosaurus/adult"},"*-argentinosaurus-baby-*":{"base": "entity/land/macronaria/argentinosaurus/baby"},
+			"*-patagotitan-adult-*":{"base": "entity/land/macronaria/patagotitan/adult"},"*-patagotitan-baby-*":{"base": "entity/land/macronaria/patagotitan/baby"},
+			"*-dreadnoughtus-adult-*":{"base": "entity/land/macronaria/dreadnoughtus/adult"},"*-dreadnoughtus-baby-*":{"base": "entity/land/macronaria/dreadnoughtus/baby"},
+			"*-futalognkosaurus-adult-*":{"base": "entity/land/macronaria/futalognkosaurus/adult"},"*-futalognkosaurus-baby-*":{"base": "entity/land/macronaria/futalognkosaurus/baby"},
+			"*-brachiosaurus-adult-*":{"base": "entity/land/macronaria/brachiosaurus/adult"},"*-brachiosaurus-baby-*":{"base": "entity/land/macronaria/brachiosaurus/baby"},
+			"*-giraffatitan-adult-*":{"base": "entity/land/macronaria/giraffatitan/adult"},"*-giraffatitan-baby-*":{"base": "entity/land/macronaria/giraffatitan/baby"},
+			"*-diamantinasaurus-adult-*":{"base": "entity/land/macronaria/diamantinasaurus/adult"},"*-diamantinasaurus-baby-*":{"base": "entity/land/macronaria/diamantinasaurus/baby"},
+			"*-europatitan-adult-*":{"base": "entity/land/macronaria/europatitan/adult"},"*-europatitan-baby-*":{"base": "entity/land/macronaria/europatitan/baby"},
+			"*-antarctosaurus-adult-*":{"base": "entity/land/macronaria/antarctosaurus/adult"},"*-antarctosaurus-baby-*":{"base": "entity/land/macronaria/antarctosaurus/baby"},
+			"*-ruyangosaurus-adult-*":{"base": "entity/land/macronaria/ruyangosaurus/adult"},"*-ruyangosaurus-baby-*":{"base": "entity/land/macronaria/ruyangosaurus/baby"},
+			"*-camarasaurus-adult-*":{"base": "entity/land/macronaria/camarasaurus/adult"},"*-camarasaurus-baby-*":{"base": "entity/land/macronaria/camarasaurus/baby"},
+			"*-bruhathkayosaurus-adult-*":{"base": "entity/land/macronaria/bruhathkayosaurus/adult"},"*-bruhathkayosaurus-baby-*":{"base": "entity/land/macronaria/bruhathkayosaurus/baby"},
+			"*-malawisaurus-adult-*":{"base": "entity/land/macronaria/malawisaurus/adult"},"*-malawisaurus-baby-*":{"base": "entity/land/macronaria/malawisaurus/baby"},
+			"*-rapetosaurus-adult-*":{"base": "entity/land/macronaria/rapetosaurus/adult"},"*-rapetosaurus-baby-*":{"base": "entity/land/macronaria/rapetosaurus/baby"},
+			"*-ampelosaurus-adult-*":{"base": "entity/land/macronaria/ampelosaurus/adult"},"*-ampelosaurus-baby-*":{"base": "entity/land/macronaria/ampelosaurus/baby"},
+		},
+         "textureByType": {
+            "*-argentinosaurus-adult-*":{"base": "entity/argentinosaurus-adult"},"*-argentinosaurus-baby-*":{"base": "entity/argentinosaurus-adult"},
+            "*-patagotitan-adult-*":{"base": "entity/patagotitan-adult"},"*-patagotitan-baby-*":{"base": "entity/patagotitan-adult"},
+            "*-dreadnoughtus-adult-*":{"base": "entity/dreadnoughtus-adult"},"*-dreadnoughtus-baby-*":{"base": "entity/dreadnoughtus-adult"},
+            "*-futalognkosaurus-adult-*":{"base": "entity/futalognkosaurus-adult"},"*-futalognkosaurus-baby-*":{"base": "entity/futalognkosaurus-adult"},
+            "*-brachiosaurus-adult-*":{"base": "entity/brachiosaurus-adult"},"*-brachiosaurus-baby-*":{"base": "entity/brachiosaurus-adult"},
+            "*-giraffatitan-adult-*":{"base": "entity/giraffatitan-adult"},"*-giraffatitan-baby-*":{"base": "entity/giraffatitan-adult"},
+            "*-diamantinasaurus-adult-*":{"base": "entity/diamantinasaurus-adult"},"*-diamantinasaurus-baby-*":{"base": "entity/diamantinasaurus-adult"},
+            "*-europatitan-adult-*":{"base": "entity/europatitan-adult"},"*-europatitan-baby-*":{"base": "entity/europatitan-adult"},
+            "*-antarctosaurus-adult-*":{"base": "entity/antarctosaurus-adult"},"*-antarctosaurus-baby-*":{"base": "entity/antarctosaurus-adult"},
+            "*-ruyangosaurus-adult-*":{"base": "entity/ruyangosaurus-adult"},"*-ruyangosaurus-baby-*":{"base": "entity/ruyangosaurus-adult"},
+            "*-camarasaurus-adult-*":{"base": "entity/camarasaurus-adult"},"*-camarasaurus-baby-*":{"base": "entity/camarasaurus-adult"},
+            "*-bruhathkayosaurus-adult-*":{"base": "entity/bruhathkayosaurus-adult"},"*-bruhathkayosaurus-baby-*":{"base": "entity/bruhathkayosaurus-adult"},
+            "*-malawisaurus-adult-*":{"base": "entity/malawisaurus-adult"},"*-malawisaurus-baby-*":{"base": "entity/malawisaurus-adult"},
+            "*-rapetosaurus-adult-*":{"base": "entity/rapetosaurus-adult"},"*-rapetosaurus-baby-*":{"base": "entity/rapetosaurus-adult"},
+            "*-ampelosaurus-adult-*":{"base": "entity/ampelosaurus-adult"},"*-ampelosaurus-baby-*":{"base": "entity/ampelosaurus-adult"},
+        },
+        "sizeByType": {
+			"*-argentinosaurus-adult-male": 1.0,"*-argentinosaurus-adult-female": 0.9,"*-argentinosaurus-baby-*": 1.0,
+			"*-patagotitan-adult-male": 0.85,"*-patagotitan-adult-female": 0.75,"*-patagotitan-baby-*": 0.85,
+			"*-dreadnoughtus-adult-male": 0.75,"*-dreadnoughtus-adult-female": 0.65,"*-dreadnoughtus-baby-*": 0.75,
+			"*-futalognkosaurus-adult-male": 0.75,"*-futalognkosaurus-adult-female": 0.65,"*-futalognkosaurus-baby-*": 0.75,
+			"*-brachiosaurus-adult-male": 0.75,"*-brachiosaurus-adult-female": 0.65,"*-brachiosaurus-baby-*": 0.75,
+			"*-giraffatitan-adult-male": 0.75,"*-giraffatitan-adult-female": 0.65,"*-giraffatitan-baby-*": 0.75,
+			"*-diamantinasaurus-adult-male": 0.75,"*-diamantinasaurus-adult-female": 0.65,"*-diamantinasaurus-baby-*": 0.75,
+			"*-europatitan-adult-male": 0.75,"*-europatitan-adult-female": 0.65,"*-europatitan-baby-*": 0.75,
+			"*-antarctosaurus-adult-male": 0.6,"*-antarctosaurus-adult-female": 0.5,"*-antarctosaurus-baby-*": 0.6,
+			"*-ruyangosaurus-adult-male": 0.6,"*-ruyangosaurus-adult-female": 0.5,"*-ruyangosaurus-baby-*": 0.6,
+			"*-camarasaurus-adult-male": 0.51,"*-camarasaurus-adult-female": 0.41,"*-camarasaurus-baby-*": 0.51,
+			"*-bruhathkayosaurus-adult-male": 0.75,"*-bruhathkayosaurus-adult-female": 0.65,"*-bruhathkayosaurus-baby-*": 0.75,
+			"*-malawisaurus-adult-male": 0.42,"*-malawisaurus-adult-female": 0.32,"*-malawisaurus-baby-*": 0.42,
+			"*-rapetosaurus-adult-male": 0.34,"*-rapetosaurus-adult-female": 0.24,"*-rapetosaurus-baby-*": 0.34,
+			"*-ampelosaurus-adult-male": 0.42,"*-ampelosaurus-adult-female": 0.32,"*-ampelosaurus-baby-*": 0.42,
+		},
+
+        "behaviors": [
+            {"code": "repulseagents" },
+			{"code": "controlledphysics","stepHeightByType":
+				{
+				"*-baby-*":1.1251,
+				"*-argentinosaurus-adult-*": 4.5,
+				"*-patagotitan-adult-*": 4.5,
+				"*-dreadnoughtus-adult-*": 4.5,
+				"*-futalognkosaurus-adult-*": 4.5,
+				"*-brachiosaurus-adult-*": 4.5,
+				"*-giraffatitan-adult-*": 4.5,
+				"*-diamantinasaurus-adult-*": 4.5,
+				"*-europatitan-adult-*": 4.5,
+				"*-antarctosaurus-adult-*": 4.3,
+				"*-ruyangosaurus-adult-*": 4.3,
+				"*-camarasaurus-adult-*": 4.1,
+				"*-bruhathkayosaurus-adult-*": 4.5,
+				"*-malawisaurus-adult-*": 3.9,
+				"*-rapetosaurus-adult-*": 3.7,
+				}
+			},
+			{"code": "floatupwhenstuck","onlyWhenDead": true},
+			{"code": "interpolateposition" },
+			{"code": "harvestable","quantitySlots": 8},
+			{"code": "multiply", "enabledByType": { "*-adult-female": true, "*": false } },
+			{"code": "despawn","minPlayerDistance": 8,"belowLightLevel": 8,"minSeconds": 300},
+			{"code": "ropetieable","minGeneration": 4},
+			{"code": "selectionboxes", "enabledByType": {  "*-baby-*": false, "*": true},"minGeneration": 4 },
+			{"code": "ownable", "enabledByType": { "*-baby-*": false,"*": true},"minGeneration": 4 },
+			{"code": "rideableaccessories", "enabledByType": {  "*-baby-*": false, "*": false},"minGeneration": 4 },
+			{"code": "rideable", "enabledByType": {  "*-baby-*": false, "*": false},"minGeneration": 4 },
+        ],
+        "animations": [
+			{"code": "attack","animation": "Attack","animationSpeed": 1.0,"weight": 10,"blendMode": "AddAverage"},
+			{"code": "attack1","animation": "Attack","animationSpeed": 1.0,"weight": 10,"blendMode": "AddAverage"},
+			{"code": "die","animation": "Die","easeInSpeed": 3,"animationSpeed": 1,"weight": 10,"blendMode": "Average","triggeredBy": { "onControls": [ "dead" ] }},
+			{"code": "eat","animation": "Eat","easeInSpeed": 4,"easeOutSpeed": 4,"blendMode": "Average"},
+			{"code": "graze","animation": "Graze","supressDefaultAnimation": true,"blendMode": "Average"},
+			{"code": "hurt","animation": "Hurt","animationSpeed": 2.2,"weight": 10,"blendMode": "AddAverage"},
+			{"code": "idle","animation": "Idle","animationSpeed": 0.5,"blendMode": "AddAverage","easeOutSpeed": 4,"triggeredBy": { "defaultAnim": true }},
+			{"code": "look","animation": "Look", "blendMode": "AddAverage","easeOutSpeed": 0.25},
+			{"code": "alert","animation": "Alert","animationSpeed": 1.2,"weight": 10,"blendMode": "AddAverage"},
+			{"code": "roar","animation": "Roar","animationSpeed": 2.2,"weight": 10,"blendMode": "AddAverage"},
+			{"code": "trot","animation": "Trot","easeInSpeed": 10,"easeOutSpeed": 2,"supressDefaultAnimation": true,"blendMode": "Average"},
+			{"code": "sit","animation": "Sit","easeInSpeed": 0.1,"easeOutSpeed": 0.5,"blendMode": "Average"},
+			{"code": "lie","animation": "Lie","easeInSpeed": 0.1,"easeOutSpeed": 0.5,"weight": 10,"blendMode": "Average"},
+			{"code": "sleep","animation": "Sleep","easeInSpeed": 2,"easeOutSpeed": 2,"weight": 5,"blendMode": "Average"},
+			{"code": "walk","animation": "Walk","easeInSpeed": 10,"supressDefaultAnimation": true,"blendMode": "Average"}
+		]
+    },
+    "server": {
+		"attributes": {"pathfinder": {"minTurnAnglePerSec": 30,"maxTurnAnglePerSec": 350}},
+        "behaviors": [
+			{"code": "selectionboxes", "enabledByType": {  "*-baby-*": false, "*": true},"minGeneration": 4 },
+			{"code": "ownable", "enabledByType": { "*-baby-*": false,"*": true},"minGeneration": 4 },
+			{"code": "rideableaccessories", "enabledByType": {  "*-baby-*": false, "*": false},"minGeneration": 4 },
+			{"code": "rideable", "enabledByType": {  "*-baby-*": false, "*": false},"minGeneration": 4 },
+            {"code": "repulseagents" },
+            {"code": "controlledphysics","stepHeightByType":
+				{
+				"*-baby-*":1.1251,
+				"*-argentinosaurus-adult-*": 4.5,
+				"*-patagotitan-adult-*": 4.5,
+				"*-dreadnoughtus-adult-*": 4.5,
+				"*-futalognkosaurus-adult-*": 4.5,
+				"*-brachiosaurus-adult-*": 4.5,
+				"*-giraffatitan-adult-*": 4.5,
+				"*-diamantinasaurus-adult-*": 4.5,
+				"*-europatitan-adult-*": 4.5,
+				"*-antarctosaurus-adult-*": 4.3,
+				"*-ruyangosaurus-adult-*": 4.3,
+				"*-camarasaurus-adult-*": 4.1,
+				"*-bruhathkayosaurus-adult-*": 4.5,
+				"*-malawisaurus-adult-*": 3.9,
+				"*-rapetosaurus-adult-*": 3.7,
+				}
+			},
+            {"code": "despawn","minPlayerDistance": 8,"belowLightLevel": 8,"minSeconds": 300},
+            {"code": "floatupwhenstuck","onlyWhenDead": true},
+            {"code": "breathe"},
+            {"code": "health",
+                    "maxhealthByType": {
+                        "*-argentinosaurus-adult-male": 800,"*-argentinosaurus-adult-female": 790,"*-argentinosaurus-baby-*": 25,
+                        "*-patagotitan-adult-male": 700,"*-patagotitan-adult-female": 690,"*-patagotitan-baby-*": 20,
+						"*-dreadnoughtus-adult-male": 700,"*-dreadnoughtus-adult-female": 690,"*-dreadnoughtus-baby-*": 20,
+						"*-futalognkosaurus-adult-male": 700,"*-futalognkosaurus-adult-female": 690,"*-futalognkosaurus-baby-*": 20,
+						"*-brachiosaurus-adult-male": 700,"*-brachiosaurus-adult-female": 690,"*-brachiosaurus-baby-*": 20,
+						"*-giraffatitan-adult-male": 700,"*-giraffatitan-adult-female": 690,"*-giraffatitan-baby-*": 20,
+						"*-diamantinasaurus-adult-male": 700,"*-diamantinasaurus-adult-female": 700,"*-diamantinasaurus-baby-*": 20,
+						"*-europatitan-adult-male": 700,"*-europatitan-adult-female": 690,"*-europatitan-baby-*": 20,
+						"*-antarctosaurus-adult-male": 600,"*-antarctosaurus-adult-female": 590,"*-antarctosaurus-baby-*": 17,
+						"*-ruyangosaurus-adult-male": 600,"*-ruyangosaurus-adult-female": 590,"*-ruyangosaurus-baby-*": 17,
+						"*-camarasaurus-adult-male": 550,"*-camarasaurus-adult-female": 540,"*-camarasaurus-baby-*": 15,
+						"*-bruhathkayosaurus-adult-male": 700,"*-bruhathkayosaurus-adult-female": 690,"*-bruhathkayosaurus-baby-*": 20,
+						"*-malawisaurus-adult-male": 500,"*-malawisaurus-adult-female": 490,"*-malawisaurus-baby-*": 12,
+						"*-rapetosaurus-adult-male": 450,"*-rapetosaurus-adult-female": 440,"*-rapetosaurus-baby-*": 12,
+                    }
+			},
+            {"code": "deaddecay",
+                    "hoursToDecay": 96,
+                    "decayedBlockByType": {
+                    "*-adult-*": "carcass-large",
+                    "*-baby-*": "carcass-medium"
+					}
+            },
+            {"code": "harvestable",
+				"quantitySlots": 8,
+				"drops": [
+					{
+						"type": "item",
+						"code": "game:redmeat-raw",
+						"quantityByType": {
+							"*-argentinosaurus-adult-*": {"avg": 400,"var": 10}, "*-argentinosaurus-baby-*": {"avg": 12,"var": 3},
+							"*-patagotitan-adult-*": {"avg": 350,"var": 10}, "*-patagotitan-baby-*": {"avg": 10,"var": 3},
+							"*-dreadnoughtus-adult-*": {"avg": 350,"var": 10}, "*-dreadnoughtus-baby-*": {"avg": 10,"var": 3},
+							"*-futalognkosaurus-adult-*": {"avg": 350,"var": 10}, "*-futalognkosaurus-baby-*": {"avg": 10,"var": 3},
+							"*-brachiosaurus-adult-*": {"avg": 350,"var": 10}, "*-brachiosaurus-baby-*": {"avg": 10,"var": 3},
+							"*-giraffatitan-adult-*": {"avg": 350,"var": 10}, "*-giraffatitan-baby-*": {"avg": 10,"var": 3},
+							"*-diamantinasaurus-adult-*": {"avg": 350,"var": 10}, "*-diamantinasaurus-baby-*": {"avg": 10,"var": 3},
+							"*-europatitan-adult-*": {"avg": 350,"var": 10}, "*-europatitan-baby-*": {"avg": 10,"var": 3},
+							"*-antarctosaurus-adult-*": {"avg": 300,"var": 10}, "*-antarctosaurus-baby-*": {"avg": 8,"var": 3},
+							"*-ruyangosaurus-adult-*": {"avg": 300,"var": 10}, "*-ruyangosaurus-baby-*": {"avg": 8,"var": 3},
+							"*-camarasaurus-adult-*": {"avg": 275,"var": 10}, "*-camarasaurus-baby-*": {"avg": 7,"var": 3},
+							"*-bruhathkayosaurus-adult-*": {"avg": 350,"var": 10}, "*-bruhathkayosaurus-baby-*": {"avg": 10,"var": 3},
+							"*-malawisaurus-adult-*": {"avg": 250,"var": 10}, "*-malawisaurus-baby-*": {"avg": 6,"var": 3},
+							"*-rapetosaurus-adult-*": {"avg": 225,"var": 10}, "*-rapetosaurus-baby-*": {"avg": 5,"var": 3},
+						}
+					},
+					{
+						"type": "item",
+						"code": "game:fat",
+						"quantityByType": {
+							"*-argentinosaurus-adult-*": {"avg": 60,"var": 5}, "*-argentinosaurus-baby-*": {"avg": 6,"var": 3},
+							"*-patagotitan-adult-*": {"avg": 55,"var": 5}, "*-patagotitan-baby-*": {"avg": 5,"var": 3},
+							"*-dreadnoughtus-adult-*": {"avg": 55,"var": 5}, "*-dreadnoughtus-baby-*": {"avg": 5,"var": 3},
+							"*-futalognkosaurus-adult-*": {"avg": 55,"var": 5}, "*-futalognkosaurus-baby-*": {"avg": 5,"var": 3},
+							"*-brachiosaurus-adult-*": {"avg": 55,"var": 5}, "*-brachiosaurus-baby-*": {"avg": 5,"var": 3},
+							"*-giraffatitan-adult-*": {"avg": 55,"var": 5}, "*-giraffatitan-baby-*": {"avg": 5,"var": 3},
+							"*-diamantinasaurus-adult-*": {"avg": 55,"var": 5}, "*-diamantinasaurus-baby-*": {"avg": 5,"var": 3},
+							"*-europatitan-adult-*": {"avg": 55,"var": 5}, "*-europatitan-baby-*": {"avg": 5,"var": 3},
+							"*-antarctosaurus-adult-*": {"avg": 50,"var": 5}, "*-antarctosaurus-baby-*": {"avg": 4,"var": 3},
+							"*-ruyangosaurus-adult-*": {"avg": 50,"var": 5}, "*-ruyangosaurus-baby-*": {"avg": 4,"var": 3},
+							"*-camarasaurus-adult-*": {"avg": 45,"var": 5}, "*-camarasaurus-baby-*": {"avg": 3,"var": 3},
+							"*-bruhathkayosaurus-adult-*": {"avg": 55,"var": 5}, "*-bruhathkayosaurus-baby-*": {"avg": 5,"var": 3},
+							"*-malawisaurus-adult-*": {"avg": 40,"var": 5}, "*-malawisaurus-baby-*": {"avg": 2,"var": 3},
+							"*-rapetosaurus-adult-*": {"avg": 35,"var": 5}, "*-rapetosaurus-baby-*": {"avg": 2,"var": 3},
+						}
+					},
+					{
+						"type": "item",
+						"code": "game:hide-raw-huge",
+						"quantityByType": {
+							"*-baby-*": {"avg": 0,"var": 0},
+							"*-argentinosaurus-adult-*": {"avg": 8,"var": 0},
+							"*-patagotitan-adult-*": {"avg": 7,"var": 0},
+							"*-dreadnoughtus-adult-*": {"avg": 7,"var": 0},
+							"*-futalognkosaurus-adult-*": {"avg": 7,"var": 0},
+							"*-brachiosaurus-adult-*": {"avg": 7,"var": 0},
+							"*-giraffatitan-adult-*": {"avg": 7,"var": 0},
+							"*-diamantinasaurus-adult-*": {"avg": 7,"var": 0},
+							"*-europatitan-adult-*": {"avg": 7,"var": 0},
+							"*-antarctosaurus-adult-*": {"avg": 6,"var": 0},
+							"*-ruyangosaurus-adult-*": {"avg": 6,"var": 0},
+							"*-camarasaurus-adult-*": {"avg": 5,"var": 0},
+							"*-bruhathkayosaurus-adult-*": {"avg": 7,"var": 0},
+							"*-malawisaurus-adult-*": {"avg": 4,"var": 0},
+							"*-rapetosaurus-adult-*": {"avg": 3,"var": 0},
+						}
+					},
+					{
+						"type": "item",
+						"code": "game:hide-raw-medium",
+						"quantityByType": {
+							"*-baby": {"avg": 1.0,"var": 0.0},
+							"*": {"avg": 0.0,"var": 0.0}
+						}
+					}
+				]
+			},
+			{"code": "multiply",
+				"enabledByType": {
+					"*-adult-female": true,
+					"*": false
+				},
+				"spawnEntityCodesByType": {
+					"*": [ { "code":"macronaria:macronaria-{type}-egg-raw"}]},
+				"requiresNearbyEntityCodeByType": {"*": "macronaria:macronaria-{type}-adult-male"},
+				"eatAnyway": true,
+				"requiresNearbyEntityRange": 20,
+				"spawnQuantityMin": 10,
+				"spawnQuantityMaxByType": {"*": 20},
+				"pregnancyDaysByType": {"*": 60},
+				"multiplyCooldownDaysMinByType": {"*": 30},
+				"multiplyCooldownDaysMaxByType": {"*": 90},
+				"portionsEatenForMultiplyByType": {"*": 100}
+			},
+            {"code": "grow",
+					"enabledByType": {
+					"*-baby-*": true,
+					"*": false
+				},
+				"hoursToGrowByType": {"*": 1440},
+				"adultEntityCodesByType": {
+					"*-baby-male": ["macronaria:macronaria-{type}-adult-male"],
+					"*-baby-female": ["macronaria:macronaria-{type}-adult-female"]
+				}
+			},
+			{"code": "emotionstates",
+				"states": [
+					{"code": "aggressiveondamage","duration": 60,
+						"chanceByType": {
+							"*-adult-*": 1,
+							"*-baby-*": 0.0
+						},
+						"slot": 2,"priority": 3,"accumType": "noaccum"},
+					{"code": "fleeondamage","duration": 60,"slot": 1,"chanceByType": {"*-adult-*": 1,"*-baby-*": 0},"priority": 2,"accumType": "max","whenHealthRelBelow": 0.4},
+					{"code": "fleeondamage","duration": 30,"slot": 1,"chanceByType": {"*-adult-*": 0,"*-baby-*": 1},"priority": 2,"accumType": "max","whenHealthRelBelow": 0.99},
+					{"code": "saturated","duration": 1200,"chance": 1,"slot": 0,"priority": 1,"accumType": "sum"},
+					{ "code": "aggressivearoundentities", "duration": 60, "chanceByType": {"*-baby-*": 0.0,"*-adult-*": 1.0}, "slot": 2, "priority": 5, "entityCodes": ["macronaria:macronaria-{type}-baby-male","macronaria:macronaria-{type}-baby-female"], "maxGeneration": 1 }
+				]
+			},
+			{
+				"code": "taskai",
+				"aiCreatureType": "LandCreature",
+				"aitasks": [
+					{
+						"code": "meleeattack",
+						"animation": "Attack",
+						"enabledByType": {"*-adult-*": true,"*-baby-*":false},
+						"entityCodesByType": {
+							"*": [ "player","bear-*","bell-*","bowtorn-*","drifter-*","hyena-*","locust-*","shiver-*","wolf-*",
+							"tyrannosauridae-*", "spinosauridae-*",
+								]},
+						"priority": 1.9,
+						"slot": 1,
+						"damageByType": {
+							"*-argentinosaurus-adult-*": 50,
+							"*-patagotitan-adult-*": 45,
+							"*-dreadnoughtus-adult-*": 45,
+							"*-futalognkosaurus-adult-*": 45,
+							"*-brachiosaurus-adult-*": 45,
+							"*-giraffatitan-adult-*": 45,
+							"*-diamantinasaurus-adult-*": 45,
+							"*-europatitan-adult-*": 45,
+							"*-antarctosaurus-adult-*": 43,
+							"*-ruyangosaurus-adult-*": 43,
+							"*-camarasaurus-adult-*": 41,
+							"*-bruhathkayosaurus-adult-*": 45,
+							"*-malawisaurus-adult-*": 39,
+							"*-rapetosaurus-adult-*": 37,
+
+						},
+						"knockbackStrengthByType": {
+							"*-baby-*":0.0,
+							"*-adult-*": 5,
+						},
+						"damageTierByType": {
+							"*-baby-*":1,
+							"*-argentinosaurus-adult-*": 7,
+							"*-patagotitan-adult-*": 6,
+							"*-dreadnoughtus-adult-*": 6,
+							"*-futalognkosaurus-adult-*": 6,
+							"*-brachiosaurus-adult-*": 6,
+							"*-giraffatitan-adult-*": 6,
+							"*-diamantinasaurus-adult-*": 6,
+							"*-europatitan-adult-*": 6,
+							"*-antarctosaurus-adult-*": 5,
+							"*-ruyangosaurus-adult-*": 5,
+							"*-camarasaurus-adult-*": 5,
+							"*-bruhathkayosaurus-adult-*": 6,
+							"*-malawisaurus-adult-*": 4,
+							"*-rapetosaurus-adult-*": 4,
+						},
+						"attackAngleRangeDeg": 180,
+						"mincooldown": 1500,
+						"maxcooldown": 2000,
+						"minDistByType": {"*-adult-*":10,"*":1},
+						"minVerDistByType": {"*-adult-*":17,"*":1},
+						"attackDurationMs": 1250,
+						"damagePlayerAtMs": 400,
+						"animationSpeed": 0.25,
+						"soundByType": {
+							"*-adult-*":"creature/stomp1"},
+					},
+					{
+						"code": "seekentity",
+						"animation": "Walk",
+						"enabledByType": {
+							"*-baby-*": false,
+							"*": true},
+						"entityCodesByType": {
+							"*-adult-*": [
+								"tyrannosauridae-*", "spinosauridae-*"
+								]
+						},
+						"priority": 1.86,
+						"mincooldown": 6000,
+						"maxcooldown": 6500,
+						"seekingRange": 20,
+						"movespeedByType": {
+							"*-baby-*": 0.003,
+							"*-adult-*": 0.0045,
+						},
+						"animationSpeedByType": {
+							"*-baby-*": 1,
+							"*-adult-*": 0.5,
+						},
+						"soundByType": {"*-adult-*":"creature/hurt"},
+						"whenInEmotionState": "aggressiveondamage"
+					},
+					{
+						"code": "seekentity",
+						"animation": "Walk",
+						"enabledByType": {
+							"*-baby-*": false,
+							"*": true},
+						"entityCodesByType": {
+							"*-adult-*": [ "player","bear-*","bell-*","bowtorn-*","drifter-*","hyena-*","locust-*","shiver-*","wolf-*",
+							"tyrannosauridae-*", "spinosauridae-*"
+								]
+						},
+						"priority": 1.84,
+						"mincooldown": 6000,
+						"maxcooldown": 6500,
+						"seekingRange": 20,
+						"movespeedByType": {
+							"*-baby-*": 0.003,
+							"*-adult-*": 0.0045,
+						},
+						"animationSpeedByType": {
+							"*-baby-*": 1,
+							"*-adult-*": 0.5,
+						},
+						"soundByType": {"*-adult-*":"creature/hurt"},
+					},
+                    {
+						"code": "fleeentity",
+						"animation": "Trot",
+						"enabledByType": {"*-adult-*": false,"*": true},
+						"entityCodesByType": {
+							"*-baby-*":["player","bear-*","bell-*","bowtorn-*","drifter-*","shiver-*","hyena-male", "hyena-female","wolf-male", "wolf-female","tyrannosauridae-*", "spinosauridae-*"],
+						},
+						"priority": 1.8,
+						"movespeedByType": {
+							"*-adult-*": 0.035,
+							"*-baby-*": 0.020,
+						},
+						"animationSpeedByType": {
+							"*-baby-*": 4,
+							"*": 3
+						},
+						"seekingRange": 20
+					},
+					{
+						"code": "fleeentity",
+						"animation": "Trot",
+						"enabledByType": {"*-adult-*": false,"*": true},
+						"entityCodesByType": {
+							"*-baby-*":["player","bear-*","bell-*","bowtorn-*","drifter-*","shiver-*","hyena-male", "hyena-female","wolf-male", "wolf-female","tyrannosauridae-*", "spinosauridae-*"],
+						},
+						"priority": 1.81,
+						"movespeedByType": {
+							"*-adult-*": 0.035,
+							"*-baby-*": 0.020,
+						},
+						"animationSpeedByType": {
+							"*-baby-*": 4,
+							"*": 3
+						},
+						"whenInEmotionState": "fleeondamage",
+						"seekingRange": 20
+					},
+
+                    {
+						"code": "getoutofwater",
+						"animation": "Walk",
+						"priority": 1.4,
+						"movespeedByType": {
+							"*-adult-*": 0.025,
+							"*-baby-*": 0.01,
+						},
+						"animationSpeed": 1.5
+					},
+                    {
+						"code": "stayclosetoentity",
+						"animation": "Trot",
+						"enabledByType": {
+							"*-baby-*": true,
+							"*":false,
+						},
+						"priority": 1.81,
+						"entityCodeByType": {
+							"*-adult-*": "macronaria-{type}-baby-{gender}",
+							"*-baby-*": "macronaria-{type}-adult-female"},
+						"movespeedByType": {
+							"*-adult-*": 0.035,
+							"*-baby-*": 0.010,
+							},
+						"maxDistanceByType": {"*-adult-*": 24,"*-baby-*": 6},
+						"searchRange": 45,
+						"animationSpeedByType": {
+							"*-adult-*": 5,
+							"*-baby-*": 5
+						},
+					},
+
+                    {
+						"code": "idle",
+						"animation": "Sit",
+						"priority": 1.2,
+						"minduration": 20000,
+						"maxduration": 240000,
+						"mincooldown": 6000,
+						"maxcooldown": 12000,
+						"priorityForCancel": 1.28,
+						"duringDayTimeFramesByType": {
+							"*":[{"fromHour": 22,"toHour": 24},{"fromHour": 0,"toHour": 4},{"fromHour": 12,"toHour": 16}],
+							},
+						"stopOnNearbyEntityCodes": [ "player", "bear-*","hyena-male", "hyena-female","wolf-male", "wolf-female", "tyrannosauridae-*", "spinosauridae-*"  ],
+						"stopRange": 20,
+						"animationSpeedByType": {
+							"*-baby-*": 0.6,
+							"*": 0.25
+						},
+						"stopOnHurt": true,
+						"whenNotInEmotionState": "aggressiveondamage|aggressivearoundentities|fleeondamage"
+					},
+                    {
+						"code": "idle",
+						"animation": "Lie",
+						"priority": 1.18,
+						"minduration": 30000,
+						"maxduration": 240000,
+						"mincooldown": 6000,
+						"maxcooldown": 12000,
+						"priorityForCancel": 1.28,
+						"duringDayTimeFramesByType": {
+							"*":[{"fromHour": 22.5,"toHour": 24},{"fromHour": 0,"toHour": 4},{"fromHour": 12.5,"toHour": 16}],
+							},
+						"stopOnNearbyEntityCodes": [ "player", "bear-*","hyena-male", "hyena-female","wolf-male", "wolf-female", "tyrannosauridae-*", "spinosauridae-*"  ],
+						"stopRange": 10,
+						"animationSpeedByType": {
+							"*-baby-*": 0.6,
+							"*": 0.25
+						},
+						"stopOnHurt": true,
+						"whenNotInEmotionState": "aggressiveondamage|aggressivearoundentities|fleeondamage"
+					},
+                    {
+						"code": "idle",
+						"animation": "Sleep",
+						"priority": 1.15,
+						"minduration": 200000,
+						"maxduration": 800000,
+						"mincooldown": 1000,
+						"maxcooldown": 3000,
+						"animationSpeed": 0.25,
+						"whenNotInEmotionState": "aggressiveondamage|aggressivearoundentities|fleeondamage",
+						"duringDayTimeFramesByType": {
+							"*":[{"fromHour": 22.75,"toHour": 24},{"fromHour": 0,"toHour": 4},{"fromHour": 12.75,"toHour": 15}],
+							},
+						"stopOnNearbyEntityCodes": [ "player" ],
+						"stopRange": 1,
+						"stopOnHurt": true
+					},
+                    {
+						"code": "seekfoodandeat",
+						"animation": "Walk",
+						"eatAnimation": "Eat",
+
+						"priority": 1.34,
+						"eatSoundByType": {
+							"*":"game:creature/animal-eat*"},
+						"eatTime": 1.5,
+						"eatLooseItems": true,
+						"movespeedByType": {
+							"*-baby-*": 0.003,
+							"*-adult-*": 0.0045,
+						},
+						"animationSpeedByType": {
+							"*-baby-*": 1,
+							"*-adult-*": 0.25,
+						},
+						"mincooldownHours": 1,
+						"maxcooldownHours": 4,
+						"whenNotInEmotionState": "aggressiveondamage|aggressivearoundentities|fleeondamage"
+					},
+                    {
+						"code": "idle",
+						"animation": "Eat",
+						"priority": 1.2,
+						"priorityForCancel": 1.35,
+						"minduration": 2667,
+						"maxduration": 2667,
+						"mincooldown": 6000,
+						"maxcooldown": 20000,
+						"animationSpeed": 0.75,
+						"soundByType": {"*":"game:creature/animal-eat*"},
+						"whenNotInEmotionState": "aggressiveondamage|aggressivearoundentities|fleeondamage"
+					},
+                    {
+						"code": "idle",
+						"animation": "Roar",
+						"priority": 0.5,
+						"priorityForCancel": 1.5,
+						"minduration": 4667,
+						"maxduration": 4667,
+						"chanceByType": {"*":0.01},
+						"mincooldown": 8000,
+						"maxcooldown": 50000,
+						"animationSpeed": 0.5,
+						"soundByType": {
+							"*-adult-*": "creature/roar",
+							"*-baby-*": "creature/baby"
+						},
+						"soundRangeByType": {
+							"*-baby-*": 30,
+							"*": 100
+						},
+						"whenNotInEmotionState": "aggressiveondamage|aggressivearoundentities|fleeondamage"
+					},
+                    {
+						"code": "wander",
+						"animation": "Walk",
+						"priority": 1.0,
+						"priorityForCancel": 1.35,
+						"chance": 0.0005,
+						"duringDayTimeFramesByType": {"*-adult-*":[{"fromHour": 18,"toHour": 19},{"fromHour": 6,"toHour": 7}]},
+						"movespeedByType": {
+							"*-baby-*": 0.003,
+							"*-adult-*": 0.0045,
+
+						},
+						"animationSpeedByType": {
+							"*-baby-*": 1,
+							"*-adult-*": 0.5,
+						},
+						"preferredLightLevel": 24,
+						"whenNotInEmotionState": "aggressiveondamage|aggressivearoundentities|fleeondamage"
+					},
+
+
+				]
+            },
+			{"code": "pettable","minGeneration": 4},
+			{"code": "ropetieable","minGeneration": 4},
+
+        ],
+	"spawnconditions": {
+		"worldgen": {
+			"tryOnlySurface": true,
+			"insideBlockCodes": ["game:air","game:tallgrass-*","game:gravel-*","game:sand-*","game:snowlayer-1","game:soil-*"],
+			"groupSizeByType": {
+				"*-adult-male":{ "dist": "uniform","avg": 3,"var": 2},
+				"*-adult-female":{ "dist": "uniform","avg": 5,"var": 5},
+			},
+			"companionsByType":{
+				"*-adult-male":["macronaria:macronaria-{type}-adult-male"],
+				"*-adult-female":["macronaria:macronaria-{type}-adult-female","macronaria:macronaria-{type}-adult-female","macronaria:macronaria-{type}-adult-female","macronaria:macronaria-{type}-adult-male", "macronaria:macronaria-{type}-baby-female","macronaria:macronaria-{type}-baby-male","macronaria:macronaria-{type}-baby-female","macronaria:macronaria-{type}-baby-male"],
+			},
+
+		},
+		"runtime": {
+			"group": "neutral",
+			"TriesPerChunk": { "avg": 0.000, "var": 0 },
+			"MinDistanceToPlayer": 100,
+			"tryOnlySurface": true,
+			"chanceByType": {
+				"*-argentinosaurus-adult-male": 0.00001,"*-argentinosaurus-adult-female": 0.00001,
+				"*-patagotitan-adult-male": 0.00001,"*-patagotitan-adult-female": 0.00001,
+				"*-dreadnoughtus-adult-male": 0.00001,"*-dreadnoughtus-adult-female": 0.00001,
+				"*-futalognkosaurus-adult-male": 0.00001,"*-futalognkosaurus-adult-female": 0.00001,
+				"*-brachiosaurus-adult-male": 0.00001,"*-brachiosaurus-adult-female": 0.00001,
+				"*-giraffatitan-adult-male": 0.00001,"*-giraffatitan-adult-female": 0.00001,
+				"*-diamantinasaurus-adult-male": 0.00001,"*-diamantinasaurus-adult-female": 0.00001,
+				"*-europatitan-adult-male": 0.00001,"*-europatitan-adult-female": 0.00001,
+				"*-antarctosaurus-adult-male": 0.00001,"*-antarctosaurus-adult-female": 0.00001,
+				"*-ruyangosaurus-adult-male": 0.00001,"*-ruyangosaurus-adult-female": 0.00001,
+				"*-camarasaurus-adult-male": 0.00001,"*-camarasaurus-adult-female": 0.00001,
+				"*-bruhathkayosaurus-adult-male": 0.00001,"*-bruhathkayosaurus-adult-female": 0.00001,
+				"*-malawisaurus-adult-male": 0.00001,"*-malawisaurus-adult-female": 0.00001,
+				"*-rapetosaurus-adult-male": 0.00001,"*-rapetosaurus-adult-female": 0.00001,
+				"*":0.00,
+			},
+			"maxQuantity": 1,
+			"maxLightLevel": 7,
+			"lightLevelType": "onlyBlockLight",
+			"spawnCapPlayerScaling": 0.0,
+			"insideBlockCodes": ["game:air","game:tallgrass-*","game:gravel-*","game:sand-*","game:snowlayer-1","game:soil-*"],
+			"groupSizeByType": {
+				"*-adult-male":{ "dist": "uniform","avg": 3,"var": 2},
+				"*-adult-female":{ "dist": "uniform","avg": 10,"var": 5},
+			},
+			"companionsByType":{
+				"*-adult-male":["macronaria:macronaria-{type}-adult-male"],
+				"*-adult-female":["macronaria:macronaria-{type}-adult-female","macronaria:macronaria-{type}-adult-female","macronaria:macronaria-{type}-adult-female","macronaria:macronaria-{type}-adult-male", "macronaria:macronaria-{type}-baby-female","macronaria:macronaria-{type}-baby-male","macronaria:macronaria-{type}-baby-female","macronaria:macronaria-{type}-baby-male"],
+			},
+		}
+	},
+    "spawnconditionsByType": {
+			"*-argentinosaurus-adult-*": {
+				"climate": {
+					"minTemp": 10,
+					"maxTemp": 40,
+					"minRain": 0.3,
+					"maxRain": 0.8,
+					"minForestOrShrubs": 0.3,
+					"maxForest": 0.7,
+					"maxShrubs": 0.7,
+					"minY": 0.9,
+					"maxY": 1.5
+				}
+			},
+			"*-patagotitan-adult-*": {
+				"climate": {
+					"minTemp": 10,
+					"maxTemp": 40,
+					"minRain": 0.3,
+					"maxRain": 0.8,
+					"minForestOrShrubs": 0.3,
+					"maxForest": 0.7,
+					"maxShrubs": 0.7,
+					"minY": 0.9,
+					"maxY": 1.5
+				}
+			},
+			"*-dreadnoughtus-adult-*": {
+				"climate": {
+					"minTemp": 10,
+					"maxTemp": 35,
+					"minRain": 0.4,
+					"maxRain": 0.9,
+					"minForestOrShrubs": 0.4,
+					"maxForest": 0.8,
+					"maxShrubs": 0.7,
+					"minY": 0.9,
+					"maxY": 1.6
+				}
+			},
+			"*-futalognkosaurus-adult-*": {
+				"climate": {
+					"minTemp": 10,
+					"maxTemp": 35,
+					"minRain": 0.4,
+					"maxRain": 0.9,
+					"minForestOrShrubs": 0.4,
+					"maxForest": 0.8,
+					"maxShrubs": 0.7,
+					"minY": 0.9,
+					"maxY": 1.6
+				}
+			},
+			"*-brachiosaurus-adult-*": {
+				"climate": {
+					"minTemp": 15,
+					"maxTemp": 45,
+					"minRain": 0.4,
+					"maxRain": 0.9,
+					"minForestOrShrubs": 0.5,
+					"maxForest": 0.9,
+					"maxShrubs": 0.6,
+					"minY": 0.9,
+					"maxY": 1.6
+				}
+			},
+			"*-giraffatitan-adult-*": {
+				"climate": {
+					"minTemp": 15,
+					"maxTemp": 45,
+					"minRain": 0.4,
+					"maxRain": 0.9,
+					"minForestOrShrubs": 0.5,
+					"maxForest": 0.9,
+					"maxShrubs": 0.6,
+					"minY": 0.9,
+					"maxY": 1.6
+				}
+			},
+			"*-diamantinasaurus-adult-*": {
+				"climate": {
+					"minTemp": 15,
+					"maxTemp": 40,
+					"minRain": 0.3,
+					"maxRain": 0.8,
+					"minForestOrShrubs": 0.3,
+					"maxForest": 0.7,
+					"maxShrubs": 0.7,
+					"minY": 0.9,
+					"maxY": 1.5
+				}
+			},
+			"*-europatitan-adult-*": {
+				"climate": {
+					"minTemp": 10,
+					"maxTemp": 35,
+					"minRain": 0.4,
+					"maxRain": 0.9,
+					"minForestOrShrubs": 0.4,
+					"maxForest": 0.8,
+					"maxShrubs": 0.7,
+					"minY": 0.9,
+					"maxY": 1.6
+				}
+			},
+			"*-antarctosaurus-adult-*": {
+				"climate": {
+					"minTemp": 5,
+					"maxTemp": 35,
+					"minRain": 0.3,
+					"maxRain": 0.8,
+					"minForestOrShrubs": 0.3,
+					"maxForest": 0.7,
+					"maxShrubs": 0.7,
+					"minY": 0.9,
+					"maxY": 1.5
+				}
+			},
+			"*-ruyangosaurus-adult-*": {
+				"climate": {
+					"minTemp": 10,
+					"maxTemp": 40,
+					"minRain": 0.3,
+					"maxRain": 0.8,
+					"minForestOrShrubs": 0.3,
+					"maxForest": 0.7,
+					"maxShrubs": 0.7,
+					"minY": 0.9,
+					"maxY": 1.5
+				}
+			},
+			"*-camarasaurus-adult-*": {
+				"climate": {
+					"minTemp": 5,
+					"maxTemp": 35,
+					"minRain": 0.4,
+					"maxRain": 0.9,
+					"minForestOrShrubs": 0.4,
+					"maxForest": 0.8,
+					"maxShrubs": 0.7,
+					"minY": 0.9,
+					"maxY": 1.6
+				}
+			},
+			"*-bruhathkayosaurus-adult-*": {
+				"climate": {
+					"minTemp": 15,
+					"maxTemp": 45,
+					"minRain": 0.3,
+					"maxRain": 0.8,
+					"minForestOrShrubs": 0.3,
+					"maxForest": 0.7,
+					"maxShrubs": 0.7,
+					"minY": 0.9,
+					"maxY": 1.5
+				}
+			},
+			"*-malawisaurus-adult-*": {
+				"climate": {
+					"minTemp": 15,
+					"maxTemp": 40,
+					"minRain": 0.3,
+					"maxRain": 0.8,
+					"minForestOrShrubs": 0.3,
+					"maxForest": 0.7,
+					"maxShrubs": 0.7,
+					"minY": 0.9,
+					"maxY": 1.5
+				}
+			},
+			"*-rapetosaurus-adult-*": {
+				"climate": {
+					"minTemp": 15,
+					"maxTemp": 40,
+					"minRain": 0.4,
+					"maxRain": 0.9,
+					"minForestOrShrubs": 0.4,
+					"maxForest": 0.8,
+					"maxShrubs": 0.7,
+					"minY": 0.9,
+					"maxY": 1.5
+				}
+			},
+			"*-ampelosaurus-adult-*": {
+				"climate": {
+					"minTemp": 10,
+					"maxTemp": 35,
+					"minRain": 0.3,
+					"maxRain": 0.8,
+					"minForestOrShrubs": 0.3,
+					"maxForest": 0.7,
+					"maxShrubs": 0.7,
+					"minY": 0.9,
+					"maxY": 1.5
+				}
+			}
+
+		}
+    },
+    "soundsByType": {
+		"*-adult-*":{
+			"hurt": "creature/hurt",
+			"death": "creature/hurt",
+			"idle": "creature/idle"
+		},
+		"*-baby-*":{
+			"hurt": "creature/baby-hurt",
+			"death": "creature/baby-hurt",
+			"idle": "creature/baby"
+		},
+		"idleSoundChance": 0.1
+	}
+}

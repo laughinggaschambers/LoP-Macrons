@@ -1,0 +1,115 @@
+﻿{
+  "code": "creature",
+  "class": "ItemCreature",
+  "maxstacksize": 64,
+  "variantgroups": [
+    {
+      "code": "type",
+      "states": [ 
+		"macronaria-argentinosaurus-adult-male","macronaria-argentinosaurus-adult-female", "macronaria-argentinosaurus-baby-male", "macronaria-argentinosaurus-baby-female", "macronaria-argentinosaurus-nest-incubating","macronaria-argentinosaurus-nest-mature", "macronaria-argentinosaurus-nest-empty",
+
+		"macronaria-patagotitan-adult-male","macronaria-patagotitan-adult-female", "macronaria-patagotitan-baby-male", "macronaria-patagotitan-baby-female", "macronaria-patagotitan-nest-incubating","macronaria-patagotitan-nest-mature", "macronaria-patagotitan-nest-empty",
+
+		"macronaria-dreadnoughtus-adult-male","macronaria-dreadnoughtus-adult-female", "macronaria-dreadnoughtus-baby-male", "macronaria-dreadnoughtus-baby-female", "macronaria-dreadnoughtus-nest-incubating","macronaria-dreadnoughtus-nest-mature", "macronaria-dreadnoughtus-nest-empty",
+
+		"macronaria-futalognkosaurus-adult-male","macronaria-futalognkosaurus-adult-female", "macronaria-futalognkosaurus-baby-male", "macronaria-futalognkosaurus-baby-female", "macronaria-futalognkosaurus-nest-incubating","macronaria-futalognkosaurus-nest-mature", "macronaria-futalognkosaurus-nest-empty",
+
+		"macronaria-brachiosaurus-adult-male","macronaria-brachiosaurus-adult-female", "macronaria-brachiosaurus-baby-male", "macronaria-brachiosaurus-baby-female", "macronaria-brachiosaurus-nest-incubating","macronaria-brachiosaurus-nest-mature", "macronaria-brachiosaurus-nest-empty",
+
+		"macronaria-giraffatitan-adult-male","macronaria-giraffatitan-adult-female", "macronaria-giraffatitan-baby-male", "macronaria-giraffatitan-baby-female", "macronaria-giraffatitan-nest-incubating","macronaria-giraffatitan-nest-mature", "macronaria-giraffatitan-nest-empty",
+
+		"macronaria-diamantinasaurus-adult-male","macronaria-diamantinasaurus-adult-female", "macronaria-diamantinasaurus-baby-male", "macronaria-diamantinasaurus-baby-female", "macronaria-diamantinasaurus-nest-incubating","macronaria-diamantinasaurus-nest-mature", "macronaria-diamantinasaurus-nest-empty",
+
+		"macronaria-europatitan-adult-male","macronaria-europatitan-adult-female", "macronaria-europatitan-baby-male", "macronaria-europatitan-baby-female", "macronaria-europatitan-nest-incubating","macronaria-europatitan-nest-mature", "macronaria-europatitan-nest-empty",
+
+		"macronaria-antarctosaurus-adult-male","macronaria-antarctosaurus-adult-female", "macronaria-antarctosaurus-baby-male", "macronaria-antarctosaurus-baby-female", "macronaria-antarctosaurus-nest-incubating","macronaria-antarctosaurus-nest-mature", "macronaria-antarctosaurus-nest-empty",
+
+		"macronaria-ruyangosaurus-adult-male","macronaria-ruyangosaurus-adult-female", "macronaria-ruyangosaurus-baby-male", "macronaria-ruyangosaurus-baby-female", "macronaria-ruyangosaurus-nest-incubating","macronaria-ruyangosaurus-nest-mature", "macronaria-ruyangosaurus-nest-empty",
+
+		"macronaria-camarasaurus-adult-male","macronaria-camarasaurus-adult-female", "macronaria-camarasaurus-baby-male", "macronaria-camarasaurus-baby-female", "macronaria-camarasaurus-nest-incubating","macronaria-camarasaurus-nest-mature", "macronaria-camarasaurus-nest-empty",
+
+		"macronaria-bruhathkayosaurus-adult-male","macronaria-bruhathkayosaurus-adult-female", "macronaria-bruhathkayosaurus-baby-male", "macronaria-bruhathkayosaurus-baby-female", "macronaria-bruhathkayosaurus-nest-incubating","macronaria-bruhathkayosaurus-nest-mature", "macronaria-bruhathkayosaurus-nest-empty",
+
+		"macronaria-malawisaurus-adult-male","macronaria-malawisaurus-adult-female", "macronaria-malawisaurus-baby-male", "macronaria-malawisaurus-baby-female", "macronaria-malawisaurus-nest-incubating","macronaria-malawisaurus-nest-mature", "macronaria-malawisaurus-nest-empty",
+
+		"macronaria-ampelosaurus-adult-male","macronaria-ampelosaurus-adult-female", "macronaria-ampelosaurus-baby-male", "macronaria-ampelosaurus-baby-female", "macronaria-ampelosaurus-nest-incubating","macronaria-ampelosaurus-nest-mature", "macronaria-ampelosaurus-nest-empty",
+
+		"macronaria-rapetosaurus-adult-male","macronaria-rapetosaurus-adult-female", "macronaria-rapetosaurus-baby-male", "macronaria-rapetosaurus-baby-female", "macronaria-rapetosaurus-nest-incubating","macronaria-rapetosaurus-nest-mature", "macronaria-rapetosaurus-nest-empty",
+	  ]
+    }
+  ],
+  "shapeByType": {
+			"*-argentinosaurus-adult-*":{"base": "entity/land/macronaria/argentinosaurus/adult"},"*-argentinosaurus-baby-*":{"base": "entity/land/macronaria/argentinosaurus/baby"},
+			"*-patagotitan-adult-*":{"base": "entity/land/macronaria/patagotitan/adult"},"*-patagotitan-baby-*":{"base": "entity/land/macronaria/patagotitan/baby"},
+			"*-dreadnoughtus-adult-*":{"base": "entity/land/macronaria/dreadnoughtus/adult"},"*-dreadnoughtus-baby-*":{"base": "entity/land/macronaria/dreadnoughtus/baby"},
+			"*-futalognkosaurus-adult-*":{"base": "entity/land/macronaria/futalognkosaurus/adult"},"*-futalognkosaurus-baby-*":{"base": "entity/land/macronaria/futalognkosaurus/baby"},
+			"*-brachiosaurus-adult-*":{"base": "entity/land/macronaria/brachiosaurus/adult"},"*-brachiosaurus-baby-*":{"base": "entity/land/macronaria/brachiosaurus/baby"},
+			"*-giraffatitan-adult-*":{"base": "entity/land/macronaria/giraffatitan/adult"},"*-giraffatitan-baby-*":{"base": "entity/land/macronaria/giraffatitan/baby"},
+			"*-diamantinasaurus-adult-*":{"base": "entity/land/macronaria/diamantinasaurus/adult"},"*-diamantinasaurus-baby-*":{"base": "entity/land/macronaria/diamantinasaurus/baby"},
+			"*-europatitan-adult-*":{"base": "entity/land/macronaria/europatitan/adult"},"*-europatitan-baby-*":{"base": "entity/land/macronaria/europatitan/baby"},
+			"*-antarctosaurus-adult-*":{"base": "entity/land/macronaria/antarctosaurus/adult"},"*-antarctosaurus-baby-*":{"base": "entity/land/macronaria/antarctosaurus/baby"},
+			"*-ruyangosaurus-adult-*":{"base": "entity/land/macronaria/ruyangosaurus/adult"},"*-ruyangosaurus-baby-*":{"base": "entity/land/macronaria/ruyangosaurus/baby"},
+			"*-camarasaurus-adult-*":{"base": "entity/land/macronaria/camarasaurus/adult"},"*-camarasaurus-baby-*":{"base": "entity/land/macronaria/camarasaurus/baby"},
+			"*-bruhathkayosaurus-adult-*":{"base": "entity/land/macronaria/bruhathkayosaurus/adult"},"*-bruhathkayosaurus-baby-*":{"base": "entity/land/macronaria/bruhathkayosaurus/baby"},
+			"*-malawisaurus-adult-*":{"base": "entity/land/macronaria/malawisaurus/adult"},"*-malawisaurus-baby-*":{"base": "entity/land/macronaria/malawisaurus/baby"},
+			"*-rapetosaurus-adult-*":{"base": "entity/land/macronaria/rapetosaurus/adult"},"*-rapetosaurus-baby-*":{"base": "entity/land/macronaria/rapetosaurus/baby"},
+			"*-ampelosaurus-adult-*":{"base": "entity/land/macronaria/ampelosaurus/adult"},"*-ampelosaurus-baby-*":{"base": "entity/land/macronaria/ampelosaurus/baby"},
+		},
+         "textureByType": {
+            "*-argentinosaurus-adult-*":{"base": "entity/argentinosaurus-adult"},"*-argentinosaurus-baby-*":{"base": "entity/argentinosaurus-adult"},
+            "*-patagotitan-adult-*":{"base": "entity/patagotitan-adult"},"*-patagotitan-baby-*":{"base": "entity/patagotitan-adult"},
+            "*-dreadnoughtus-adult-*":{"base": "entity/dreadnoughtus-adult"},"*-dreadnoughtus-baby-*":{"base": "entity/dreadnoughtus-adult"},
+            "*-futalognkosaurus-adult-*":{"base": "entity/futalognkosaurus-adult"},"*-futalognkosaurus-baby-*":{"base": "entity/futalognkosaurus-adult"},
+            "*-brachiosaurus-adult-*":{"base": "entity/brachiosaurus-adult"},"*-brachiosaurus-baby-*":{"base": "entity/brachiosaurus-adult"},
+            "*-giraffatitan-adult-*":{"base": "entity/giraffatitan-adult"},"*-giraffatitan-baby-*":{"base": "entity/giraffatitan-adult"},
+            "*-diamantinasaurus-adult-*":{"base": "entity/diamantinasaurus-adult"},"*-diamantinasaurus-baby-*":{"base": "entity/diamantinasaurus-adult"},
+            "*-europatitan-adult-*":{"base": "entity/europatitan-adult"},"*-europatitan-baby-*":{"base": "entity/europatitan-adult"},
+            "*-antarctosaurus-adult-*":{"base": "entity/antarctosaurus-adult"},"*-antarctosaurus-baby-*":{"base": "entity/antarctosaurus-adult"},
+            "*-ruyangosaurus-adult-*":{"base": "entity/ruyangosaurus-adult"},"*-ruyangosaurus-baby-*":{"base": "entity/ruyangosaurus-adult"},
+            "*-camarasaurus-adult-*":{"base": "entity/camarasaurus-adult"},"*-camarasaurus-baby-*":{"base": "entity/camarasaurus-adult"},
+            "*-bruhathkayosaurus-adult-*":{"base": "entity/bruhathkayosaurus-adult"},"*-bruhathkayosaurus-baby-*":{"base": "entity/bruhathkayosaurus-adult"},
+            "*-malawisaurus-adult-*":{"base": "entity/malawisaurus-adult"},"*-malawisaurus-baby-*":{"base": "entity/malawisaurus-adult"},
+            "*-rapetosaurus-adult-*":{"base": "entity/rapetosaurus-adult"},"*-rapetosaurus-baby-*":{"base": "entity/rapetosaurus-adult"},
+            "*-ampelosaurus-adult-*":{"base": "entity/ampelosaurus-adult"},"*-ampelosaurus-baby-*":{"base": "entity/ampelosaurus-adult"},
+        },
+
+  "creativeinventory": { "general": ["*"], "items": ["*"], "creatures": ["*"] },
+	"materialDensity": 600,
+	"guiTransformByType": {
+		"*-baby-*": {
+			"rotate": true,
+			"translation": { "x": -20, "y": -15, "z": 0 },
+			"rotation": { "x": -11, "y": -52, "z": -180 },
+			"origin": { "x": 1.5, "y": 1.5, "z": 1.5 },
+			"scale": 0.7
+		},
+		"creature-macronaria-*": {
+			"rotate": true,
+			"translation": { "x": -10, "y": 0, "z": 0 },
+			"rotation": { "x": -11, "y": -52, "z": -180 },
+			"origin": { "x": 1.5, "y": 1.5, "z": 1.5 },
+			"scale": 0.1
+		},
+	},
+
+	"tpHandTransformByType": {
+		"*-baby-*": {
+			"translation": { "x": -0.51, "y": -0.2, "z": -0.7 },
+			"rotation": { "x": 53, "y": -165, "z": 77 },
+			"origin": { "x": 0, "y": 0, "z": 0 },
+			"scale": 0.1
+		},
+		"creature-macronaria-*": {
+			"translation": { "x": -12, "y": -12, "z": -8 },
+			"rotation": { "x": -180, "y": 0, "z": -156 },
+			"scale": 0.05
+		}		
+	},
+
+	"fpHandTransformByType": {
+		"creature-macronaria-*": {
+			"translation": { "x": -5, "y": -5, "z": 0 },
+			"rotation": { "x": -8, "y": -63, "z": -7 }
+		}
+	}
+}
