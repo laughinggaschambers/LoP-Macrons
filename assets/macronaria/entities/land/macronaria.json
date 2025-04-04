@@ -344,6 +344,7 @@
 				"*-bruhathkayosaurus-adult-*": 4.5,
 				"*-malawisaurus-adult-*": 3.9,
 				"*-rapetosaurus-adult-*": 3.7,
+				"*-ampelosaurus-adult-*": 3.9,
 				}
 			},
 			{"code": "floatupwhenstuck","onlyWhenDead": true},
@@ -400,6 +401,7 @@
 				"*-bruhathkayosaurus-adult-*": 4.5,
 				"*-malawisaurus-adult-*": 3.9,
 				"*-rapetosaurus-adult-*": 3.7,
+				"*-ampelosaurus-adult-*": 3.9,
 				}
 			},
             {"code": "despawn","minPlayerDistance": 8,"belowLightLevel": 8,"minSeconds": 300},
@@ -420,7 +422,8 @@
 						"*-camarasaurus-adult-male": 550,"*-camarasaurus-adult-female": 540,"*-camarasaurus-baby-*": 15,
 						"*-bruhathkayosaurus-adult-male": 700,"*-bruhathkayosaurus-adult-female": 690,"*-bruhathkayosaurus-baby-*": 20,
 						"*-malawisaurus-adult-male": 500,"*-malawisaurus-adult-female": 490,"*-malawisaurus-baby-*": 12,
-						"*-rapetosaurus-adult-male": 450,"*-rapetosaurus-adult-female": 440,"*-rapetosaurus-baby-*": 12,
+						"*-rapetosaurus-adult-male": 450,"*-rapetosaurus-adult-female": 440,"*-rapetosaurus-baby-*": 10,
+						"*-ampelosaurus-adult-male": 500,"*-ampelosaurus-adult-female": 490,"*-ampelosaurus-baby-*": 12,
                     }
 			},
             {"code": "deaddecay",
@@ -451,6 +454,7 @@
 							"*-bruhathkayosaurus-adult-*": {"avg": 350,"var": 10}, "*-bruhathkayosaurus-baby-*": {"avg": 10,"var": 3},
 							"*-malawisaurus-adult-*": {"avg": 250,"var": 10}, "*-malawisaurus-baby-*": {"avg": 6,"var": 3},
 							"*-rapetosaurus-adult-*": {"avg": 225,"var": 10}, "*-rapetosaurus-baby-*": {"avg": 5,"var": 3},
+							"*-ampelosaurus-adult-*": {"avg": 250,"var": 10}, "*-ampelosaurus-baby-*": {"avg": 6,"var": 3},
 						}
 					},
 					{
@@ -471,6 +475,7 @@
 							"*-bruhathkayosaurus-adult-*": {"avg": 55,"var": 5}, "*-bruhathkayosaurus-baby-*": {"avg": 5,"var": 3},
 							"*-malawisaurus-adult-*": {"avg": 40,"var": 5}, "*-malawisaurus-baby-*": {"avg": 2,"var": 3},
 							"*-rapetosaurus-adult-*": {"avg": 35,"var": 5}, "*-rapetosaurus-baby-*": {"avg": 2,"var": 3},
+							"*-ampelosaurus-adult-*": {"avg": 40,"var": 5}, "*-ampelosaurus-baby-*": {"avg": 2,"var": 3},
 						}
 					},
 					{
@@ -492,6 +497,7 @@
 							"*-bruhathkayosaurus-adult-*": {"avg": 7,"var": 0},
 							"*-malawisaurus-adult-*": {"avg": 4,"var": 0},
 							"*-rapetosaurus-adult-*": {"avg": 3,"var": 0},
+							"*-ampelosaurus-adult-*": {"avg": 4,"var": 0},
 						}
 					},
 					{
@@ -575,6 +581,7 @@
 							"*-bruhathkayosaurus-adult-*": 45,
 							"*-malawisaurus-adult-*": 39,
 							"*-rapetosaurus-adult-*": 37,
+							"*-ampelosaurus-adult-*": 39,
 
 						},
 						"knockbackStrengthByType": {
@@ -597,6 +604,7 @@
 							"*-bruhathkayosaurus-adult-*": 6,
 							"*-malawisaurus-adult-*": 4,
 							"*-rapetosaurus-adult-*": 4,
+							"*-ampelosaurus-adult-*": 4,
 						},
 						"attackAngleRangeDeg": 180,
 						"mincooldown": 1500,
@@ -607,13 +615,17 @@
 						"damagePlayerAtMs": 400,
 						"animationSpeed": 0.25,
 						"soundByType": {
-							"*-adult-*":"creature/stomp1"},
+							"*-adult-*":"creature/attack"},
 					},
 					{
 						"code": "seekentity",
 						"animation": "Walk",
 						"enabledByType": {
 							"*-baby-*": false,
+							"*-camarasaurus-adult-*": false,
+							"*-malawisaurus-adult-*": false,
+							"*-rapetosaurus-adult-*": false,
+							"*-ampelosaurus-adult-*": false,
 							"*": true},
 						"entityCodesByType": {
 							"*-adult-*": [
@@ -632,8 +644,8 @@
 							"*-baby-*": 1,
 							"*-adult-*": 0.5,
 						},
-						"soundByType": {"*-adult-*":"creature/hurt"},
-						"whenInEmotionState": "aggressiveondamage"
+						"soundByType": {"*-adult-*":"creature/roar"},
+
 					},
 					{
 						"code": "seekentity",
@@ -658,7 +670,8 @@
 							"*-baby-*": 1,
 							"*-adult-*": 0.5,
 						},
-						"soundByType": {"*-adult-*":"creature/hurt"},
+						"soundByType": {"*-adult-*":"creature/roar"},
+						"whenInEmotionState": "aggressiveondamage"
 					},
                     {
 						"code": "fleeentity",
@@ -863,7 +876,14 @@
 							"*-adult-*": 0.5,
 						},
 						"preferredLightLevel": 24,
-						"whenNotInEmotionState": "aggressiveondamage|aggressivearoundentities|fleeondamage"
+						"whenNotInEmotionState": "aggressiveondamage|aggressivearoundentities|fleeondamage",
+						"soundRangeByType": {
+							"*-adult-*": 100
+						},
+						"soundByType": {
+							"*-adult-*": "creature/stomp",
+						},
+
 					},
 
 
@@ -907,6 +927,7 @@
 				"*-bruhathkayosaurus-adult-male": 0.00001,"*-bruhathkayosaurus-adult-female": 0.00001,
 				"*-malawisaurus-adult-male": 0.00001,"*-malawisaurus-adult-female": 0.00001,
 				"*-rapetosaurus-adult-male": 0.00001,"*-rapetosaurus-adult-female": 0.00001,
+				"*-ampelosaurus-adult-male": 0.00001,"*-ampelosaurus-adult-female": 0.00001,
 				"*":0.00,
 			},
 			"maxQuantity": 1,
@@ -1126,12 +1147,12 @@
     "soundsByType": {
 		"*-adult-*":{
 			"hurt": "creature/hurt",
-			"death": "creature/hurt",
+			"death": "creature/death",
 			"idle": "creature/idle"
 		},
 		"*-baby-*":{
-			"hurt": "creature/baby-hurt",
-			"death": "creature/baby-hurt",
+			"hurt": "creature/baby",
+			"death": "creature/baby",
 			"idle": "creature/baby"
 		},
 		"idleSoundChance": 0.1
