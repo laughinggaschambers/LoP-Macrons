@@ -1,0 +1,72 @@
+[
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "combatoverhaul" }],
+    "file": "macronaria:entities/land/macronaria",
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "CombatOverhaul:EntityColliders",
+      "elements": {
+        "Torso": ["Neck", "Body Front", "Body", "Body Back", "Tail", "Tail 1", "Tail 2","Tail 3",],
+        "Head": ["Head", "Top Jaw","Top Jaw1","Top Jaw2", "Lower Jaw","Lower Jaw1","Lower Jaw2",],
+        "Arm": [],
+        "Leg": ["Leg Front L","Leg Front R","Leg Back L","Leg Back R","Shin Front L","Shin Front R","Shin Back L","Shin Back R","Foot Front L","Foot Front R","Foot Back L","Foot Back R",],
+        "Critical": [],
+        "Resistant": []
+      }
+    }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "combatoverhaul" }],
+    "file": "macronaria:entities/land/macronaria",
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "CombatOverhaul:EntityColliders",
+      "elements": {
+        "Torso": ["Neck", "Body Front", "Body", "Body Back", "Tail", "Tail 1", "Tail 2","Tail 3",],
+        "Head": ["Head", "Top Jaw","Top Jaw1","Top Jaw2", "Lower Jaw","Lower Jaw1","Lower Jaw2",],
+        "Arm": [],
+        "Leg": ["Leg Front L","Leg Front R","Leg Back L","Leg Back R","Shin Front L","Shin Front R","Shin Back L","Shin Back R","Foot Front L","Foot Front R","Foot Back L","Foot Back R",],
+        "Critical": [],
+        "Resistant": []
+      }
+    }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "combatoverhaul" }],
+    "file": "macronaria:entities/land/macronaria",
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "CombatOverhaul:EntityDamageModel",
+      "damageModel": {
+        "TorsoDamageMultiplier": 1,
+        "LimbsDamageMultiplier": 0.75,
+        "HeadDamageMultiplier": 1.5,
+        "CriticalDamageMultiplier": 2,
+        "DefaultResists": {"BluntAttack": 10, "SlashingAttack": 8, "PiercingAttack": 2}
+      }
+    }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "combatoverhaul" }],
+    "file": "macronaria:entities/land/macronaria",
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "CombatOverhaul:EntityDamageModel",
+      "damageModel": {
+        "TorsoDamageMultiplier": 1,
+        "LimbsDamageMultiplier": 0.75,
+        "HeadDamageMultiplier": 1.5,
+        "CriticalDamageMultiplier": 2,
+        "DefaultResists": {"BluntAttack": 10, "SlashingAttack": 8, "PiercingAttack": 2}
+      }
+    }
+  }
+]
