@@ -2,7 +2,7 @@
 	"code": "macronaria",
 	"class": "EntityAgent",
 	"variantgroups": [
-		{"code": "type","states": ["ankylosaurus","tarchia","euoplocephalus","edmontonia","ziapelta","pinacosaurus","antarctopelta","struthiosaurus",]},
+		{"code": "type","states": ["argentinosaurus","patagotitan","dreadnoughtus","futalognkosaurus","brachiosaurus","giraffatitan","diamantinasaurus","europatitan","antarctosaurus","ruyangosaurus","camarasaurus","bruhathkayosaurus","malawisaurus","rapetosaurus","ampelosaurus"]},
 		{ "code": "age", "states": ["egg"] },
 		{ "code": "state", "states": ["raw"] }
 	],
