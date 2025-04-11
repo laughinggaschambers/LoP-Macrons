@@ -562,7 +562,7 @@
 						"enabledByType": {"*-adult-*": true,"*-baby-*":false},
 						"entityCodesByType": {
 							"*": [ "player","bear-*","bell-*","bowtorn-*","drifter-*","hyena-*","locust-*","shiver-*","wolf-*",
-							"tyrannosauridae-*", "spinosauridae-*",
+							"tyrannosauridae-*", "spinosauridae-*", "dromaeosauridae-*",
 								]},
 						"priority": 1.9,
 						"slot": 1,
@@ -655,7 +655,7 @@
 							"*": true},
 						"entityCodesByType": {
 							"*-adult-*": [ "player","bear-*","bell-*","bowtorn-*","drifter-*","hyena-*","locust-*","shiver-*","wolf-*",
-							"tyrannosauridae-*", "spinosauridae-*"
+							"tyrannosauridae-*", "spinosauridae-*", "dromaeosauridae-*",
 								]
 						},
 						"priority": 1.84,
@@ -678,7 +678,7 @@
 						"animation": "Trot",
 						"enabledByType": {"*-adult-*": false,"*": true},
 						"entityCodesByType": {
-							"*-baby-*":["player","bear-*","bell-*","bowtorn-*","drifter-*","shiver-*","hyena-male", "hyena-female","wolf-male", "wolf-female","tyrannosauridae-*", "spinosauridae-*"],
+							"*-baby-*":["player","bear-*","bell-*","bowtorn-*","drifter-*","shiver-*","hyena-male", "hyena-female","wolf-male", "wolf-female","tyrannosauridae-*", "spinosauridae-*","dromaeosauridae-*",],
 						},
 						"priority": 1.8,
 						"movespeedByType": {
@@ -696,7 +696,7 @@
 						"animation": "Trot",
 						"enabledByType": {"*-adult-*": false,"*": true},
 						"entityCodesByType": {
-							"*-baby-*":["player","bear-*","bell-*","bowtorn-*","drifter-*","shiver-*","hyena-male", "hyena-female","wolf-male", "wolf-female","tyrannosauridae-*", "spinosauridae-*"],
+							"*-baby-*":["player","bear-*","bell-*","bowtorn-*","drifter-*","shiver-*","hyena-male", "hyena-female","wolf-male", "wolf-female","tyrannosauridae-*", "spinosauridae-*","dromaeosauridae-*",],
 						},
 						"priority": 1.81,
 						"movespeedByType": {
@@ -756,7 +756,7 @@
 						"duringDayTimeFramesByType": {
 							"*":[{"fromHour": 22,"toHour": 24},{"fromHour": 0,"toHour": 4},{"fromHour": 12,"toHour": 16}],
 							},
-						"stopOnNearbyEntityCodes": [ "player", "bear-*","hyena-male", "hyena-female","wolf-male", "wolf-female", "tyrannosauridae-*", "spinosauridae-*"  ],
+						"stopOnNearbyEntityCodes": [ "player", "bear-*","hyena-male", "hyena-female","wolf-male", "wolf-female", "tyrannosauridae-*", "spinosauridae-*","dromaeosauridae-*",],
 						"stopRange": 20,
 						"animationSpeedByType": {
 							"*-baby-*": 0.6,
@@ -777,7 +777,7 @@
 						"duringDayTimeFramesByType": {
 							"*":[{"fromHour": 22.5,"toHour": 24},{"fromHour": 0,"toHour": 4},{"fromHour": 12.5,"toHour": 16}],
 							},
-						"stopOnNearbyEntityCodes": [ "player", "bear-*","hyena-male", "hyena-female","wolf-male", "wolf-female", "tyrannosauridae-*", "spinosauridae-*"  ],
+						"stopOnNearbyEntityCodes": [ "player", "bear-*","hyena-male", "hyena-female","wolf-male", "wolf-female", "tyrannosauridae-*", "spinosauridae-*","dromaeosauridae-*",],
 						"stopRange": 10,
 						"animationSpeedByType": {
 							"*-baby-*": 0.6,
@@ -957,6 +957,9 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.5
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
 			"*-patagotitan-adult-*": {
@@ -970,6 +973,9 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.5
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
 			"*-dreadnoughtus-adult-*": {
@@ -983,6 +989,9 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.6
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
 			"*-futalognkosaurus-adult-*": {
@@ -996,6 +1005,9 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.6
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
 			"*-brachiosaurus-adult-*": {
@@ -1009,6 +1021,9 @@
 					"maxShrubs": 0.6,
 					"minY": 0.9,
 					"maxY": 1.6
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
 			"*-giraffatitan-adult-*": {
@@ -1022,6 +1037,9 @@
 					"maxShrubs": 0.6,
 					"minY": 0.9,
 					"maxY": 1.6
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
 			"*-diamantinasaurus-adult-*": {
@@ -1035,6 +1053,9 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.5
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
 			"*-europatitan-adult-*": {
@@ -1048,6 +1069,9 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.6
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
 			"*-antarctosaurus-adult-*": {
@@ -1061,6 +1085,9 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.5
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
 			"*-ruyangosaurus-adult-*": {
@@ -1074,6 +1101,9 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.5
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
 			"*-camarasaurus-adult-*": {
@@ -1087,6 +1117,9 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.6
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
 			"*-bruhathkayosaurus-adult-*": {
@@ -1100,6 +1133,9 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.5
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
 			"*-malawisaurus-adult-*": {
@@ -1113,6 +1149,9 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.5
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
 			"*-rapetosaurus-adult-*": {
@@ -1126,6 +1165,9 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.5
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
 			"*-ampelosaurus-adult-*": {
@@ -1139,6 +1181,9 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.5
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			}
 
