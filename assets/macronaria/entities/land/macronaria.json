@@ -47,14 +47,24 @@
 	"behaviorConfigs": {
 		"rideableaccessories": {
 			"wearableSlots": [
-				{"code": "head", "forCategoryCodes": [], "attachmentPointCode": "HeadAP" },
+				{"code": "head", "forCategoryCodes": ["macronsbridle"], "attachmentPointCode": "HeadAP" },
 				{"code": "face", "forCategoryCodes": [], "attachmentPointCode": "FaceAP" },
 				{"code": "neck", "forCategoryCodes": [], "attachmentPointCode": "NeckAP" },
-				{"code": "middleback", "forCategoryCodes": [], "attachmentPointCode": "MidAP", },
+				{"code": "middleback", "forCategoryCodes": ["macronshowdah"], "attachmentPointCode": "MidAP",},
+				{"code": "Front Storage 1","forCategoryCodes": ["chest", "basket", "crate"],"attachmentPointcode": "FStore1AP","stepParentTo": {"": { "elementName": "FrontStorage1" }}},
+				{"code": "Front Storage 2","forCategoryCodes": ["chest", "basket", "crate"],"attachmentPointcode": "FStore2AP","stepParentTo": {"": { "elementName": "FrontStorage2" }}},
+				{"code": "Front Storage 3","forCategoryCodes": ["chest", "basket", "crate"],"attachmentPointcode": "FStore3AP","stepParentTo": {"": { "elementName": "FrontStorage3" }}},
+				{"code": "Front Storage 4","forCategoryCodes": ["chest", "basket", "crate"],"attachmentPointcode": "FStore4AP","stepParentTo": {"": { "elementName": "FrontStorage4" }}},
+				{"code": "Back Storage 1","forCategoryCodes": ["chest", "basket", "crate"],"attachmentPointcode": "BStore1AP","stepParentTo": {"": { "elementName": "BackStorage1" }}},
+				{"code": "Back Storage 2","forCategoryCodes": ["chest", "basket", "crate"],"attachmentPointcode": "BStore2AP","stepParentTo": {"": { "elementName": "BackStorage2" }}},
+				{"code": "Back Storage 3","forCategoryCodes": ["chest", "basket", "crate"],"attachmentPointcode": "BStore3AP","stepParentTo": {"": { "elementName": "BackStorage3" }}},
+				{"code": "Back Storage 4","forCategoryCodes": ["chest", "basket", "crate"],"attachmentPointcode": "BStore4AP","stepParentTo": {"": { "elementName": "BackStorage4" }}},
+				{"code": "Back Rider2","forCategoryCodes": [],"attachmentPointcode": "LLegAP","stepParentTo": {"": { "elementName": "Leg Back L" }}},
+				{"code": "Back Rider3","forCategoryCodes": [],"attachmentPointcode": "RLegAP","stepParentTo": {"": { "elementName": "Leg Back R" }}},
 			]
 		},
 		"selectionboxes": {
-			"selectionBoxes": ["HeadAP","FaceAP", "NeckAP", "MidAP"]
+			"selectionBoxes": ["HeadAP","FaceAP", "NeckAP", "MidAP","FStore1AP","FStore2AP","FStore3AP","FStore4AP","BStore1AP","BStore2AP","BStore3AP","BStore4AP","LLegAP","RLegAP"]
 		},
 		"rideable": {
 			"interactMountAnySeat": true,
@@ -64,12 +74,22 @@
 						"*": {"x":0,"y":0.0,"z":0},
 					}
 				},
+				{ "apName": "Rider3", "selectionBox": "LLegAP", "bodyYawLimit": 0.2, "controllable": false,
+					"mountOffsetByType": {
+						"*": {"x":0,"y":0.0,"z":0},
+					}
+				},
+				{ "apName": "Rider2", "selectionBox": "RLegAP", "bodyYawLimit": 0.2, "controllable": false,
+					"mountOffsetByType": {
+						"*": {"x":0,"y":0.0,"z":0},
+					}
+				},
 			],
 			"controls": {
 				"idle": {
 					"weight": 1,
 					"riderAnim": {
-						"animation": "rideelk-idle",
+						"animation": "sitflooridle",
 						"animationSpeed": 0.00000001,
 						"weight": 1,
 						"withFpVariant": true,
@@ -95,15 +115,15 @@
 				"swim": {
 					"animation": "Swim",
 					"movespeedByType": {
-							"*-adult-*": 0.001,
+							"*-adult-*": 0.025,
 						},
 						"animationSpeedByType": {
-							"*": 0.75
+							"*": 1.5
 						},
 					"weight": 10,
 					"blendMode": "Average",
 					"riderAnim": {
-						"animation": "rideelk-walk",
+						"animation": "sitflooridle",
 						"animationSpeed": 1,
 						"weight": 1,
 						"withFpVariant": true,
@@ -130,14 +150,20 @@
 					"animation": "Walk",
 					"weight": 10,
 					"movespeedByType": {
-						"*-adult-*": 0.003,
+						"*-camarasaurus-*":0.005,
+						"*-malawisaurus-*":0.006,
+						"*-rapetosaurus-*":0.006,
+						"*-adult-*": 0.0045,
 					},
 					"animationSpeedByType": {
-						"*": 1
+						"*-camarasaurus-*":0.9,
+						"*-malawisaurus-*":0.9,
+						"*-rapetosaurus-*":0.9,
+						"*": 0.5
 					},
 					"blendMode": "Average",
 					"riderAnim": {
-						"animation": "rideelk-walk",
+						"animation": "sitflooridle",
 						"animationSpeed": 1,
 						"weight": 1,
 						"withFpVariant": true,
@@ -164,16 +190,22 @@
 					"animation": "Walk",
 					"weight": 10,
 					"movespeedByType": {
-						"*-adult-*": 0.003,
+						"*-camarasaurus-*":0.005,
+						"*-malawisaurus-*":0.006,
+						"*-rapetosaurus-*":0.006,
+						"*-adult-*": 0.0045,
 					},
 					"animationSpeedByType": {
-						"*": 1
+						"*-camarasaurus-*":0.9,
+						"*-malawisaurus-*":0.9,
+						"*-rapetosaurus-*":0.9,
+						"*": 0.5
 					},
 					"easeInSpeed": 1,
 					"easeOutSpeed": 3,
 					"blendMode": "Average",
 					"riderAnim": {
-						"animation": "rideelk-walk",
+						"animation": "sitflooridle",
 						"animationSpeed": 1,
 						"weight": 1,
 						"withFpVariant": true,
@@ -197,21 +229,24 @@
 					}
 				},
 				"sprint": {
-					"animation": "Gallop",
+					"animation": "Trot",
 					"weight": 10,
 						"priority": 2.1,
-						"movespeedByType": {
-							"*-baby-*": 0.038,
-							"*-adult-*": 0.056,
-
-						},
-						"animationSpeedByType": {
-							"*-baby-*": 8,
-							"*-adult-*": 6
-						},
+					"movespeedByType": {
+						"*-camarasaurus-*":0.010,
+						"*-malawisaurus-*":0.015,
+						"*-rapetosaurus-*":0.015,
+						"*-adult-*": 0.009,
+					},
+					"animationSpeedByType": {
+						"*-camarasaurus-*":1.1,
+						"*-malawisaurus-*":1.15,
+						"*-rapetosaurus-*":1.15,
+						"*": 1
+					},
 					"blendMode": "Average",
 					"riderAnim": {
-						"animation": "rideelk-run",
+						"animation": "sitflooridle",
 						"animationSpeed": 2,
 						"weight": 1,
 						"withFpVariant": true,
@@ -242,7 +277,7 @@
 					"animationSpeed": 1,
 					"movespeed": 0.08,
 					"riderAnim": {
-						"animation": "rideelk-jump",
+						"animation": "sitflooridle",
 						"animationSpeed": 1,
 						"weight": 10,
 						"withFpVariant": true,
@@ -354,10 +389,10 @@
 			{"code": "multiply", "enabledByType": { "*-adult-female": true, "*": false } },
 			{"code": "despawn","minPlayerDistance": 8,"belowLightLevel": 8,"minSeconds": 300},
 			{"code": "ropetieable","minGeneration": 4},
-			{"code": "selectionboxes", "enabledByType": {  "*-baby-*": false, "*": true},"minGeneration": 4 },
-			{"code": "ownable", "enabledByType": { "*-baby-*": false,"*": true},"minGeneration": 4 },
-			{"code": "rideableaccessories", "enabledByType": {  "*-baby-*": false, "*": false},"minGeneration": 4 },
-			{"code": "rideable", "enabledByType": {  "*-baby-*": false, "*": false},"minGeneration": 4 },
+			{"code": "selectionboxes", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 4 },
+			{"code": "ownable", "enabledByType": { "*-ampelosaurus-*":false,"*-baby-*": false,"*": true},"minGeneration": 4 },
+			{"code": "rideableaccessories", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 4 },
+			{"code": "rideable", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 4 },
         ],
         "animations": [
 			{"code": "attack","animation": "Attack","animationSpeed": 1.0,"weight": 10,"blendMode": "AddAverage"},
@@ -380,10 +415,10 @@
     "server": {
 		"attributes": {"pathfinder": {"minTurnAnglePerSec": 30,"maxTurnAnglePerSec": 350}},
         "behaviors": [
-			{"code": "selectionboxes", "enabledByType": {  "*-baby-*": false, "*": true},"minGeneration": 4 },
-			{"code": "ownable", "enabledByType": { "*-baby-*": false,"*": true},"minGeneration": 4 },
-			{"code": "rideableaccessories", "enabledByType": {  "*-baby-*": false, "*": false},"minGeneration": 4 },
-			{"code": "rideable", "enabledByType": {  "*-baby-*": false, "*": false},"minGeneration": 4 },
+			{"code": "selectionboxes", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 4 },
+			{"code": "ownable", "enabledByType": { "*-ampelosaurus-*":false,"*-baby-*": false,"*": true},"minGeneration": 4 },
+			{"code": "rideableaccessories", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 4 },
+			{"code": "rideable", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 4 },
             {"code": "repulseagents" },
             {"code": "controlledphysics","stepHeightByType":
 				{
@@ -619,7 +654,7 @@
 					},
 					{
 						"code": "seekentity",
-						"animation": "Walk",
+						"animation": "Trot",
 						"enabledByType": {
 							"*-baby-*": false,
 							"*-camarasaurus-adult-*": false,
@@ -637,19 +672,17 @@
 						"maxcooldown": 6500,
 						"seekingRange": 20,
 						"movespeedByType": {
-							"*-baby-*": 0.003,
-							"*-adult-*": 0.0045,
+							"*-adult-*": 0.009,
 						},
 						"animationSpeedByType": {
-							"*-baby-*": 1,
-							"*-adult-*": 0.5,
+							"*": 1
 						},
 						"soundByType": {"*-adult-*":"creature/roar"},
 
 					},
 					{
 						"code": "seekentity",
-						"animation": "Walk",
+						"animation": "Trot",
 						"enabledByType": {
 							"*-baby-*": false,
 							"*": true},
@@ -663,12 +696,16 @@
 						"maxcooldown": 6500,
 						"seekingRange": 20,
 						"movespeedByType": {
-							"*-baby-*": 0.003,
-							"*-adult-*": 0.0045,
+							"*-camarasaurus-*":0.010,
+							"*-malawisaurus-*":0.015,
+							"*-rapetosaurus-*":0.015,
+							"*-adult-*": 0.009,
 						},
 						"animationSpeedByType": {
-							"*-baby-*": 1,
-							"*-adult-*": 0.5,
+							"*-camarasaurus-*":1.1,
+							"*-malawisaurus-*":1.15,
+							"*-rapetosaurus-*":1.15,
+							"*": 1
 						},
 						"soundByType": {"*-adult-*":"creature/roar"},
 						"whenInEmotionState": "aggressiveondamage"
@@ -867,13 +904,16 @@
 						"chance": 0.0005,
 						"duringDayTimeFramesByType": {"*-adult-*":[{"fromHour": 18,"toHour": 19},{"fromHour": 6,"toHour": 7}]},
 						"movespeedByType": {
-							"*-baby-*": 0.003,
+							"*-camarasaurus-*":0.005,
+							"*-malawisaurus-*":0.006,
+							"*-rapetosaurus-*":0.006,
 							"*-adult-*": 0.0045,
-
 						},
 						"animationSpeedByType": {
-							"*-baby-*": 1,
-							"*-adult-*": 0.5,
+							"*-camarasaurus-*":0.9,
+							"*-malawisaurus-*":0.9,
+							"*-rapetosaurus-*":0.9,
+							"*": 0.5
 						},
 						"preferredLightLevel": 24,
 						"whenNotInEmotionState": "aggressiveondamage|aggressivearoundentities|fleeondamage",

@@ -116,11 +116,26 @@
 					"attachmentpoints": [
 						{
 							"code": "Rider",
-							"posX": "28.0","posY": "65.0","posZ": "28.0",
+							"posX": "17.0","posY": "45.0","posZ": "28.0",
 							"rotationX": "0.0","rotationY": "-180.0","rotationZ": "0.0"
 						},
 						{
 							"code": "MidAP",
+							"posX": "0.0","posY": "0.0","posZ": "0.0",
+							"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+						},
+						{
+							"code": "Rider2",
+							"posX": "33.0","posY": "45.0","posZ": "23.0",
+							"rotationX": "0.0","rotationY": "-180.0","rotationZ": "0.0"
+						},
+						{
+							"code": "Rider3",
+							"posX": "33.0","posY": "45.0","posZ": "35.0",
+							"rotationX": "0.0","rotationY": "-180.0","rotationZ": "0.0"
+						},
+						{
+							"code": "Center",
 							"posX": "0.0","posY": "0.0","posZ": "0.0",
 							"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
 						}
@@ -992,6 +1007,13 @@
 										"down": { "texture": "#argentinosaurus-adult", "uv": [ 478.125, 17.0, 503.125, 31.0 ] }
 									}
 								}
+							],
+							"attachmentpoints": [
+								{
+									"code": "LLegAP",
+									"posX": "0.0","posY": "0.0","posZ": "0.0",
+									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+								}
 							]
 						},
 						{
@@ -1177,6 +1199,79 @@
 										"up": { "texture": "#argentinosaurus-adult", "uv": [ 740.625, 171.0, 765.625, 185.0 ] },
 										"down": { "texture": "#argentinosaurus-adult", "uv": [ 462.5, 22.0, 487.5, 36.0 ] }
 									}
+								}
+							],
+							"attachmentpoints": [
+								{
+									"code": "RLegAP",
+									"posX": "0.0","posY": "0.0","posZ": "0.0",
+									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+								}
+							]
+						},
+						{
+							"name": "BackStorage1",
+							"from": [ 15.0, 52.0, 10.5 ],
+							"to": [ 25.0, 62.0, 20.5 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ 21.0, 52.0, 15.5 ],
+							"rotationY": -180.0,
+							"faces": {
+							},
+							"attachmentpoints": [
+								{
+									"code": "BStore1AP",
+									"posX": "5.0","posY": "0.0","posZ": "5.0",
+									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+								}
+							]
+						},
+						{
+							"name": "BackStorage2",
+							"from": [ 11.0, 52.0, 18.5 ],
+							"to": [ 21.0, 62.0, 28.5 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ 16.0, 52.0, 23.5 ],
+							"faces": {
+							},
+							"attachmentpoints": [
+								{
+									"code": "BStore2AP",
+									"posX": "5.0","posY": "0.0","posZ": "5.0",
+									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+								}
+							]
+						},
+						{
+							"name": "BackStorage3",
+							"from": [ 25.0, 52.0, 18.5 ],
+							"to": [ 35.0, 62.0, 28.5 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ 30.0, 52.0, 23.5 ],
+							"faces": {
+							},
+							"attachmentpoints": [
+								{
+									"code": "BStore3AP",
+									"posX": "5.0","posY": "0.0","posZ": "5.0",
+									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+								}
+							]
+						},
+						{
+							"name": "BackStorage4",
+							"from": [ 31.0, 52.0, 10.5 ],
+							"to": [ 41.0, 62.0, 20.5 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ 36.0, 52.0, 15.5 ],
+							"rotationY": -180.0,
+							"faces": {
+							},
+							"attachmentpoints": [
+								{
+									"code": "BStore4AP",
+									"posX": "5.0","posY": "0.0","posZ": "5.0",
+									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
 								}
 							]
 						}
@@ -2250,6 +2345,72 @@
 								},
 								{
 									"code": "NeckAP",
+									"posX": "0.0","posY": "0.0","posZ": "0.0",
+									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+								}
+							]
+						},
+						{
+							"name": "FrontStorage1",
+							"from": [ 22.0, 54.0, 10.5 ],
+							"to": [ 32.0, 64.0, 20.5 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ 27.0, 54.0, 15.5 ],
+							"rotationY": 180.0,
+							"faces": {
+							},
+							"attachmentpoints": [
+								{
+									"code": "FStore1AP",
+									"posX": "0.0","posY": "0.0","posZ": "0.0",
+									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+								}
+							]
+						},
+						{
+							"name": "FrontStorage2",
+							"from": [ 8.0, 54.0, 10.5 ],
+							"to": [ 18.0, 64.0, 20.5 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ 13.0, 54.0, 15.5 ],
+							"rotationY": 180.0,
+							"faces": {
+							},
+							"attachmentpoints": [
+								{
+									"code": "FStore2AP",
+									"posX": "0.0","posY": "0.0","posZ": "0.0",
+									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+								}
+							]
+						},
+						{
+							"name": "FrontStorage3",
+							"from": [ 16.0, 54.0, 18.5 ],
+							"to": [ 26.0, 64.0, 28.5 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ 21.0, 54.0, 23.5 ],
+							"faces": {
+							},
+							"attachmentpoints": [
+								{
+									"code": "FStore3AP",
+									"posX": "0.0","posY": "0.0","posZ": "0.0",
+									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+								}
+							]
+						},
+						{
+							"name": "FrontStorage4",
+							"from": [ 2.0, 54.0, 18.5 ],
+							"to": [ 12.0, 64.0, 28.5 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ 7.0, 54.0, 23.5 ],
+							"faces": {
+							},
+							"attachmentpoints": [
+								{
+									"code": "FStore4AP",
 									"posX": "0.0","posY": "0.0","posZ": "0.0",
 									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
 								}

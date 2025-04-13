@@ -1,0 +1,47 @@
+[
+	{
+		ingredientPattern: "_M_,LPL,SNH",
+		ingredients: {
+			"S": { type: "item", code: "game:saw-*", isTool: true  },
+			"H": { type: "item", code: "game:hammer-*", isTool: true  },
+			"P": { type: "item", code: "game:plank-*", name: "wood", quantity:12},
+			"M": { type: "item", code: "game:metalplate-brass", name: "brass" },
+			"L": { type: "item", code: "game:leather-sturdy-*", name: "leather",quantity:4},
+			"N": { type: "item", code: "game:metalnailsandstrips-steel", name: "nail", quantity:4},
+		},
+		name: "tyrannosaddle",
+		width: 3,
+		height: 3,
+		output: { type: "item", code: "macronaria:macronswearable-howdah", "quantity": 1 }
+	},
+	{
+		ingredientPattern: "LNL,S_H,MMM",
+		ingredients: {
+			"S": { type: "item", code: "game:saw-*", isTool: true  },
+			"H": { type: "item", code: "game:hammer-*", isTool: true  },
+			"P": { type: "item", code: "game:plank-*", name: "wood" },
+			"M": { type: "item", code: "game:metalplate-steel", name: "steel" },
+			"L": { type: "item", code: "game:leather-sturdy-*", name: "leather", quantity:4},
+			"N": { type: "item", code: "game:metalnailsandstrips-steel", name: "nail", quantity:2},
+		},
+		name: "tyrannobridle",
+		width: 3,
+		height: 3,
+		output: { type: "item", code: "macronaria:macronswearable-bridle1", "quantity": 1 }
+	},
+	{
+		ingredientPattern: "L_L,SNH,MMM",
+		ingredients: {
+			"S": { type: "item", code: "game:saw-*", isTool: true  },
+			"H": { type: "item", code: "game:hammer-*", isTool: true  },
+			"P": { type: "item", code: "game:plank-*", name: "wood" },
+			"M": { type: "item", code: "game:metalplate-steel", name: "steel" },
+			"L": { type: "item", code: "game:leather-sturdy-*", name: "leather", quantity:4},
+			"N": { type: "item", code: "game:metalnailsandstrips-steel", name: "nail", quantity:2},
+		},
+		name: "tyrannobridle",
+		width: 3,
+		height: 3,
+		output: { type: "item", code: "macronaria:macronswearable-bridle2", "quantity": 1 }
+	},
+]

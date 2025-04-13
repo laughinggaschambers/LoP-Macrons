@@ -1,0 +1,100 @@
+{
+	code: "macronswearable",
+	variantgroups: [
+		{ code: "type", states: [
+			"bridle1","bridle2", "howdah"
+		] }
+	],
+	allowedVariants: [
+		"macronswearable-bridle1",
+		"macronswearable-bridle2",
+		"macronswearable-howdah"
+	],
+	attributes: {
+		attachableToEntity: {
+			categoryCodeByType: {
+				"macronswearable-bridle*": "macronsbridle",
+				"macronswearable-howdah*": "macronshowdah"
+			},
+			attachedShapeBySlotCodeByType: {
+				"*-howdah": {"*": { base: "item/wearable/howdah"}},
+				"*-bridle*": { 
+					"*": { base: "item/wearable/bridle1" }
+				}
+			}
+		},
+		controlSchemeByType: {
+			"*-bridle1": "Hold",
+			"*-bridle2": "Press"
+		},
+		isSaddleByType: {
+			"macronswearable-howdah": true
+		},
+		isBridleByType: {
+			"macronswearable-bridle*": true
+		},
+		interactPassthroughByType: {
+			"*-howdah": true
+		}
+	},
+	shapeByType: {
+		"*-bridle2": { base: "item/wearable/bridle1" },
+		"*-bridle1": { base: "item/wearable/bridle1" },
+		"*-howdah": { base: "item/wearable/howdah" }
+	},
+	texturesByType: {
+		"*": {
+			"plain": { base: "game:block/leather/chromium" },
+			"poor": { base: "game:block/leather/plain" },
+			"black": { base: "game:block/leather/black" },
+			"steel": { base: "game:block/metal/plate/steel"},
+			"brass": { base: "game:block/metal/plate/brass"},
+			"wood-generic": { base: "game:block/wood-generic"},
+		}
+	},
+	heldTpIdleAnimationByType: {
+		"*": "holdbothhands",
+		"macronswearable-saddlebags*": "holdbothhands"
+	},
+	maxStackSize: 1,
+	creativeinventory: { "general": ["*"], "items": ["*"], "clothing": ["*"] },
+	renderAlphaTest: 0.25,
+	guiTransformByType: {
+		"*-howdah": {
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: -35, y: -46, z: -180 },
+			origin: { x: 0.5, y: 0.2, z: 0.6 },
+			scale: 0.25
+		},
+		"macronswearable-bridle*": {
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: -45, y: -70, z: -180 },
+			origin: { x: 0.5, y: -0, z: 0.5 },
+			scale: 1
+		}
+	},
+	groundTransformByType: {
+		"*-howdah": {
+			translation: { x: 0, y: -5, z: 0 },
+			rotation: { x: 0, y: 0, z: 0 },
+			scale: 5
+		},
+		"macronswearable-bridle*": {
+			translation: { x: 0, y: 0.5, z: 0 },
+			rotation: { x: 0, y: 0, z: 0 },
+			scale: 5
+		}
+	},
+	tpHandTransformByType: {
+		"*-howdah": {
+			translation: { x: 1, y: -2.8, z: -2.4 },
+			rotation: { x: -43, y: -17, z: -107 },
+			scale: 0.25
+		},
+		"macronswearable-bridle*": {
+			translation: { x: -1, y: -1.50, z: -0.6 },
+			rotation: { x: -43, y: -17, z: -107 },
+			scale: 0.8
+		}
+	}
+}

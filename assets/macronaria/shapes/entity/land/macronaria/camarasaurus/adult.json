@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"collapsedPaths": "Root/Center/Spike,Root/Center/Body Back/Tail/Tail2/Cube7/Spike28,Root/Leg Back L/Shin Back L/Foot Back L/Foot Back L2,Root/Leg Back L,Root/Center/Spike13,Root/Center/Body Back/Leg Back R,Root/Body Back/Body Back2,Root/Body Back/Body Back4,Root/Body Back,Root/Leg Back R,Root/Body Front/Body Front8,Root/Tail,Root/Neck/Neck1/Neck2/Neck4/Neck5/Head/Creast,Root/Body Front/Body Front5,Root/Neck/Neck1/Neck2/Neck10/Neck11,Root/Lower Jaw,Root/Body Front,Root/Center/Body,Root/Center/Body Front/Neck/Neck1/Neck2/Neck4/Spike10,Root/Center/Body Front/Neck/Neck1/Neck2/Neck4/Spike37,Root/Body Back/Tail,Root/Leg Front R,Root/Head,Root/Center/Body Back/Tail/Tail2/Spike22,Root/Neck,Root/Center/Body Front/Leg Front R,Root/Creast,Root/Body,Root/Head/Lower Jaw,Root/Center/Body Back/Tail/Cube6,Root/Leg Front L,Root/Head9,Root/Center/Body Front/Body Front8,Root/Neck/Neck17/Neck18,Root/Center/Body Front/Body Front5,Root/Top Jaw,Root/Center/Body Back/Leg Back L,Root/Center/Body Front/Leg Front L,Root/Body Front/Body Front5/Body Front6",
+		"collapsedPaths": "Root/Center/Body Back/Tail/Tail2/Cube7/Spike28,Root/Center/Spike,Root/Leg Back L,Root/Center/Spike13,Root/Leg Back L/Shin Back L/Foot Back L/Foot Back L2,Root/Center/Body Back,Root/Center/Body Back/Leg Back R,Root/Body Back/Body Back2,Root/Body Back/Body Back4,Root/Body Back,Root/Leg Back R,Root/Body Front/Body Front8,Root/Tail,Root/Neck/Neck1/Neck2/Neck4/Neck5/Head/Creast,Root/Body Front/Body Front5,Root/Neck/Neck1/Neck2/Neck10/Neck11,Root/Lower Jaw,Root/Body Front,Root/Center/Body,Root/Center/Body Back/Tail,Root/Center/Body Front/Neck/Neck1/Neck2/Neck4/Spike10,Root/Center/Body Front/Neck/Neck1/Neck2/Neck4/Spike37,Root/Body Back/Tail,Root/Leg Front R,Root/Head,Root/Center/Body Back/Tail/Tail2/Spike22,Root/Center/Body Front/Leg Front R,Root/Neck,Root/Creast,Root/Body,Root/Head/Lower Jaw,Root/Center/Body Back/Tail/Cube6,Root/Leg Front L,Root/Head9,Root/Center/Body Front/Body Front8,Root/Neck/Neck17/Neck18,Root/Center/Body Front/Body Front5,Root/Top Jaw,Root/Center/Body Back/Leg Back L,Root/Center/Body Front/Leg Front L,Root/Body Front/Body Front5/Body Front6,Root/Center/Body Front/Neck",
 		"allAngles": true,
 		"entityTextureMode": true
 	},
@@ -116,11 +116,16 @@
 					"attachmentpoints": [
 						{
 							"code": "Rider",
-							"posX": "28.0","posY": "65.0","posZ": "28.0",
+							"posX": "24.0","posY": "12.0","posZ": "28.0",
 							"rotationX": "0.0","rotationY": "-180.0","rotationZ": "0.0"
 						},
 						{
 							"code": "MidAP",
+							"posX": "0.0","posY": "0.0","posZ": "0.0",
+							"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+						},
+						{
+							"code": "Center",
 							"posX": "0.0","posY": "0.0","posZ": "0.0",
 							"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
 						}
@@ -1541,6 +1546,39 @@
 										"up": { "texture": "#argentinosaurus-adult", "uv": [ 740.5, 171.0, 765.5, 185.0 ] },
 										"down": { "texture": "#argentinosaurus-adult", "uv": [ 462.5, 22.0, 487.5, 36.0 ] }
 									}
+								}
+							]
+						},
+						{
+							"name": "BackStorage1",
+							"from": [ 15.0, 52.0, 10.5 ],
+							"to": [ 25.0, 62.0, 20.5 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ 21.0, 52.0, 15.5 ],
+							"rotationY": -180.0,
+							"faces": {
+							},
+							"attachmentpoints": [
+								{
+									"code": "BStore1AP",
+									"posX": "5.0","posY": "0.0","posZ": "5.0",
+									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+								}
+							]
+						},
+						{
+							"name": "BackStorage2",
+							"from": [ 11.0, 52.0, 18.5 ],
+							"to": [ 21.0, 62.0, 28.5 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ 16.0, 52.0, 23.5 ],
+							"faces": {
+							},
+							"attachmentpoints": [
+								{
+									"code": "BStore2AP",
+									"posX": "5.0","posY": "0.0","posZ": "5.0",
+									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
 								}
 							]
 						}
@@ -2978,6 +3016,39 @@
 								},
 								{
 									"code": "NeckAP",
+									"posX": "0.0","posY": "0.0","posZ": "0.0",
+									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+								}
+							]
+						},
+						{
+							"name": "FrontStorage1",
+							"from": [ 22.0, 54.0, 10.5 ],
+							"to": [ 32.0, 64.0, 20.5 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ 27.0, 54.0, 15.5 ],
+							"rotationY": 180.0,
+							"faces": {
+							},
+							"attachmentpoints": [
+								{
+									"code": "FStore1AP",
+									"posX": "0.0","posY": "0.0","posZ": "0.0",
+									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+								}
+							]
+						},
+						{
+							"name": "FrontStorage3",
+							"from": [ 16.0, 54.0, 18.5 ],
+							"to": [ 26.0, 64.0, 28.5 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ 21.0, 54.0, 23.5 ],
+							"faces": {
+							},
+							"attachmentpoints": [
+								{
+									"code": "FStore3AP",
 									"posX": "0.0","posY": "0.0","posZ": "0.0",
 									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
 								}
