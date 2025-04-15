@@ -47,9 +47,9 @@
 	"behaviorConfigs": {
 		"rideableaccessories": {
 			"wearableSlots": [
-				{"code": "head", "forCategoryCodes": ["macronsbridle"], "attachmentPointCode": "HeadAP" },
+				{"code": "head", "forCategoryCodes": [], "attachmentPointCode": "HeadAP" },
 				{"code": "face", "forCategoryCodes": [], "attachmentPointCode": "FaceAP" },
-				{"code": "neck", "forCategoryCodes": [], "attachmentPointCode": "NeckAP" },
+				{"code": "neck", "forCategoryCodes": ["macronsbridle"], "attachmentPointCode": "NeckAP" },
 				{"code": "middleback", "forCategoryCodes": ["macronshowdah"], "attachmentPointCode": "MidAP",},
 				{"code": "Front Storage 1","forCategoryCodes": ["chest", "basket", "crate"],"attachmentPointcode": "FStore1AP","stepParentTo": {"": { "elementName": "FrontStorage1" }}},
 				{"code": "Front Storage 2","forCategoryCodes": ["chest", "basket", "crate"],"attachmentPointcode": "FStore2AP","stepParentTo": {"": { "elementName": "FrontStorage2" }}},
@@ -150,16 +150,16 @@
 					"animation": "Walk",
 					"weight": 10,
 					"movespeedByType": {
-						"*-camarasaurus-*":0.005,
-						"*-malawisaurus-*":0.006,
-						"*-rapetosaurus-*":0.006,
-						"*-adult-*": 0.0045,
+						"*-camarasaurus-*":0.01,
+						"*-malawisaurus-*":0.011,
+						"*-rapetosaurus-*":0.011,
+						"*-adult-*": 0.009,
 					},
 					"animationSpeedByType": {
-						"*-camarasaurus-*":0.9,
-						"*-malawisaurus-*":0.9,
-						"*-rapetosaurus-*":0.9,
-						"*": 0.5
+						"*-camarasaurus-*":1,
+						"*-malawisaurus-*":1,
+						"*-rapetosaurus-*":1,
+						"*": 1
 					},
 					"blendMode": "Average",
 					"riderAnim": {
@@ -190,16 +190,16 @@
 					"animation": "Walk",
 					"weight": 10,
 					"movespeedByType": {
-						"*-camarasaurus-*":0.005,
-						"*-malawisaurus-*":0.006,
-						"*-rapetosaurus-*":0.006,
-						"*-adult-*": 0.0045,
+						"*-camarasaurus-*":0.01,
+						"*-malawisaurus-*":0.011,
+						"*-rapetosaurus-*":0.011,
+						"*-adult-*": 0.009,
 					},
 					"animationSpeedByType": {
-						"*-camarasaurus-*":0.9,
-						"*-malawisaurus-*":0.9,
-						"*-rapetosaurus-*":0.9,
-						"*": 0.5
+						"*-camarasaurus-*":1,
+						"*-malawisaurus-*":1,
+						"*-rapetosaurus-*":1,
+						"*": 1
 					},
 					"easeInSpeed": 1,
 					"easeOutSpeed": 3,
@@ -233,16 +233,16 @@
 					"weight": 10,
 						"priority": 2.1,
 					"movespeedByType": {
-						"*-camarasaurus-*":0.010,
-						"*-malawisaurus-*":0.015,
-						"*-rapetosaurus-*":0.015,
-						"*-adult-*": 0.009,
+						"*-camarasaurus-*":0.020,
+						"*-malawisaurus-*":0.025,
+						"*-rapetosaurus-*":0.025,
+						"*-adult-*": 0.015,
 					},
 					"animationSpeedByType": {
-						"*-camarasaurus-*":1.1,
-						"*-malawisaurus-*":1.15,
-						"*-rapetosaurus-*":1.15,
-						"*": 1
+						"*-camarasaurus-*":1.5,
+						"*-malawisaurus-*":1.5,
+						"*-rapetosaurus-*":1.5,
+						"*": 1.5
 					},
 					"blendMode": "Average",
 					"riderAnim": {
@@ -651,6 +651,7 @@
 						"animationSpeed": 0.25,
 						"soundByType": {
 							"*-adult-*":"creature/attack"},
+						"whenInEmotionState": "aggressiveondamage"
 					},
 					{
 						"code": "seekentity",
@@ -672,9 +673,15 @@
 						"maxcooldown": 6500,
 						"seekingRange": 20,
 						"movespeedByType": {
+							"*-camarasaurus-*":0.010,
+							"*-malawisaurus-*":0.015,
+							"*-rapetosaurus-*":0.015,
 							"*-adult-*": 0.009,
 						},
 						"animationSpeedByType": {
+							"*-camarasaurus-*":1.1,
+							"*-malawisaurus-*":1.15,
+							"*-rapetosaurus-*":1.15,
 							"*": 1
 						},
 						"soundByType": {"*-adult-*":"creature/roar"},
@@ -904,16 +911,16 @@
 						"chance": 0.0005,
 						"duringDayTimeFramesByType": {"*-adult-*":[{"fromHour": 18,"toHour": 19},{"fromHour": 6,"toHour": 7}]},
 						"movespeedByType": {
-							"*-camarasaurus-*":0.005,
-							"*-malawisaurus-*":0.006,
-							"*-rapetosaurus-*":0.006,
-							"*-adult-*": 0.0045,
+							"*-camarasaurus-*":0.01,
+							"*-malawisaurus-*":0.011,
+							"*-rapetosaurus-*":0.011,
+							"*-adult-*": 0.009,
 						},
 						"animationSpeedByType": {
-							"*-camarasaurus-*":0.9,
-							"*-malawisaurus-*":0.9,
-							"*-rapetosaurus-*":0.9,
-							"*": 0.5
+							"*-camarasaurus-*":1,
+							"*-malawisaurus-*":1,
+							"*-rapetosaurus-*":1,
+							"*": 1
 						},
 						"preferredLightLevel": 24,
 						"whenNotInEmotionState": "aggressiveondamage|aggressivearoundentities|fleeondamage",
