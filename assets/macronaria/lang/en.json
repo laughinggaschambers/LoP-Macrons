@@ -3,14 +3,12 @@
   "game:creaturegroup-macronaria": "Macronarians",
 
   "item-macronswearable-howdah": "Howdah made for macronarians",
-  "item-macronswearable-bridle1": "Bridle made of macronarians",
+  "item-macronswearable-bridle1": "Bridle made for macronarians",
   "itemdesc-macronswearable-bridle1": "Useful for precise, short distance travel",
-  "item-macronswearable-bridle2": "Bridle made of macronarians",
+  "item-macronswearable-bridle2": "Bridle made for macronarians",
   "itemdesc-macronswearable-bridle2": "Useful for long distance travel",
   "item-handbooktitle-macronswearable-bridle2": "How to Use",
   "item-handbooktext-macronswearable-bridle2": "When your mount is wearing a curb bit, you need only press forward once, rather than hold it down, to move.",
-  "creature-macronswearable-*-selectionbox-HeadAP": "Bridle slot",
-  "creature-macronswearable-*-selectionbox-MidAP": "Howdah",
 
   "item-creature-macronaria-argentinosaurus-adult-male": "Argentinosaurus (Male)",
   "item-creature-macronaria-argentinosaurus-adult-female": "Argentinosaurus (Female)",

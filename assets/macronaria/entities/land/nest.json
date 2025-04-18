@@ -162,7 +162,7 @@
 			"groupSizeByType": {
 				"*": { "dist": "uniform", "avg": 1.5, "var": 0 }
 			},
-			"*":["macronaria:macronaria-{type}-adult-female"]},
+			"*":["macronaria:macronaria-{type}-adult-female","macronaria:macronaria-{type}-adult-male"]},
 
 		"runtime": {
 			"group": "neutral",
@@ -186,11 +186,11 @@
 				"game:soil-*"
 			],
 			"companionsByType": {
-			"*":["macronaria:macronaria-{type}-adult-female","macronaria:macronaria-{type}-adult-female"]}
+			"*":["macronaria:macronaria-{type}-adult-female","macronaria:macronaria-{type}-adult-male"]}
 		},
     },
 	"spawnconditionsByType": {
-			"*-argentinosaurus-adult-*": {
+			"*-argentinosaurus-*": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 40,
@@ -201,9 +201,12 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.5
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-patagotitan-adult-*": {
+			"*-patagotitan-*": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 40,
@@ -214,9 +217,12 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.5
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-dreadnoughtus-adult-*": {
+			"*-dreadnoughtus-*": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 35,
@@ -227,9 +233,12 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.6
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-futalognkosaurus-adult-*": {
+			"*-futalognkosaurus-*": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 35,
@@ -240,9 +249,12 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.6
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-brachiosaurus-adult-*": {
+			"*-brachiosaurus-*": {
 				"climate": {
 					"minTemp": 15,
 					"maxTemp": 45,
@@ -253,9 +265,12 @@
 					"maxShrubs": 0.6,
 					"minY": 0.9,
 					"maxY": 1.6
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-giraffatitan-adult-*": {
+			"*-giraffatitan-*": {
 				"climate": {
 					"minTemp": 15,
 					"maxTemp": 45,
@@ -266,9 +281,12 @@
 					"maxShrubs": 0.6,
 					"minY": 0.9,
 					"maxY": 1.6
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-diamantinasaurus-adult-*": {
+			"*-diamantinasaurus-*": {
 				"climate": {
 					"minTemp": 15,
 					"maxTemp": 40,
@@ -279,9 +297,12 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.5
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-europatitan-adult-*": {
+			"*-europatitan-*": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 35,
@@ -292,9 +313,12 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.6
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-antarctosaurus-adult-*": {
+			"*-antarctosaurus-*": {
 				"climate": {
 					"minTemp": 5,
 					"maxTemp": 35,
@@ -305,9 +329,12 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.5
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-ruyangosaurus-adult-*": {
+			"*-ruyangosaurus-*": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 40,
@@ -318,9 +345,12 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.5
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-camarasaurus-adult-*": {
+			"*-camarasaurus-*": {
 				"climate": {
 					"minTemp": 5,
 					"maxTemp": 35,
@@ -331,9 +361,12 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.6
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-bruhathkayosaurus-adult-*": {
+			"*-bruhathkayosaurus-*": {
 				"climate": {
 					"minTemp": 15,
 					"maxTemp": 45,
@@ -344,9 +377,12 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.5
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-malawisaurus-adult-*": {
+			"*-malawisaurus-*": {
 				"climate": {
 					"minTemp": 15,
 					"maxTemp": 40,
@@ -357,9 +393,12 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.5
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-rapetosaurus-adult-*": {
+			"*-rapetosaurus-*": {
 				"climate": {
 					"minTemp": 15,
 					"maxTemp": 40,
@@ -370,9 +409,12 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.5
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-ampelosaurus-adult-*": {
+			"*-ampelosaurus-*": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 35,
@@ -383,6 +425,9 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.5
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			}
 

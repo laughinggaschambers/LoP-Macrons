@@ -54,6 +54,7 @@
 			"*-malawisaurus-adult-*":{"base": "entity/land/macronaria/malawisaurus/adult"},"*-malawisaurus-baby-*":{"base": "entity/land/macronaria/malawisaurus/baby"},
 			"*-rapetosaurus-adult-*":{"base": "entity/land/macronaria/rapetosaurus/adult"},"*-rapetosaurus-baby-*":{"base": "entity/land/macronaria/rapetosaurus/baby"},
 			"*-ampelosaurus-adult-*":{"base": "entity/land/macronaria/ampelosaurus/adult"},"*-ampelosaurus-baby-*":{"base": "entity/land/macronaria/ampelosaurus/baby"},
+			"*-nest-*":{"base": "entity/land/nest"}, "*-nest-empty":{"base": "entity/land/nest-empty"},
 		},
          "textureByType": {
             "*-argentinosaurus-adult-*":{"base": "entity/argentinosaurus-adult"},"*-argentinosaurus-baby-*":{"base": "entity/argentinosaurus-adult"},

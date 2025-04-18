@@ -560,14 +560,46 @@
 				"pregnancyDaysByType": {"*": 60},
 				"multiplyCooldownDaysMinByType": {"*": 30},
 				"multiplyCooldownDaysMaxByType": {"*": 90},
-				"portionsEatenForMultiplyByType": {"*": 100}
+				"portionsEatenForMultiplyByType": {
+					"*-argentinosaurus-*": 200,
+					"*-patagotitan-*": 170,
+					"*-dreadnoughtus-*": 150,
+					"*-futalognkosaurus-*": 150,
+					"*-brachiosaurus-*": 150,
+					"*-giraffatitan-*": 150,
+					"*-diamantinasaurus-*": 150,
+					"*-europatitan-*": 150,
+					"*-antarctosaurus-*": 120,
+					"*-ruyangosaurus-*": 120,
+					"*-camarasaurus-*": 102,
+					"*-bruhathkayosaurus-*": 150,
+					"*-malawisaurus-*": 84,
+					"*-rapetosaurus-*": 68,
+					"*-ampelosaurus-*": 84,
+				}
 			},
             {"code": "grow",
 					"enabledByType": {
 					"*-baby-*": true,
 					"*": false
 				},
-				"hoursToGrowByType": {"*": 1440},
+				"hoursToGrowByType": {
+					"*-argentinosaurus-*": 1600,
+					"*-patagotitan-*": 1360,
+					"*-dreadnoughtus-*": 1200,
+					"*-futalognkosaurus-*": 1200,
+					"*-brachiosaurus-*": 1200,
+					"*-giraffatitan-*": 1200,
+					"*-diamantinasaurus-*": 1200,
+					"*-europatitan-*": 1200,
+					"*-antarctosaurus-*": 960,
+					"*-ruyangosaurus-*": 960,
+					"*-camarasaurus-*": 816,
+					"*-bruhathkayosaurus-*": 1200,
+					"*-malawisaurus-*": 672,
+					"*-rapetosaurus-*": 544,
+					"*-ampelosaurus-*": 672,
+				},
 				"adultEntityCodesByType": {
 					"*-baby-male": ["macronaria:macronaria-{type}-adult-male"],
 					"*-baby-female": ["macronaria:macronaria-{type}-adult-female"]
