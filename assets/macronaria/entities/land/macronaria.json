@@ -150,16 +150,16 @@
 					"animation": "Walk",
 					"weight": 10,
 					"movespeedByType": {
-						"*-camarasaurus-*":0.01,
-						"*-malawisaurus-*":0.011,
-						"*-rapetosaurus-*":0.011,
-						"*-adult-*": 0.009,
+						"*-camarasaurus-*":0.02,
+						"*-malawisaurus-*":0.023,
+						"*-rapetosaurus-*":0.023,
+						"*-adult-*": 0.018,
 					},
 					"animationSpeedByType": {
-						"*-camarasaurus-*":1,
-						"*-malawisaurus-*":1,
-						"*-rapetosaurus-*":1,
-						"*": 1
+						"*-camarasaurus-*":2,
+						"*-malawisaurus-*":2,
+						"*-rapetosaurus-*":2,
+						"*": 2
 					},
 					"blendMode": "Average",
 					"riderAnim": {
@@ -233,16 +233,16 @@
 					"weight": 10,
 						"priority": 2.1,
 					"movespeedByType": {
-						"*-camarasaurus-*":0.020,
-						"*-malawisaurus-*":0.025,
-						"*-rapetosaurus-*":0.025,
-						"*-adult-*": 0.015,
+						"*-camarasaurus-*":0.03,
+						"*-malawisaurus-*":0.035,
+						"*-rapetosaurus-*":0.035,
+						"*-adult-*": 0.025,
 					},
 					"animationSpeedByType": {
-						"*-camarasaurus-*":1.5,
-						"*-malawisaurus-*":1.5,
-						"*-rapetosaurus-*":1.5,
-						"*": 1.5
+						"*-camarasaurus-*":2,
+						"*-malawisaurus-*":2,
+						"*-rapetosaurus-*":2,
+						"*": 2
 					},
 					"blendMode": "Average",
 					"riderAnim": {
@@ -705,16 +705,16 @@
 						"maxcooldown": 6500,
 						"seekingRange": 20,
 						"movespeedByType": {
-							"*-camarasaurus-*":0.010,
-							"*-malawisaurus-*":0.015,
-							"*-rapetosaurus-*":0.015,
-							"*-adult-*": 0.009,
+							"*-camarasaurus-*":0.03,
+							"*-malawisaurus-*":0.035,
+							"*-rapetosaurus-*":0.035,
+							"*-adult-*": 0.025,
 						},
 						"animationSpeedByType": {
-							"*-camarasaurus-*":1.1,
-							"*-malawisaurus-*":1.15,
-							"*-rapetosaurus-*":1.15,
-							"*": 1
+							"*-camarasaurus-*":2,
+							"*-malawisaurus-*":2,
+							"*-rapetosaurus-*":2,
+							"*": 2
 						},
 						"soundByType": {"*-adult-*":"creature/roar"},
 
@@ -735,16 +735,16 @@
 						"maxcooldown": 6500,
 						"seekingRange": 20,
 						"movespeedByType": {
-							"*-camarasaurus-*":0.010,
-							"*-malawisaurus-*":0.015,
-							"*-rapetosaurus-*":0.015,
-							"*-adult-*": 0.009,
+							"*-camarasaurus-*":0.03,
+							"*-malawisaurus-*":0.035,
+							"*-rapetosaurus-*":0.035,
+							"*-adult-*": 0.025,
 						},
 						"animationSpeedByType": {
-							"*-camarasaurus-*":1.1,
-							"*-malawisaurus-*":1.15,
-							"*-rapetosaurus-*":1.15,
-							"*": 1
+							"*-camarasaurus-*":2,
+							"*-malawisaurus-*":2,
+							"*-rapetosaurus-*":2,
+							"*": 2
 						},
 						"soundByType": {"*-adult-*":"creature/roar"},
 						"whenInEmotionState": "aggressiveondamage"
@@ -792,10 +792,17 @@
 						"animation": "Walk",
 						"priority": 1.4,
 						"movespeedByType": {
-							"*-adult-*": 0.025,
-							"*-baby-*": 0.01,
+							"*-camarasaurus-*":0.020,
+							"*-malawisaurus-*":0.025,
+							"*-rapetosaurus-*":0.025,
+							"*-adult-*": 0.015,
 						},
-						"animationSpeed": 1.5
+						"animationSpeedByType": {
+							"*-camarasaurus-*":1.5,
+							"*-malawisaurus-*":1.5,
+							"*-rapetosaurus-*":1.5,
+							"*": 1.5
+						},
 					},
                     {
 						"code": "stayclosetoentity",
@@ -810,13 +817,13 @@
 							"*-baby-*": "macronaria-{type}-adult-female"},
 						"movespeedByType": {
 							"*-adult-*": 0.035,
-							"*-baby-*": 0.010,
+							"*-baby-*": 0.020,
 							},
 						"maxDistanceByType": {"*-adult-*": 24,"*-baby-*": 6},
 						"searchRange": 45,
 						"animationSpeedByType": {
 							"*-adult-*": 5,
-							"*-baby-*": 5
+							"*-baby-*": 3
 						},
 					},
 
@@ -890,12 +897,16 @@
 						"eatTime": 1.5,
 						"eatLooseItems": true,
 						"movespeedByType": {
-							"*-baby-*": 0.003,
-							"*-adult-*": 0.0045,
+							"*-camarasaurus-*":0.02,
+							"*-malawisaurus-*":0.023,
+							"*-rapetosaurus-*":0.023,
+							"*-adult-*": 0.018,
 						},
 						"animationSpeedByType": {
-							"*-baby-*": 1,
-							"*-adult-*": 0.25,
+							"*-camarasaurus-*":2,
+							"*-malawisaurus-*":2,
+							"*-rapetosaurus-*":2,
+							"*": 2
 						},
 						"mincooldownHours": 1,
 						"maxcooldownHours": 4,
@@ -943,16 +954,16 @@
 						"chance": 0.0005,
 						"duringDayTimeFramesByType": {"*-adult-*":[{"fromHour": 18,"toHour": 19},{"fromHour": 6,"toHour": 7}]},
 						"movespeedByType": {
-							"*-camarasaurus-*":0.01,
-							"*-malawisaurus-*":0.011,
-							"*-rapetosaurus-*":0.011,
-							"*-adult-*": 0.009,
+							"*-camarasaurus-*":0.02,
+							"*-malawisaurus-*":0.023,
+							"*-rapetosaurus-*":0.023,
+							"*-adult-*": 0.018,
 						},
 						"animationSpeedByType": {
-							"*-camarasaurus-*":1,
-							"*-malawisaurus-*":1,
-							"*-rapetosaurus-*":1,
-							"*": 1
+							"*-camarasaurus-*":2,
+							"*-malawisaurus-*":2,
+							"*-rapetosaurus-*":2,
+							"*": 2
 						},
 						"preferredLightLevel": 24,
 						"whenNotInEmotionState": "aggressiveondamage|aggressivearoundentities|fleeondamage",
@@ -977,8 +988,9 @@
 			"tryOnlySurface": true,
 			"insideBlockCodes": ["game:air","game:tallgrass-*","game:gravel-*","game:sand-*","game:snowlayer-1","game:soil-*"],
 			"groupSizeByType": {
-				"*-adult-male":{ "dist": "uniform","avg": 3,"var": 2},
-				"*-adult-female":{ "dist": "uniform","avg": 5,"var": 5},
+				"*-adult-male":{ "dist": "uniform","avg": 4,"var": 2},
+				"*-adult-female":{ "dist": "uniform","avg": 8,"var": 3},
+				"*-baby-*":{ "dist": "uniform","avg": 10,"var": 5},
 			},
 			"companionsByType":{
 				"*-adult-male":["macronaria:macronaria-{type}-adult-male"],
@@ -988,7 +1000,6 @@
 		},
 		"runtime": {
 			"group": "neutral",
-			"TriesPerChunk": { "avg": 0.000, "var": 0 },
 			"MinDistanceToPlayer": 100,
 			"tryOnlySurface": true,
 			"chanceByType": {
@@ -1009,7 +1020,6 @@
 				"*-ampelosaurus-adult-male": 0.00001,"*-ampelosaurus-adult-female": 0.00001,
 				"*":0.00,
 			},
-			"maxQuantity": 1,
 			"maxLightLevel": 7,
 			"lightLevelType": "onlyBlockLight",
 			"spawnCapPlayerScaling": 0.0,
@@ -1017,6 +1027,7 @@
 			"groupSizeByType": {
 				"*-adult-male":{ "dist": "uniform","avg": 3,"var": 2},
 				"*-adult-female":{ "dist": "uniform","avg": 10,"var": 5},
+				"*-baby-*":{ "dist": "uniform","avg": 10,"var": 5},
 			},
 			"companionsByType":{
 				"*-adult-male":["macronaria:macronaria-{type}-adult-male"],
@@ -1037,6 +1048,9 @@
 					"minY": 0.9,
 					"maxY": 1.5
 				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
+				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
@@ -1052,6 +1066,9 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.5
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
 				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
@@ -1069,6 +1086,9 @@
 					"minY": 0.9,
 					"maxY": 1.6
 				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
+				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
@@ -1084,6 +1104,9 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.6
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
 				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
@@ -1101,6 +1124,9 @@
 					"minY": 0.9,
 					"maxY": 1.6
 				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
+				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
@@ -1116,6 +1142,9 @@
 					"maxShrubs": 0.6,
 					"minY": 0.9,
 					"maxY": 1.6
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
 				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
@@ -1133,6 +1162,9 @@
 					"minY": 0.9,
 					"maxY": 1.5
 				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
+				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
@@ -1148,6 +1180,9 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.6
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
 				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
@@ -1165,6 +1200,9 @@
 					"minY": 0.9,
 					"maxY": 1.5
 				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
+				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
@@ -1180,6 +1218,9 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.5
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
 				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
@@ -1197,6 +1238,9 @@
 					"minY": 0.9,
 					"maxY": 1.6
 				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
+				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
@@ -1212,6 +1256,9 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.5
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
 				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
@@ -1229,6 +1276,9 @@
 					"minY": 0.9,
 					"maxY": 1.5
 				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
+				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
@@ -1245,6 +1295,9 @@
 					"minY": 0.9,
 					"maxY": 1.5
 				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
+				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
@@ -1260,6 +1313,9 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.5
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
 				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }

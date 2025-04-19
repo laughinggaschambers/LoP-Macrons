@@ -150,6 +150,7 @@
 		],
 	"spawnconditions": {
 		"worldgen": {
+			"triesPerChunk": { "avg": 0.0, "var": 0},
 			"tryOnlySurface": true,
 			"insideBlockCodes": [
 				"game:air",
@@ -160,7 +161,7 @@
 				"game:soil-*"
 			],
 			"groupSizeByType": {
-				"*": { "dist": "uniform", "avg": 1.5, "var": 0 }
+				"*": { "dist": "uniform", "avg": 2, "var": 0 }
 			},
 			"*":["macronaria:macronaria-{type}-adult-female","macronaria:macronaria-{type}-adult-male"]},
 
@@ -202,6 +203,9 @@
 					"minY": 0.9,
 					"maxY": 1.5
 				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
+				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
@@ -217,6 +221,9 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.5
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
 				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
@@ -234,6 +241,9 @@
 					"minY": 0.9,
 					"maxY": 1.6
 				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
+				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
@@ -249,6 +259,9 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.6
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
 				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
@@ -266,6 +279,9 @@
 					"minY": 0.9,
 					"maxY": 1.6
 				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
+				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
@@ -281,6 +297,9 @@
 					"maxShrubs": 0.6,
 					"minY": 0.9,
 					"maxY": 1.6
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
 				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
@@ -298,6 +317,9 @@
 					"minY": 0.9,
 					"maxY": 1.5
 				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
+				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
@@ -313,6 +335,9 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.6
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
 				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
@@ -330,6 +355,9 @@
 					"minY": 0.9,
 					"maxY": 1.5
 				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
+				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
@@ -345,6 +373,9 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.5
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
 				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
@@ -362,6 +393,9 @@
 					"minY": 0.9,
 					"maxY": 1.6
 				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
+				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
@@ -377,6 +411,9 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.5
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
 				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
@@ -394,6 +431,9 @@
 					"minY": 0.9,
 					"maxY": 1.5
 				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
+				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
@@ -410,6 +450,9 @@
 					"minY": 0.9,
 					"maxY": 1.5
 				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
+				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
@@ -425,6 +468,9 @@
 					"maxShrubs": 0.7,
 					"minY": 0.9,
 					"maxY": 1.5
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.0007, "var": 0}
 				},
 				"runtime": {
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
