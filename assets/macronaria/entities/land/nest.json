@@ -150,7 +150,9 @@
 		],
 	"spawnconditions": {
 		"worldgen": {
+			"chanceByType": {"*-empty": 0.0},
 			"triesPerChunk": { "avg": 0.0, "var": 0},
+			"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 },
 			"tryOnlySurface": true,
 			"insideBlockCodes": [
 				"game:air",
@@ -168,7 +170,7 @@
 		"runtime": {
 			"group": "neutral",
 			"tryOnlySurface": true,
-			"maxQuantityByGroup": {"code": "*",	"maxQuantity": 1},
+			"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 },
 			"chanceByType": {"*-incubating": 0.00001,"*": 0.0},
 			"TriesPerChunk": { "avg": 0.0, "var": 0 },
 			"mindistancetoplayer": 100,
@@ -191,7 +193,7 @@
 		},
     },
 	"spawnconditionsByType": {
-			"*-argentinosaurus-*": {
+			"*-argentinosaurus-nest-incubating": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 40,
@@ -210,7 +212,7 @@
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-patagotitan-*": {
+			"*-patagotitan-nest-incubating": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 40,
@@ -229,7 +231,7 @@
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-dreadnoughtus-*": {
+			"*-dreadnoughtus-nest-incubating": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 35,
@@ -248,7 +250,7 @@
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-futalognkosaurus-*": {
+			"*-futalognkosaurus-nest-incubating": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 35,
@@ -267,7 +269,7 @@
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-brachiosaurus-*": {
+			"*-brachiosaurus-nest-incubating": {
 				"climate": {
 					"minTemp": 15,
 					"maxTemp": 45,
@@ -286,7 +288,7 @@
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-giraffatitan-*": {
+			"*-giraffatitan-nest-incubating": {
 				"climate": {
 					"minTemp": 15,
 					"maxTemp": 45,
@@ -305,7 +307,7 @@
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-diamantinasaurus-*": {
+			"*-diamantinasaurus-nest-incubating": {
 				"climate": {
 					"minTemp": 15,
 					"maxTemp": 40,
@@ -324,7 +326,7 @@
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-europatitan-*": {
+			"*-europatitan-nest-incubating": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 35,
@@ -343,7 +345,7 @@
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-antarctosaurus-*": {
+			"*-antarctosaurus-nest-incubating": {
 				"climate": {
 					"minTemp": 5,
 					"maxTemp": 35,
@@ -362,7 +364,7 @@
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-ruyangosaurus-*": {
+			"*-ruyangosaurus-nest-incubating": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 40,
@@ -381,7 +383,7 @@
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-camarasaurus-*": {
+			"*-camarasaurus-nest-incubating": {
 				"climate": {
 					"minTemp": 5,
 					"maxTemp": 35,
@@ -400,7 +402,7 @@
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-bruhathkayosaurus-*": {
+			"*-bruhathkayosaurus-nest-incubating": {
 				"climate": {
 					"minTemp": 15,
 					"maxTemp": 45,
@@ -419,7 +421,7 @@
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-malawisaurus-*": {
+			"*-malawisaurus-nest-incubating": {
 				"climate": {
 					"minTemp": 15,
 					"maxTemp": 40,
@@ -438,7 +440,7 @@
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-rapetosaurus-*": {
+			"*-rapetosaurus-nest-incubating": {
 				"climate": {
 					"minTemp": 15,
 					"maxTemp": 40,
@@ -457,7 +459,7 @@
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			},
-			"*-ampelosaurus-*": {
+			"*-ampelosaurus-nest-incubating": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 35,

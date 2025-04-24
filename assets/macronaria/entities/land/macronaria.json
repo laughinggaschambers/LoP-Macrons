@@ -628,7 +628,7 @@
 						"enabledByType": {"*-adult-*": true,"*-baby-*":false},
 						"entityCodesByType": {
 							"*": [ "player","bear-*","bell-*","bowtorn-*","drifter-*","hyena-*","locust-*","shiver-*","wolf-*",
-							"tyrannosauridae-*", "spinosauridae-*", "dromaeosauridae-*",
+							"tyrannosauridae-*", "spinosauridae-*", "dromaeosauridae-*","abelisauridae-*",
 								]},
 						"priority": 1.9,
 						"slot": 1,
@@ -726,7 +726,7 @@
 							"*": true},
 						"entityCodesByType": {
 							"*-adult-*": [ "player","bear-*","bell-*","bowtorn-*","drifter-*","hyena-*","locust-*","shiver-*","wolf-*",
-							"tyrannosauridae-*", "spinosauridae-*", "dromaeosauridae-*",
+							"tyrannosauridae-*", "spinosauridae-*", "dromaeosauridae-*","abelisauridae-*",
 								]
 						},
 						"priority": 1.84,
@@ -753,7 +753,7 @@
 						"animation": "Trot",
 						"enabledByType": {"*-adult-*": false,"*": true},
 						"entityCodesByType": {
-							"*-baby-*":["player","bear-*","bell-*","bowtorn-*","drifter-*","shiver-*","hyena-male", "hyena-female","wolf-male", "wolf-female","tyrannosauridae-*", "spinosauridae-*","dromaeosauridae-*",],
+							"*-baby-*":["player","bear-*","bell-*","bowtorn-*","drifter-*","shiver-*","hyena-male", "hyena-female","wolf-male", "wolf-female","tyrannosauridae-*", "spinosauridae-*","dromaeosauridae-*","abelisauridae-*",],
 						},
 						"priority": 1.8,
 						"movespeedByType": {
@@ -771,7 +771,7 @@
 						"animation": "Trot",
 						"enabledByType": {"*-adult-*": false,"*": true},
 						"entityCodesByType": {
-							"*-baby-*":["player","bear-*","bell-*","bowtorn-*","drifter-*","shiver-*","hyena-male", "hyena-female","wolf-male", "wolf-female","tyrannosauridae-*", "spinosauridae-*","dromaeosauridae-*",],
+							"*-baby-*":["player","bear-*","bell-*","bowtorn-*","drifter-*","shiver-*","hyena-male", "hyena-female","wolf-male", "wolf-female","tyrannosauridae-*", "spinosauridae-*","dromaeosauridae-*","abelisauridae-*",],
 						},
 						"priority": 1.81,
 						"movespeedByType": {
@@ -838,7 +838,7 @@
 						"duringDayTimeFramesByType": {
 							"*":[{"fromHour": 22,"toHour": 24},{"fromHour": 0,"toHour": 4},{"fromHour": 12,"toHour": 16}],
 							},
-						"stopOnNearbyEntityCodes": [ "player", "bear-*","hyena-male", "hyena-female","wolf-male", "wolf-female", "tyrannosauridae-*", "spinosauridae-*","dromaeosauridae-*",],
+						"stopOnNearbyEntityCodes": [ "player", "bear-*","hyena-male", "hyena-female","wolf-male", "wolf-female", "tyrannosauridae-*", "spinosauridae-*","dromaeosauridae-*","abelisauridae-*",],
 						"stopRange": 20,
 						"animationSpeedByType": {
 							"*-baby-*": 0.6,
@@ -859,7 +859,7 @@
 						"duringDayTimeFramesByType": {
 							"*":[{"fromHour": 22.5,"toHour": 24},{"fromHour": 0,"toHour": 4},{"fromHour": 12.5,"toHour": 16}],
 							},
-						"stopOnNearbyEntityCodes": [ "player", "bear-*","hyena-male", "hyena-female","wolf-male", "wolf-female", "tyrannosauridae-*", "spinosauridae-*","dromaeosauridae-*",],
+						"stopOnNearbyEntityCodes": [ "player", "bear-*","hyena-male", "hyena-female","wolf-male", "wolf-female", "tyrannosauridae-*", "spinosauridae-*","dromaeosauridae-*","abelisauridae-*",],
 						"stopRange": 10,
 						"animationSpeedByType": {
 							"*-baby-*": 0.6,
@@ -967,7 +967,7 @@
 						"preferredLightLevel": 24,
 						"whenNotInEmotionState": "aggressiveondamage|aggressivearoundentities|fleeondamage",
 						"soundRangeByType": {
-							"*-adult-*": 100
+							"*-adult-*": 25
 						},
 						"soundByType": {
 							"*-adult-*": "creature/stomp",
@@ -984,6 +984,9 @@
         ],
 	"spawnconditions": {
 		"worldgen": {
+			"chanceByType": {"*-baby-*": 0.0},
+			"triesPerChunk": { "avg": 0.0007, "var": 0},
+			"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 },
 			"tryOnlySurface": true,
 			"insideBlockCodes": ["game:air","game:tallgrass-*","game:gravel-*","game:sand-*","game:snowlayer-1","game:soil-*"],
 			"groupSizeByType": {
@@ -1001,24 +1004,9 @@
 			"group": "neutral",
 			"MinDistanceToPlayer": 100,
 			"tryOnlySurface": true,
-			"chanceByType": {
-				"*-argentinosaurus-adult-male": 0.00001,"*-argentinosaurus-adult-female": 0.00001,
-				"*-patagotitan-adult-male": 0.00001,"*-patagotitan-adult-female": 0.00001,
-				"*-dreadnoughtus-adult-male": 0.00001,"*-dreadnoughtus-adult-female": 0.00001,
-				"*-futalognkosaurus-adult-male": 0.00001,"*-futalognkosaurus-adult-female": 0.00001,
-				"*-brachiosaurus-adult-male": 0.00001,"*-brachiosaurus-adult-female": 0.00001,
-				"*-giraffatitan-adult-male": 0.00001,"*-giraffatitan-adult-female": 0.00001,
-				"*-diamantinasaurus-adult-male": 0.00001,"*-diamantinasaurus-adult-female": 0.00001,
-				"*-europatitan-adult-male": 0.00001,"*-europatitan-adult-female": 0.00001,
-				"*-antarctosaurus-adult-male": 0.00001,"*-antarctosaurus-adult-female": 0.00001,
-				"*-ruyangosaurus-adult-male": 0.00001,"*-ruyangosaurus-adult-female": 0.00001,
-				"*-camarasaurus-adult-male": 0.00001,"*-camarasaurus-adult-female": 0.00001,
-				"*-bruhathkayosaurus-adult-male": 0.00001,"*-bruhathkayosaurus-adult-female": 0.00001,
-				"*-malawisaurus-adult-male": 0.00001,"*-malawisaurus-adult-female": 0.00001,
-				"*-rapetosaurus-adult-male": 0.00001,"*-rapetosaurus-adult-female": 0.00001,
-				"*-ampelosaurus-adult-male": 0.00001,"*-ampelosaurus-adult-female": 0.00001,
-				"*":0.00,
-			},
+			"chanceByType": {"*-adult-*": 0.00001,"*":0.00,},
+			"triesPerChunk": { "avg": 0.0, "var": 0},
+			"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 },
 			"maxLightLevel": 7,
 			"lightLevelType": "onlyBlockLight",
 			"spawnCapPlayerScaling": 0.0,
@@ -1047,12 +1035,6 @@
 					"minY": 0.9,
 					"maxY": 1.5
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-patagotitan-adult-*": {
 				"climate": {
@@ -1066,12 +1048,6 @@
 					"minY": 0.9,
 					"maxY": 1.5
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-dreadnoughtus-adult-*": {
 				"climate": {
@@ -1085,12 +1061,6 @@
 					"minY": 0.9,
 					"maxY": 1.6
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-futalognkosaurus-adult-*": {
 				"climate": {
@@ -1104,12 +1074,6 @@
 					"minY": 0.9,
 					"maxY": 1.6
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-brachiosaurus-adult-*": {
 				"climate": {
@@ -1123,12 +1087,6 @@
 					"minY": 0.9,
 					"maxY": 1.6
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-giraffatitan-adult-*": {
 				"climate": {
@@ -1142,12 +1100,6 @@
 					"minY": 0.9,
 					"maxY": 1.6
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-diamantinasaurus-adult-*": {
 				"climate": {
@@ -1161,12 +1113,6 @@
 					"minY": 0.9,
 					"maxY": 1.5
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-europatitan-adult-*": {
 				"climate": {
@@ -1180,12 +1126,6 @@
 					"minY": 0.9,
 					"maxY": 1.6
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-antarctosaurus-adult-*": {
 				"climate": {
@@ -1199,12 +1139,6 @@
 					"minY": 0.9,
 					"maxY": 1.5
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-ruyangosaurus-adult-*": {
 				"climate": {
@@ -1218,12 +1152,6 @@
 					"minY": 0.9,
 					"maxY": 1.5
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-camarasaurus-adult-*": {
 				"climate": {
@@ -1237,12 +1165,6 @@
 					"minY": 0.9,
 					"maxY": 1.6
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-bruhathkayosaurus-adult-*": {
 				"climate": {
@@ -1256,12 +1178,6 @@
 					"minY": 0.9,
 					"maxY": 1.5
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-malawisaurus-adult-*": {
 				"climate": {
@@ -1275,12 +1191,6 @@
 					"minY": 0.9,
 					"maxY": 1.5
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-rapetosaurus-adult-*": {
 				"climate": {
@@ -1294,12 +1204,6 @@
 					"minY": 0.9,
 					"maxY": 1.5
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-ampelosaurus-adult-*": {
 				"climate": {
@@ -1313,12 +1217,6 @@
 					"minY": 0.9,
 					"maxY": 1.5
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			}
 
 		}

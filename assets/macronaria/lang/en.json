@@ -9,6 +9,9 @@
   "itemdesc-macronswearable-bridle2": "Useful for long distance travel",
   "item-handbooktitle-macronswearable-bridle2": "How to Use",
   "item-handbooktext-macronswearable-bridle2": "When your mount is wearing a curb bit, you need only press forward once, rather than hold it down, to move.",
+  "setting-drop-multiplier":"Mob drop multiplier",
+  "setting-worldgen-spawnrate":"Worldgen spawnrate",
+  "setting-runtime-spawnrate":"Runtime spawnrate",
 
   "item-creature-macronaria-argentinosaurus-adult-male": "Argentinosaurus (Male)",
   "item-creature-macronaria-argentinosaurus-adult-female": "Argentinosaurus (Female)",
