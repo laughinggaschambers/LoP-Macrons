@@ -26,7 +26,7 @@
 		},
 
     "deadhitBoxSizeByType": {
-		"*-adult-*": {"x": 3,"y": 3},"*-baby-*": {"x": 2.5,"y": 2.5},
+		"*-adult-*": {"x": 3,"y": 3},"*-baby-*": {"x": 1,"y": 1},
 		},
     "eyeHeightByType": {"*":1},
     "weightByType": {"*-adult-*":4000,"*-baby-*":10},
@@ -37,7 +37,6 @@
 		"tamedByType": {"*": false },
 		"killedByInfoText": "deadcreature-killed",
 		"handbook": {"groupcode": "creaturegroup-macronaria"},
-		"minGenerationToAllowHealing": 0,
 		"creatureDiet": {
 			"foodCategories": ["Fruit", "Vegetable", "Grain"],
 			"foodTags": ["fruitmash","nibblecrops", "sweetBerryBush", "grass"]
@@ -232,16 +231,16 @@
 					"weight": 10,
 						"priority": 2.1,
 					"movespeedByType": {
-						"*-camarasaurus-*":0.03,
-						"*-malawisaurus-*":0.035,
-						"*-rapetosaurus-*":0.035,
-						"*-adult-*": 0.025,
+						"*-camarasaurus-*":0.04,
+						"*-malawisaurus-*":0.045,
+						"*-rapetosaurus-*":0.045,
+						"*-adult-*": 0.035,
 					},
 					"animationSpeedByType": {
-						"*-camarasaurus-*":2,
-						"*-malawisaurus-*":2,
-						"*-rapetosaurus-*":2,
-						"*": 2
+						"*-camarasaurus-*":2.5,
+						"*-malawisaurus-*":2.5,
+						"*-rapetosaurus-*":2.5,
+						"*": 2.5
 					},
 					"blendMode": "Average",
 					"riderAnim": {
@@ -389,7 +388,6 @@
 			{"code": "despawn","minPlayerDistance": 8,"belowLightLevel": 8,"minSeconds": 300},
 			{"code": "ropetieable","minGeneration": 4},
 			{"code": "selectionboxes", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 4 },
-			{"code": "ownable", "enabledByType": { "*-ampelosaurus-*":false,"*-baby-*": false,"*": true},"minGeneration": 4 },
 			{"code": "rideableaccessories", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 4 },
 			{"code": "rideable", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 4 },
         ],
@@ -415,7 +413,6 @@
 		"attributes": {"pathfinder": {"minTurnAnglePerSec": 30,"maxTurnAnglePerSec": 350}},
         "behaviors": [
 			{"code": "selectionboxes", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 4 },
-			{"code": "ownable", "enabledByType": { "*-ampelosaurus-*":false,"*-baby-*": false,"*": true},"minGeneration": 4 },
 			{"code": "rideableaccessories", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 4 },
 			{"code": "rideable", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 4 },
             {"code": "repulseagents" },
@@ -679,7 +676,7 @@
 						"minVerDistByType": {"*-adult-*":17,"*":1},
 						"attackDurationMs": 1250,
 						"damagePlayerAtMs": 400,
-						"animationSpeed": 0.25,
+						"animationSpeed": 0.5,
 						"soundByType": {
 							"*-adult-*":"creature/attack"},
 						"whenInEmotionState": "aggressiveondamage"
@@ -1023,7 +1020,7 @@
 		}
 	},
     "spawnconditionsByType": {
-			"*-argentinosaurus-adult-*": {
+			"*-argentinosaurus-*": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 40,
@@ -1036,7 +1033,7 @@
 					"maxY": 1.5
 				},
 			},
-			"*-patagotitan-adult-*": {
+			"*-patagotitan-*": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 40,
@@ -1049,7 +1046,7 @@
 					"maxY": 1.5
 				},
 			},
-			"*-dreadnoughtus-adult-*": {
+			"*-dreadnoughtus-*": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 35,
@@ -1062,7 +1059,7 @@
 					"maxY": 1.6
 				},
 			},
-			"*-futalognkosaurus-adult-*": {
+			"*-futalognkosaurus-*": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 35,
@@ -1075,7 +1072,7 @@
 					"maxY": 1.6
 				},
 			},
-			"*-brachiosaurus-adult-*": {
+			"*-brachiosaurus-*": {
 				"climate": {
 					"minTemp": 15,
 					"maxTemp": 45,
@@ -1088,7 +1085,7 @@
 					"maxY": 1.6
 				},
 			},
-			"*-giraffatitan-adult-*": {
+			"*-giraffatitan-*": {
 				"climate": {
 					"minTemp": 15,
 					"maxTemp": 45,
@@ -1101,7 +1098,7 @@
 					"maxY": 1.6
 				},
 			},
-			"*-diamantinasaurus-adult-*": {
+			"*-diamantinasaurus-*": {
 				"climate": {
 					"minTemp": 15,
 					"maxTemp": 40,
@@ -1114,7 +1111,7 @@
 					"maxY": 1.5
 				},
 			},
-			"*-europatitan-adult-*": {
+			"*-europatitan-*": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 35,
@@ -1127,7 +1124,7 @@
 					"maxY": 1.6
 				},
 			},
-			"*-antarctosaurus-adult-*": {
+			"*-antarctosaurus-*": {
 				"climate": {
 					"minTemp": 5,
 					"maxTemp": 35,
@@ -1140,7 +1137,7 @@
 					"maxY": 1.5
 				},
 			},
-			"*-ruyangosaurus-adult-*": {
+			"*-ruyangosaurus-*": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 40,
@@ -1153,7 +1150,7 @@
 					"maxY": 1.5
 				},
 			},
-			"*-camarasaurus-adult-*": {
+			"*-camarasaurus-*": {
 				"climate": {
 					"minTemp": 5,
 					"maxTemp": 35,
@@ -1166,7 +1163,7 @@
 					"maxY": 1.6
 				},
 			},
-			"*-bruhathkayosaurus-adult-*": {
+			"*-bruhathkayosaurus-*": {
 				"climate": {
 					"minTemp": 15,
 					"maxTemp": 45,
@@ -1179,7 +1176,7 @@
 					"maxY": 1.5
 				},
 			},
-			"*-malawisaurus-adult-*": {
+			"*-malawisaurus-*": {
 				"climate": {
 					"minTemp": 15,
 					"maxTemp": 40,
@@ -1192,7 +1189,7 @@
 					"maxY": 1.5
 				},
 			},
-			"*-rapetosaurus-adult-*": {
+			"*-rapetosaurus-*": {
 				"climate": {
 					"minTemp": 15,
 					"maxTemp": 40,
@@ -1205,7 +1202,7 @@
 					"maxY": 1.5
 				},
 			},
-			"*-ampelosaurus-adult-*": {
+			"*-ampelosaurus-*": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 35,
