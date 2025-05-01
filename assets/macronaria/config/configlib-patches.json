@@ -143,6 +143,12 @@
         "/server/spawnconditions/worldgen/triesPerChunk/avg": "worlgen",
         "/server/spawnconditions/runtime/chanceByType/*-adult-*": "runtime",
       }
+    },
+    "boolean":{
+      "macronaria:entities/land/macronaria.json": {
+        "/server/behaviors/0/enabledByType/*": "ridable",
+        "/client/behaviors/0/enabledByType/*": "ridable",
+        }
     }
   },
   "settings":[
@@ -177,6 +183,12 @@
         "max": 1.0,
         "step":0.00001
       }
+    },
+    {
+      "code": "ridable",
+      "type": "boolean",
+      "ingui": "setting-ridable",
+      "default": true,
     },
   ]
 }

@@ -360,6 +360,7 @@
 		},
 
         "behaviors": [
+			{"code": "rideable", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 4 },
             {"code": "repulseagents" },
 			{"code": "controlledphysics","stepHeightByType":
 				{
@@ -389,7 +390,6 @@
 			{"code": "ropetieable","minGeneration": 4},
 			{"code": "selectionboxes", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 4 },
 			{"code": "rideableaccessories", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 4 },
-			{"code": "rideable", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 4 },
         ],
         "animations": [
 			{"code": "attack","animation": "Attack","animationSpeed": 1.0,"weight": 10,"blendMode": "AddAverage"},
@@ -412,9 +412,9 @@
     "server": {
 		"attributes": {"pathfinder": {"minTurnAnglePerSec": 30,"maxTurnAnglePerSec": 350}},
         "behaviors": [
+			{"code": "rideable", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 4 },
 			{"code": "selectionboxes", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 4 },
 			{"code": "rideableaccessories", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 4 },
-			{"code": "rideable", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 4 },
             {"code": "repulseagents" },
             {"code": "controlledphysics","stepHeightByType":
 				{
@@ -625,6 +625,7 @@
 						"enabledByType": {"*-adult-*": true,"*-baby-*":false},
 						"entityCodesByType": {
 							"*": [ "player","bear-*","bell-*","bowtorn-*","drifter-*","hyena-*","locust-*","shiver-*","wolf-*",
+							"hitch",
 							"tyrannosauridae-*", "spinosauridae-*", "dromaeosauridae-*","abelisauridae-*",
 								]},
 						"priority": 1.9,
@@ -900,7 +901,26 @@
 						},
 						"animationSpeedByType": {
 							"*-camarasaurus-*":2,
-							"*-malawisaurus-*":2,
+							"*-malawisaurus-*":2,"movespeedByType": {
+							"*-baby-*":0.035,
+							"*-tyrannosaurus-adult-*":0.065,
+							"*-tarbosaurus-adult-*": 0.07,
+							"*-nanuqsaurus-adult-*": 0.085,
+							"*-albertosaurus-adult-*": 0.075,
+							"*-gorgosaurus-adult-*": 0.08,
+							"*-alioramus-adult-*": 0.09,
+							"*-qianzhousaurus-adult-*": 0.08,
+						},
+						"animationSpeedByType": {
+							"*-baby-*":2.5,
+							"*-tyrannosaurus-adult-*":1.7,
+							"*-tarbosaurus-adult-*": 1.8,
+							"*-nanuqsaurus-adult-*": 1.95,
+							"*-albertosaurus-adult-*": 1.9,
+							"*-gorgosaurus-adult-*": 1.85,
+							"*-alioramus-adult-*": 2,
+							"*-qianzhousaurus-adult-*": 1.85,
+						},
 							"*-rapetosaurus-*":2,
 							"*": 2
 						},
@@ -969,7 +989,109 @@
 						"soundByType": {
 							"*-adult-*": "creature/stomp",
 						},
+					},
+					{
+						"code": "stayclosetoentity",
+						"animation": "Run",
+						"priority": 2,
+						"entityCodeByType": {
+							"*-adult-*": "hitch"
+							},
+						"movespeedByType": {
+							"*-camarasaurus-*":0.03,
+							"*-malawisaurus-*":0.035,
+							"*-rapetosaurus-*":0.035,
+							"*-adult-*": 0.025,
+						},
+						"animationSpeedByType": {
+							"*-camarasaurus-*":2,
+							"*-malawisaurus-*":2,
+							"*-rapetosaurus-*":2,
+							"*": 2
+						},
+						"maxDistance": 6,
+						"searchRange": 10,
 
+					},
+					{
+						"code": "seekentity",
+						"animation": "Run",
+						"entityCodesByType": {"*-adult-*":["hitch"],},
+						"priority": 1.85,
+						"seekingRange": 10,
+						"belowTempSeekingRange": 10,
+						"movespeedByType": {
+							"*-camarasaurus-*":0.03,
+							"*-malawisaurus-*":0.035,
+							"*-rapetosaurus-*":0.035,
+							"*-adult-*": 0.025,
+						},
+						"animationSpeedByType": {
+							"*-camarasaurus-*":2,
+							"*-malawisaurus-*":2,
+							"*-rapetosaurus-*":2,
+							"*": 2
+						},
+					},
+
+					{
+						"code": "meleeattack",
+						"animation": "Attack",
+						"enabledByType": {"*-adult-*": true,"*-baby-*":false},
+						"entityCodesByType": {
+							"*": [ "hitch"]},
+						"priority": 1.9,
+						"slot": 1,
+						"damageByType": {
+							"*-argentinosaurus-adult-*": 50,
+							"*-patagotitan-adult-*": 45,
+							"*-dreadnoughtus-adult-*": 45,
+							"*-futalognkosaurus-adult-*": 45,
+							"*-brachiosaurus-adult-*": 45,
+							"*-giraffatitan-adult-*": 45,
+							"*-diamantinasaurus-adult-*": 45,
+							"*-europatitan-adult-*": 45,
+							"*-antarctosaurus-adult-*": 43,
+							"*-ruyangosaurus-adult-*": 43,
+							"*-camarasaurus-adult-*": 41,
+							"*-bruhathkayosaurus-adult-*": 45,
+							"*-malawisaurus-adult-*": 39,
+							"*-rapetosaurus-adult-*": 37,
+							"*-ampelosaurus-adult-*": 39,
+
+						},
+						"knockbackStrengthByType": {
+							"*-baby-*":0.0,
+							"*-adult-*": 5,
+						},
+						"damageTierByType": {
+							"*-baby-*":1,
+							"*-argentinosaurus-adult-*": 7,
+							"*-patagotitan-adult-*": 6,
+							"*-dreadnoughtus-adult-*": 6,
+							"*-futalognkosaurus-adult-*": 6,
+							"*-brachiosaurus-adult-*": 6,
+							"*-giraffatitan-adult-*": 6,
+							"*-diamantinasaurus-adult-*": 6,
+							"*-europatitan-adult-*": 6,
+							"*-antarctosaurus-adult-*": 5,
+							"*-ruyangosaurus-adult-*": 5,
+							"*-camarasaurus-adult-*": 5,
+							"*-bruhathkayosaurus-adult-*": 6,
+							"*-malawisaurus-adult-*": 4,
+							"*-rapetosaurus-adult-*": 4,
+							"*-ampelosaurus-adult-*": 4,
+						},
+						"attackAngleRangeDeg": 180,
+						"mincooldown": 1500,
+						"maxcooldown": 2000,
+						"minDistByType": {"*-adult-*":13,"*":1},
+						"minVerDistByType": {"*-adult-*":17,"*":1},
+						"attackDurationMs": 1250,
+						"damagePlayerAtMs": 400,
+						"animationSpeed": 0.5,
+						"soundByType": {
+							"*-adult-*":"creature/attack"},
 					},
 
 
