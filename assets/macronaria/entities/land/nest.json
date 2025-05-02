@@ -23,8 +23,7 @@
 		"*": 100
 	},
 	"drops": [],
-	"attributes": {
-	},
+	"attributes": {},
 	"client": {
 		"renderer": "Shape",
 		"shapeByType": {
@@ -102,7 +101,8 @@
 				"code": "grow",
 				"enabledByType": {
 					"*-empty": false,
-					"*": true
+
+	"*": true
 				},
 				"hoursToGrowByType": {"*-incubating": 160,"*-mature": 2},
 				"adultEntityCodesByType": {
@@ -190,8 +190,8 @@
 			],
 			"companionsByType": {
 			"*":["macronaria:macronaria-{type}-adult-female","macronaria:macronaria-{type}-adult-male"]}
+			},
 		},
-    },
 	"spawnconditionsByType": {
 			"*-argentinosaurus-nest-incubating": {
 				"climate": {
@@ -478,10 +478,7 @@
 					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
 				}
 			}
-
-
-
 		}
-
+	}
 
 }
