@@ -1,6 +1,6 @@
 [
   {
-    "file": "ankylosauria:entities/land/ankylosauria.json",
+    "file": "macronaria:entities/land/macronaria.json",
     "op": "addmerge",
     "path": "/attributesByType",
     "side": "Server",
@@ -80,7 +80,7 @@
                     },
 
             "*-bruhathkayosaurus-*": {
-                      "biorealm": [,
+                      "biorealm": [
                         "central palearctic",
                       ]
                     },
@@ -111,7 +111,7 @@
     ]
   },
   {
-    "file": "ankylosauria:entities/land/nest.json",
+    "file": "macronaria:entities/land/nest.json",
     "op": "addmerge",
     "path": "/attributesByType",
     "side": "Server",
@@ -191,7 +191,7 @@
                     },
 
             "*-bruhathkayosaurus-*": {
-                      "biorealm": [,
+                      "biorealm": [
                         "central palearctic",
                       ]
                     },

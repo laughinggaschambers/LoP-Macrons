@@ -26,11 +26,11 @@
 		},
 
     "deadhitBoxSizeByType": {
-		"*-adult-*": {"x": 3,"y": 3},"*-baby-*": {"x": 1,"y": 1},
+		"*-adult-*": {"x": 2.5,"y": 2},"*-baby-*": {"x": 1,"y": 1},
 		},
-    "eyeHeightByType": {"*":1},
+    "eyeHeightByType": {"*":15},
     "weightByType": {"*-adult-*":4000,"*-baby-*":10},
-    "knockbackResistanceByType": {"*-adult-*": 1,"*-baby-*": 1	},
+    "knockbackResistanceByType": {"*-adult-*": 1,"*-baby-*": 0	},
 
     "drops": [],
     "attributes": {
@@ -903,23 +903,9 @@
 							"*-camarasaurus-*":2,
 							"*-malawisaurus-*":2,"movespeedByType": {
 							"*-baby-*":0.035,
-							"*-tyrannosaurus-adult-*":0.065,
-							"*-tarbosaurus-adult-*": 0.07,
-							"*-nanuqsaurus-adult-*": 0.085,
-							"*-albertosaurus-adult-*": 0.075,
-							"*-gorgosaurus-adult-*": 0.08,
-							"*-alioramus-adult-*": 0.09,
-							"*-qianzhousaurus-adult-*": 0.08,
 						},
 						"animationSpeedByType": {
 							"*-baby-*":2.5,
-							"*-tyrannosaurus-adult-*":1.7,
-							"*-tarbosaurus-adult-*": 1.8,
-							"*-nanuqsaurus-adult-*": 1.95,
-							"*-albertosaurus-adult-*": 1.9,
-							"*-gorgosaurus-adult-*": 1.85,
-							"*-alioramus-adult-*": 2,
-							"*-qianzhousaurus-adult-*": 1.85,
 						},
 							"*-rapetosaurus-*":2,
 							"*": 2
@@ -974,6 +960,7 @@
 							"*-malawisaurus-*":0.023,
 							"*-rapetosaurus-*":0.023,
 							"*-adult-*": 0.018,
+							"*-baby-*": 0.008,
 						},
 						"animationSpeedByType": {
 							"*-camarasaurus-*":2,
@@ -994,6 +981,7 @@
 						"code": "stayclosetoentity",
 						"animation": "Run",
 						"priority": 2,
+						"enabledByType": {"*-adult-*": true,"*-baby-*":false},
 						"entityCodeByType": {
 							"*-adult-*": "hitch"
 							},
@@ -1016,10 +1004,11 @@
 					{
 						"code": "seekentity",
 						"animation": "Run",
+						"enabledByType": {"*-adult-*": true,"*-baby-*":false},
 						"entityCodesByType": {"*-adult-*":["hitch"],},
-						"priority": 1.85,
-						"seekingRange": 10,
-						"belowTempSeekingRange": 10,
+						"priority": 1,
+						"seekingRange": 5,
+						"belowTempSeekingRange": 5,
 						"movespeedByType": {
 							"*-camarasaurus-*":0.03,
 							"*-malawisaurus-*":0.035,
@@ -1040,7 +1029,7 @@
 						"enabledByType": {"*-adult-*": true,"*-baby-*":false},
 						"entityCodesByType": {
 							"*": [ "hitch"]},
-						"priority": 1.9,
+						"priority": 1,
 						"slot": 1,
 						"damageByType": {
 							"*-argentinosaurus-adult-*": 50,
