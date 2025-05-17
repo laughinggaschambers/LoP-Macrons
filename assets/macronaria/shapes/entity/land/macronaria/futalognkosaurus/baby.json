@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"collapsedPaths": "Root/Leg Back L/Shin Back L/Foot Back L/Foot Back L2,Root/Leg Back L,Root/Body Back/Body Back2,Root/Body Back/Body Back4,Root/Body Back,Root/Leg Back R,Root/Body Front/Body Front8,Root/Tail,Root/Neck/Neck1/Neck2/Neck4/Neck5/Head/Creast,Root/Body Front/Body Front5,Root/Neck/Neck1/Neck2/Neck10/Neck11,Root/Lower Jaw,Root/Body Front,Root/Body Back/Tail,Root/Leg Front R,Root/Head,Root/Neck,Root/Creast,Root/Body,Root/Head/Lower Jaw,Root/Center/Body Back/Tail/Cube6,Root/Leg Front L,Root/Head9,Root/Neck/Neck17/Neck18,Root/Top Jaw,Root/Body Front/Body Front5/Body Front6",
+		"collapsedPaths": "Root/Leg Back L,Root/Body Back/Body Back2,Root/Body Back/Body Back4,Root/Leg Back R,Root/Body Front/Body Front8,Root/Body Front/Body Front5,Root/Neck/Neck1/Neck2/Neck10/Neck11,Root/Head/Lower Jaw,Root/Center/Body Back/Tail/Cube6,Root/Neck/Neck17/Neck18,Root/Leg Back L/Shin Back L/Foot Back L/Foot Back L2,Root/Body Back,Root/Tail,Root/Neck/Neck1/Neck2/Neck4/Neck5/Head/Creast,Root/Leg Front R,Root/Neck,Root/Creast,Root/Leg Front L,Root/Head9,Root/Body Front,Root/Body Back/Tail,Root/Body,Root/Lower Jaw,Root/Head,Root/Top Jaw,Root/Body Front/Body Front5/Body Front6",
 		"allAngles": true,
 		"entityTextureMode": true
 	},
@@ -2204,6 +2204,13 @@
 							]
 						}
 					]
+				}
+			],
+			"attachmentpoints": [
+				{
+					"code": "Center",
+					"posX": "0.0","posY": "0.0","posZ": "0.0",
+					"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
 				}
 			]
 		}
