@@ -151,7 +151,7 @@
 	"spawnconditions": {
 		"worldgen": {
 			"chanceByType": {"*-empty": 0.0},
-			"triesPerChunk": { "avg": 0.0, "var": 0},
+			"triesPerChunkByType": {"*-incubating":{ "avg": 0.0007, "var": 0}},
 			"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 },
 			"tryOnlySurface": true,
 			"insideBlockCodes": [
@@ -198,285 +198,195 @@
 					"minTemp": 10,
 					"maxTemp": 40,
 					"minRain": 0.3,
-					"maxRain": 0.8,
+					"maxRain": 1,
 					"minForestOrShrubs": 0.3,
-					"maxForest": 0.7,
-					"maxShrubs": 0.7,
+					"maxForest": 1,
+					"maxShrubs": 1,
 					"minY": 0.9,
 					"maxY": 1.5
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-patagotitan-nest-incubating": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 40,
 					"minRain": 0.3,
-					"maxRain": 0.8,
+					"maxRain": 1,
 					"minForestOrShrubs": 0.3,
-					"maxForest": 0.7,
-					"maxShrubs": 0.7,
+					"maxForest": 1,
+					"maxShrubs": 1,
 					"minY": 0.9,
 					"maxY": 1.5
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-dreadnoughtus-nest-incubating": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 35,
 					"minRain": 0.4,
-					"maxRain": 0.9,
+					"maxRain": 1,
 					"minForestOrShrubs": 0.4,
-					"maxForest": 0.8,
-					"maxShrubs": 0.7,
+					"maxForest": 1,
+					"maxShrubs": 1,
 					"minY": 0.9,
 					"maxY": 1.6
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-futalognkosaurus-nest-incubating": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 35,
 					"minRain": 0.4,
-					"maxRain": 0.9,
+					"maxRain": 1,
 					"minForestOrShrubs": 0.4,
-					"maxForest": 0.8,
-					"maxShrubs": 0.7,
+					"maxForest": 1,
+					"maxShrubs": 1,
 					"minY": 0.9,
 					"maxY": 1.6
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-brachiosaurus-nest-incubating": {
 				"climate": {
 					"minTemp": 15,
 					"maxTemp": 45,
 					"minRain": 0.4,
-					"maxRain": 0.9,
+					"maxRain": 1,
 					"minForestOrShrubs": 0.5,
-					"maxForest": 0.9,
+					"maxForest": 1,
 					"maxShrubs": 0.6,
 					"minY": 0.9,
 					"maxY": 1.6
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-giraffatitan-nest-incubating": {
 				"climate": {
 					"minTemp": 15,
 					"maxTemp": 45,
 					"minRain": 0.4,
-					"maxRain": 0.9,
+					"maxRain": 1,
 					"minForestOrShrubs": 0.5,
-					"maxForest": 0.9,
+					"maxForest": 1,
 					"maxShrubs": 0.6,
 					"minY": 0.9,
 					"maxY": 1.6
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-diamantinasaurus-nest-incubating": {
 				"climate": {
 					"minTemp": 15,
 					"maxTemp": 40,
 					"minRain": 0.3,
-					"maxRain": 0.8,
+					"maxRain": 1,
 					"minForestOrShrubs": 0.3,
-					"maxForest": 0.7,
-					"maxShrubs": 0.7,
+					"maxForest": 1,
+					"maxShrubs": 1,
 					"minY": 0.9,
 					"maxY": 1.5
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-europatitan-nest-incubating": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 35,
 					"minRain": 0.4,
-					"maxRain": 0.9,
+					"maxRain": 1,
 					"minForestOrShrubs": 0.4,
-					"maxForest": 0.8,
-					"maxShrubs": 0.7,
+					"maxForest": 1,
+					"maxShrubs": 1,
 					"minY": 0.9,
 					"maxY": 1.6
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-antarctosaurus-nest-incubating": {
 				"climate": {
 					"minTemp": 5,
 					"maxTemp": 35,
 					"minRain": 0.3,
-					"maxRain": 0.8,
+					"maxRain": 1,
 					"minForestOrShrubs": 0.3,
-					"maxForest": 0.7,
-					"maxShrubs": 0.7,
+					"maxForest": 1,
+					"maxShrubs": 1,
 					"minY": 0.9,
 					"maxY": 1.5
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-ruyangosaurus-nest-incubating": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 40,
 					"minRain": 0.3,
-					"maxRain": 0.8,
+					"maxRain": 1,
 					"minForestOrShrubs": 0.3,
-					"maxForest": 0.7,
-					"maxShrubs": 0.7,
+					"maxForest": 1,
+					"maxShrubs": 1,
 					"minY": 0.9,
 					"maxY": 1.5
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-camarasaurus-nest-incubating": {
 				"climate": {
 					"minTemp": 5,
 					"maxTemp": 35,
 					"minRain": 0.4,
-					"maxRain": 0.9,
+					"maxRain": 1,
 					"minForestOrShrubs": 0.4,
-					"maxForest": 0.8,
-					"maxShrubs": 0.7,
+					"maxForest": 1,
+					"maxShrubs": 1,
 					"minY": 0.9,
 					"maxY": 1.6
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-bruhathkayosaurus-nest-incubating": {
 				"climate": {
 					"minTemp": 15,
 					"maxTemp": 45,
 					"minRain": 0.3,
-					"maxRain": 0.8,
+					"maxRain": 1,
 					"minForestOrShrubs": 0.3,
-					"maxForest": 0.7,
-					"maxShrubs": 0.7,
+					"maxForest": 1,
+					"maxShrubs": 1,
 					"minY": 0.9,
 					"maxY": 1.5
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-malawisaurus-nest-incubating": {
 				"climate": {
 					"minTemp": 15,
 					"maxTemp": 40,
 					"minRain": 0.3,
-					"maxRain": 0.8,
+					"maxRain": 1,
 					"minForestOrShrubs": 0.3,
-					"maxForest": 0.7,
-					"maxShrubs": 0.7,
+					"maxForest": 1,
+					"maxShrubs": 1,
 					"minY": 0.9,
 					"maxY": 1.5
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-rapetosaurus-nest-incubating": {
 				"climate": {
 					"minTemp": 15,
 					"maxTemp": 40,
 					"minRain": 0.4,
-					"maxRain": 0.9,
+					"maxRain": 1,
 					"minForestOrShrubs": 0.4,
-					"maxForest": 0.8,
-					"maxShrubs": 0.7,
+					"maxForest": 1,
+					"maxShrubs": 1,
 					"minY": 0.9,
 					"maxY": 1.5
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			},
 			"*-ampelosaurus-nest-incubating": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 35,
 					"minRain": 0.3,
-					"maxRain": 0.8,
+					"maxRain": 1,
 					"minForestOrShrubs": 0.3,
-					"maxForest": 0.7,
-					"maxShrubs": 0.7,
+					"maxForest": 1,
+					"maxShrubs": 1,
 					"minY": 0.9,
 					"maxY": 1.5
 				},
-				"worldgen": {
-					"triesPerChunk": { "avg": 0.0007, "var": 0}
-				},
-				"runtime": {
-					"maxQuantityByGroup": { "code": "macronaria-*", "maxQuantity": 1 }
-				}
 			}
 		}
 	}
