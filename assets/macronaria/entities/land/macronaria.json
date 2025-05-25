@@ -626,7 +626,10 @@
 						"entityCodesByType": {
 							"*": [ "player","bear-*","bell-*","bowtorn-*","drifter-*","hyena-*","locust-*","shiver-*","wolf-*",
 							"hitch",
+
 							"tyrannosauridae-*", "spinosauridae-*", "dromaeosauridae-*","abelisauridae-*","mosasauridae-*","carcharodontosauridae-*",
+
+							"pantherinae-*", "caninae-*","felinae-*","machairodontinae-*","ursidae-*",
 								]},
 						"priority": 1.9,
 						"slot": 1,
@@ -720,7 +723,10 @@
 							"*": true},
 						"entityCodesByType": {
 							"*-adult-*": [ "player","bear-*","bell-*","bowtorn-*","drifter-*","hyena-*","locust-*","shiver-*","wolf-*",
+
 							"tyrannosauridae-*", "spinosauridae-*", "dromaeosauridae-*","abelisauridae-*","carcharodontosauridae-*",
+
+							"pantherinae-*", "caninae-*","felinae-*","machairodontinae-*","ursidae-*",
 								]
 						},
 						"priority": 1.84,
@@ -743,7 +749,13 @@
 						"animation": "Trot",
 						"enabledByType": {"*-adult-*": false,"*": true},
 						"entityCodesByType": {
-							"*-baby-*":["player","bear-*","bell-*","bowtorn-*","drifter-*","shiver-*","hyena-male", "hyena-female","wolf-male", "wolf-female","tyrannosauridae-*", "spinosauridae-*","dromaeosauridae-*","abelisauridae-*","mosasauridae-*","carcharodontosauridae-*",],
+							"*-baby-*":["player","bear-*","bell-*","bowtorn-*","drifter-*","shiver-*","hyena-male", "hyena-female","wolf-male", "wolf-female",
+
+							"tyrannosauridae-*", "spinosauridae-*","dromaeosauridae-*","abelisauridae-*","mosasauridae-*","carcharodontosauridae-*",
+
+							"pantherinae-*", "caninae-*","felinae-*","machairodontinae-*","ursidae-*",
+
+							],
 						},
 						"priority": 1.8,
 						"movespeedByType": {
@@ -761,7 +773,13 @@
 						"animation": "Trot",
 						"enabledByType": {"*-adult-*": false,"*": true},
 						"entityCodesByType": {
-							"*-baby-*":["player","bear-*","bell-*","bowtorn-*","drifter-*","shiver-*","hyena-male", "hyena-female","wolf-male", "wolf-female","tyrannosauridae-*", "spinosauridae-*","dromaeosauridae-*","abelisauridae-*","mosasauridae-*","carcharodontosauridae-*",],
+							"*-baby-*":["player","bear-*","bell-*","bowtorn-*","drifter-*","shiver-*","hyena-male", "hyena-female","wolf-male", "wolf-female",
+
+							"tyrannosauridae-*", "spinosauridae-*","dromaeosauridae-*","abelisauridae-*","mosasauridae-*","carcharodontosauridae-*",
+
+							"pantherinae-*", "caninae-*","felinae-*","machairodontinae-*","ursidae-*",
+
+							],
 						},
 						"priority": 1.81,
 						"movespeedByType": {
@@ -828,7 +846,12 @@
 						"duringDayTimeFramesByType": {
 							"*":[{"fromHour": 22,"toHour": 24},{"fromHour": 0,"toHour": 4},{"fromHour": 12,"toHour": 16}],
 							},
-						"stopOnNearbyEntityCodes": [ "player", "bear-*","hyena-male", "hyena-female","wolf-male", "wolf-female", "tyrannosauridae-*", "spinosauridae-*","dromaeosauridae-*","abelisauridae-*","mosasauridae-*","carcharodontosauridae-*",],
+						"stopOnNearbyEntityCodes": [ "player", "bear-*","hyena-male", "hyena-female","wolf-male", "wolf-female",
+
+						"tyrannosauridae-*", "spinosauridae-*","dromaeosauridae-*","abelisauridae-*","mosasauridae-*","carcharodontosauridae-*",
+
+						"pantherinae-*", "caninae-*","felinae-*","machairodontinae-*","ursidae-*",
+						],
 						"stopRange": 20,
 						"animationSpeedByType": {
 							"*-baby-*": 0.6,
@@ -849,7 +872,12 @@
 						"duringDayTimeFramesByType": {
 							"*":[{"fromHour": 22.5,"toHour": 24},{"fromHour": 0,"toHour": 4},{"fromHour": 12.5,"toHour": 16}],
 							},
-						"stopOnNearbyEntityCodes": [ "player", "bear-*","hyena-male", "hyena-female","wolf-male", "wolf-female", "tyrannosauridae-*", "spinosauridae-*","dromaeosauridae-*","abelisauridae-*","mosasauridae-*","carcharodontosauridae-*",],
+						"stopOnNearbyEntityCodes": [ "player", "bear-*","hyena-male", "hyena-female","wolf-male", "wolf-female",
+
+						"tyrannosauridae-*", "spinosauridae-*","dromaeosauridae-*","abelisauridae-*","mosasauridae-*","carcharodontosauridae-*",
+
+						"pantherinae-*", "caninae-*","felinae-*","machairodontinae-*","ursidae-*",
+						],
 						"stopRange": 10,
 						"animationSpeedByType": {
 							"*-baby-*": 0.6,
