@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"collapsedPaths": "Root/Leg Back L,Root/Center/Body Back/Leg Back R,Root/Body Back/Body Back2,Root/Body Back/Body Back4,Root/Leg Back R,Root/Body Front/Body Front8,Root/Body Front/Body Front5,Root/Neck/Neck1/Neck2/Neck10/Neck11,Root/Center/Body/Spike23,Root/Body Front,Root/Center/Body/Spike29,Root/Body Back/Tail,Root/Center/Body Back/Tail/Tail2/Cube7/Cube8/Spike102,Root/Center/Body/Spike26,Root/Center/Body Back/Tail/Spike81,Root/Center/Body Front/Neck/Neck1/Spike63,Root/Center/Body Front/Leg Front R,Root/Center/Body Front/Neck/Neck1/Spike60,Root/Body,Root/Head/Lower Jaw,Root/Center/Body Back/Tail/Cube6,Root/Center/Body Front/Neck/Neck1/Neck2/Spike66,Root/Center/Body Front/Neck/Neck1/Neck2/Spike63,Root/Center/Body Back/Tail/Spike84,Root/Center/Body Front/Body Front8,Root/Neck/Neck17/Neck18,Root/Center/Body Front/Body Front5,Root/Center/Body/Spike51,Root/Center/Body Front/Leg Front L,Root/Center/Body Front/Neck/Neck1/Spike54,Root/Leg Back L/Shin Back L/Foot Back L/Foot Back L2,Root/Center/Body Back/Body Back2,Root/Center/Body Back/Body Back4,Root/Center/Body Front/Neck/Spike81,Root/Body Back,Root/Tail,Root/Neck/Neck1/Neck2/Neck4/Neck5/Head/Creast,Root/Lower Jaw,Root/Center/Body/Spike41,Root/Center/Body Front/Neck/Neck1/Neck2/Neck4/Spike72,Root/Leg Front R,Root/Center/Body/Body2,Root/Head,Root/Center/Body/Body4,Root/Neck,Root/Creast,Root/Leg Front L,Root/Head9,Root/Center/Body Front/Neck/Spike54,Root/Center/Body Front/Neck/Neck1/Neck2/Neck4/Neck5/Head,Root/Center/Body/Spike32,Root/Top Jaw,Root/Center/Body/Spike35,Root/Body Front/Body Front5/Body Front6,Root/Center/Body/Spike38",
+		"collapsedPaths": "Root/Leg Back L,Root/Center/Body Back/Leg Back R,Root/Body Back/Body Back2,Root/Body Back/Body Back4,Root/Leg Back R,Root/Body Front/Body Front8,Root/Body Front/Body Front5,Root/Neck/Neck1/Neck2/Neck10/Neck11,Root/Center/Body/Spike23,Root/Body Front,Root/Center/Body Back/Tail,Root/Center/Body/Spike29,Root/Body Back/Tail,Root/Center/Body Back/Tail/Tail2/Cube7/Cube8/Spike102,Root/Center/Body/Spike26,Root/Center/Body Back/Tail/Spike81,Root/Center/Body Front/Neck/Neck1/Spike63,Root/Center/Body Front/Neck/Neck1/Spike60,Root/Body,Root/Head/Lower Jaw,Root/Center/Body Back/Tail/Cube6,Root/Center/Body Front/Neck/Neck1/Neck2/Spike66,Root/Center/Body Front/Neck/Neck1/Neck2/Spike63,Root/Center/Body Back/Tail/Spike84,Root/Center/Body Front/Body Front8,Root/Neck/Neck17/Neck18,Root/Center/Body Front/Body Front5,Root/Center/Body/Spike51,Root/Center/Body Back/Leg Back L,Root/Center/Body Front/Neck/Neck1/Spike54,Root/Leg Back L/Shin Back L/Foot Back L/Foot Back L2,Root/Center/Body Front/Neck/Spike81,Root/Body Back,Root/Tail,Root/Neck/Neck1/Neck2/Neck4/Neck5/Head/Creast,Root/Lower Jaw,Root/Center/Body/Spike41,Root/Center/Body Front/Neck/Neck1/Neck2/Neck4/Spike72,Root/Leg Front R,Root/Center/Body/Body2,Root/Head,Root/Center/Body/Body4,Root/Neck,Root/Creast,Root/Leg Front L,Root/Head9,Root/Center/Body Front/Neck/Spike54,Root/Center/Body Front/Neck/Neck1/Neck2/Neck4/Neck5/Head,Root/Center/Body/Spike32,Root/Top Jaw,Root/Center/Body/Spike35,Root/Body Front/Body Front5/Body Front6,Root/Center/Body/Spike38",
 		"allAngles": true,
 		"entityTextureMode": true
 	},
@@ -944,17 +944,17 @@
 								{
 									"name": "Shin Back L",
 									"from": [ 1.0, -38.0, 1.0 ],
-									"to": [ 18.0, 7.0, 12.0 ],
+									"to": [ 18.0, 7.0, 15.0 ],
 									"autoUnwrap": false,
 									"uv": [ 451.5625, 307.0 ],
 									"rotationOrigin": [ 10.0, 5.0, 10.0 ],
 									"faces": {
 										"north": { "texture": "#argentinosaurus-adult", "uv": [ 746.0, 258.0, 763.0, 303.0 ] },
-										"east": { "texture": "#argentinosaurus-adult", "uv": [ 769.0, 258.0, 780.0, 303.0 ] },
+										"east": { "texture": "#argentinosaurus-adult", "uv": [ 769.0, 258.0, 783.0, 303.0 ] },
 										"south": { "texture": "#argentinosaurus-adult", "uv": [ 746.0, 258.0, 763.0, 303.0 ] },
-										"west": { "texture": "#argentinosaurus-adult", "uv": [ 732.0, 258.0, 743.0, 303.0 ] },
-										"up": { "texture": "#argentinosaurus-adult", "uv": [ 466.0, 23.0, 483.0, 34.0 ] },
-										"down": { "texture": "#argentinosaurus-adult", "uv": [ 474.0, 21.0, 491.0, 32.0 ] }
+										"west": { "texture": "#argentinosaurus-adult", "uv": [ 732.0, 258.0, 746.0, 303.0 ] },
+										"up": { "texture": "#argentinosaurus-adult", "uv": [ 466.0, 23.0, 483.0, 37.0 ] },
+										"down": { "texture": "#argentinosaurus-adult", "uv": [ 474.0, 21.0, 491.0, 35.0 ] }
 									},
 									"children": [
 										{
@@ -1355,7 +1355,7 @@
 							"attachmentpoints": [
 								{
 									"code": "BStore3AP",
-									"posX": "5.0","posY": "0.0","posZ": "5.0",
+									"posX": "8.0","posY": "8.0","posZ": "8.0",
 									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
 								}
 							]
@@ -1397,18 +1397,18 @@
 						{
 							"name": "Spike7",
 							"from": [ 37.0, 46.0, 39.0 ],
-							"to": [ 43.0, 51.0, 44.0 ],
+							"to": [ 45.0, 51.0, 44.0 ],
 							"uv": [ 85.9375, 2.0 ],
 							"rotationOrigin": [ 42.0, 48.5, 41.5 ],
 							"rotationX": -45.0,
 							"rotationY": -45.0,
 							"faces": {
-								"north": { "texture": "#argentinosaurus-adult", "uv": [ 86.0, 7.0, 92.0, 12.0 ] },
-								"east": { "texture": "#argentinosaurus-adult", "uv": [ 92.0, 7.0, 97.0, 12.0 ] },
-								"south": { "texture": "#argentinosaurus-adult", "uv": [ 97.0, 7.0, 103.0, 12.0 ] },
-								"west": { "texture": "#argentinosaurus-adult", "uv": [ 103.0, 7.0, 108.0, 12.0 ] },
-								"up": { "texture": "#argentinosaurus-adult", "uv": [ 86.0, 2.0, 92.0, 7.0 ] },
-								"down": { "texture": "#argentinosaurus-adult", "uv": [ 92.0, 2.0, 98.0, 7.0 ] }
+								"north": { "texture": "#argentinosaurus-adult", "uv": [ 86.0, 7.0, 94.0, 12.0 ] },
+								"east": { "texture": "#argentinosaurus-adult", "uv": [ 94.0, 7.0, 99.0, 12.0 ] },
+								"south": { "texture": "#argentinosaurus-adult", "uv": [ 99.0, 7.0, 107.0, 12.0 ] },
+								"west": { "texture": "#argentinosaurus-adult", "uv": [ 107.0, 7.0, 112.0, 12.0 ] },
+								"up": { "texture": "#argentinosaurus-adult", "uv": [ 86.0, 2.0, 94.0, 7.0 ] },
+								"down": { "texture": "#argentinosaurus-adult", "uv": [ 94.0, 2.0, 102.0, 7.0 ] }
 							}
 						},
 						{
@@ -1465,18 +1465,18 @@
 						{
 							"name": "Spike16",
 							"from": [ 52.0, 46.0, -4.0 ],
-							"to": [ 60.0, 51.0, 1.0 ],
+							"to": [ 58.0, 51.0, 1.0 ],
 							"uv": [ 85.9375, 2.0 ],
 							"rotationOrigin": [ 57.0, 48.5, -1.5 ],
 							"rotationX": 45.0,
 							"rotationY": 45.0,
 							"faces": {
-								"north": { "texture": "#argentinosaurus-adult", "uv": [ 86.0, 7.0, 94.0, 12.0 ] },
-								"east": { "texture": "#argentinosaurus-adult", "uv": [ 94.0, 7.0, 99.0, 12.0 ] },
-								"south": { "texture": "#argentinosaurus-adult", "uv": [ 99.0, 7.0, 107.0, 12.0 ] },
-								"west": { "texture": "#argentinosaurus-adult", "uv": [ 107.0, 7.0, 112.0, 12.0 ] },
-								"up": { "texture": "#argentinosaurus-adult", "uv": [ 86.0, 2.0, 94.0, 7.0 ] },
-								"down": { "texture": "#argentinosaurus-adult", "uv": [ 94.0, 2.0, 102.0, 7.0 ] }
+								"north": { "texture": "#argentinosaurus-adult", "uv": [ 86.0, 7.0, 92.0, 12.0 ] },
+								"east": { "texture": "#argentinosaurus-adult", "uv": [ 92.0, 7.0, 97.0, 12.0 ] },
+								"south": { "texture": "#argentinosaurus-adult", "uv": [ 97.0, 7.0, 103.0, 12.0 ] },
+								"west": { "texture": "#argentinosaurus-adult", "uv": [ 103.0, 7.0, 108.0, 12.0 ] },
+								"up": { "texture": "#argentinosaurus-adult", "uv": [ 86.0, 2.0, 92.0, 7.0 ] },
+								"down": { "texture": "#argentinosaurus-adult", "uv": [ 92.0, 2.0, 98.0, 7.0 ] }
 							}
 						}
 					]
@@ -1586,17 +1586,17 @@
 						{
 							"name": "Leg Front L",
 							"from": [ 2.0, -15.0, 40.0 ],
-							"to": [ 27.0, 30.0, 59.0 ],
+							"to": [ 27.0, 30.0, 56.0 ],
 							"autoUnwrap": false,
 							"uv": [ 671.875, 210.0 ],
 							"rotationOrigin": [ 14.0, 22.0, 48.0 ],
 							"faces": {
 								"north": { "texture": "#argentinosaurus-adult", "uv": [ 673.4375, 198.0, 698.4375, 243.0 ], "snapUv": false },
-								"east": { "texture": "#argentinosaurus-adult", "uv": [ 697.0, 198.0, 716.0, 243.0 ] },
+								"east": { "texture": "#argentinosaurus-adult", "uv": [ 697.0, 198.0, 713.0, 243.0 ] },
 								"south": { "texture": "#argentinosaurus-adult", "uv": [ 673.0, 198.0, 698.0, 243.0 ] },
-								"west": { "texture": "#argentinosaurus-adult", "uv": [ 656.0, 198.0, 675.0, 243.0 ] },
-								"up": { "texture": "#argentinosaurus-adult", "uv": [ 673.0, 171.0, 698.0, 190.0 ] },
-								"down": { "texture": "#argentinosaurus-adult", "uv": [ 673.0, 243.0, 698.0, 262.0 ] }
+								"west": { "texture": "#argentinosaurus-adult", "uv": [ 656.0, 198.0, 672.0, 243.0 ] },
+								"up": { "texture": "#argentinosaurus-adult", "uv": [ 673.0, 171.0, 698.0, 187.0 ] },
+								"down": { "texture": "#argentinosaurus-adult", "uv": [ 673.0, 243.0, 698.0, 259.0 ] }
 							},
 							"children": [
 								{
