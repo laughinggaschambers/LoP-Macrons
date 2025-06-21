@@ -8,17 +8,17 @@
     ],
     "fallDamageMultiplierByType": { "*-baby-*" :2,"*-adult-*" :15},
     "hitBoxSizeByType": {
-			"*-argentinosaurus-adult-male": {"x": 3.5,"y": 11},"*-argentinosaurus-adult-female": {"x": 3.5,"y": 11},"*-argentinosaurus-baby-*": {"x": 2.5,"y": 2.5},
-			"*-patagotitan-adult-male": {"x": 3.5,"y": 10},"*-patagotitan-adult-female": {"x": 3.5,"y": 10},"*-patagotitan-baby-*": {"x": 2.5,"y": 2.5},
-			"*-dreadnoughtus-adult-male": {"x": 3.5,"y": 10},"*-dreadnoughtus-adult-female": {"x": 3.5,"y": 10},"*-dreadnoughtus-baby-*": {"x": 2.5,"y": 2.5},
-			"*-futalognkosaurus-adult-male": {"x": 3.5,"y": 10},"*-futalognkosaurus-adult-female": {"x": 3.5,"y": 10},"*-futalognkosaurus-baby-*": {"x": 2.5,"y": 2.5},
-			"*-brachiosaurus-adult-male": {"x": 3.5,"y": 10},"*-brachiosaurus-adult-female": {"x": 3.5,"y": 10},"*-brachiosaurus-baby-*": {"x": 2.5,"y": 2.5},
-			"*-giraffatitan-adult-male": {"x": 3.5,"y": 10},"*-giraffatitan-adult-female": {"x": 3.5,"y": 10},"*-giraffatitan-baby-*": {"x": 2.5,"y": 2.5},
-			"*-diamantinasaurus-adult-male": {"x": 3.5,"y": 10},"*-diamantinasaurus-adult-female": {"x": 4,"y": 10},"*-diamantinasaurus-baby-*": {"x": 2.5,"y": 2.5},
-			"*-europatitan-adult-male": {"x": 3.5,"y": 10},"*-europatitan-adult-female": {"x": 3.5,"y": 10},"*-europatitan-baby-*": {"x": 2.5,"y": 2.5},
-			"*-antarctosaurus-adult-male": {"x": 3.5,"y": 7},"*-antarctosaurus-adult-female": {"x": 3.5,"y": 7},"*-antarctosaurus-baby-*": {"x": 1.5,"y": 1.5},
-			"*-ruyangosaurus-adult-male": {"x": 3.5,"y": 7},"*-ruyangosaurus-adult-female": {"x": 3.5,"y": 7},"*-ruyangosaurus-baby-*": {"x": 1.5,"y": 1.5},
-			"*-camarasaurus-adult-male": {"x": 3.5,"y": 7},"*-camarasaurus-adult-female": {"x": 3.5,"y": 7},"*-camarasaurus-baby-*": {"x": 1.5,"y": 1.5},
+			"*-argentinosaurus-adult-male": {"x": 3.5,"y": 11},"*-argentinosaurus-adult-female": {"x": 3.5,"y": 11},"*-argentinosaurus-baby-*": {"x": 1,"y": 2.5},
+			"*-patagotitan-adult-male": {"x": 3.5,"y": 10},"*-patagotitan-adult-female": {"x": 2,"y": 10},"*-patagotitan-baby-*": {"x": 1,"y": 2.5},
+			"*-dreadnoughtus-adult-male": {"x": 3.5,"y": 10},"*-dreadnoughtus-adult-female": {"x": 3.5,"y": 10},"*-dreadnoughtus-baby-*": {"x": 1,"y": 2.5},
+			"*-futalognkosaurus-adult-male": {"x": 3.5,"y": 10},"*-futalognkosaurus-adult-female": {"x": 3.5,"y": 10},"*-futalognkosaurus-baby-*": {"x": 1,"y": 2.5},
+			"*-brachiosaurus-adult-male": {"x": 3.5,"y": 10},"*-brachiosaurus-adult-female": {"x": 3.5,"y": 10},"*-brachiosaurus-baby-*": {"x": 1,"y": 2.5},
+			"*-giraffatitan-adult-male": {"x": 3.5,"y": 10},"*-giraffatitan-adult-female": {"x": 3.5,"y": 10},"*-giraffatitan-baby-*": {"x": 1,"y": 2.5},
+			"*-diamantinasaurus-adult-male": {"x": 3.5,"y": 10},"*-diamantinasaurus-adult-female": {"x": 4,"y": 10},"*-diamantinasaurus-baby-*": {"x": 1,"y": 2.5},
+			"*-europatitan-adult-male": {"x": 3.5,"y": 10},"*-europatitan-adult-female": {"x": 3.5,"y": 10},"*-europatitan-baby-*": {"x": 1,"y": 2.5},
+			"*-antarctosaurus-adult-male": {"x": 3.5,"y": 7},"*-antarctosaurus-adult-female": {"x": 3.5,"y": 7},"*-antarctosaurus-baby-*": {"x": 1,"y": 1.5},
+			"*-ruyangosaurus-adult-male": {"x": 3.5,"y": 7},"*-ruyangosaurus-adult-female": {"x": 3.5,"y": 7},"*-ruyangosaurus-baby-*": {"x": 1,"y": 1.5},
+			"*-camarasaurus-adult-male": {"x": 3.5,"y": 7},"*-camarasaurus-adult-female": {"x": 3.5,"y": 7},"*-camarasaurus-baby-*": {"x": 1,"y": 1.5},
 			"*-bruhathkayosaurus-adult-male": {"x": 3.5,"y": 10},"*-bruhathkayosaurus-adult-female": {"x": 3.5,"y": 10},"*-bruhathkayosaurus-baby-*": {"x": 1.5,"y": 1.5},
 			"*-malawisaurus-adult-male": {"x": 3,"y": 5},"*-malawisaurus-adult-female": {"x": 3,"y": 5},"*-malawisaurus-baby-*": {"x": 1,"y": 1},
 			"*-rapetosaurus-adult-male": {"x": 3,"y": 4},"*-rapetosaurus-adult-female": {"x": 3,"y": 4},"*-rapetosaurus-baby-*": {"x": 1,"y": 1},
@@ -360,7 +360,10 @@
 		},
 
         "behaviors": [
-			{"code": "rideable", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 4 },
+			{"code": "ownable", "enabledByType": { "*-baby-*": false,"*": true},"minGeneration": 10 },
+			{"code": "selectionboxes", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 3 },
+			{"code": "rideableaccessories", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 3 },
+			{"code": "rideable", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 3 },
             {"code": "repulseagents" },
 			{"code": "controlledphysics","stepHeightByType":
 				{
@@ -388,8 +391,8 @@
 			{"code": "multiply", "enabledByType": { "*-adult-female": true, "*": false } },
 			{"code": "despawn","minPlayerDistance": 8,"belowLightLevel": 8,"minSeconds": 300},
 			{"code": "ropetieable","minGeneration": 4},
-			{"code": "selectionboxes", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 4 },
-			{"code": "rideableaccessories", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 4 },
+
+
         ],
         "animations": [
 			{"code": "attack","animation": "Attack","animationSpeed": 1.0,"weight": 10,"blendMode": "AddAverage"},
@@ -412,9 +415,10 @@
     "server": {
 		"attributes": {"pathfinder": {"minTurnAnglePerSec": 60,"maxTurnAnglePerSec": 120}},
         "behaviors": [
-			{"code": "rideable", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 4 },
+			{"code": "ownable", "enabledByType": { "*-baby-*": false,"*": true},"minGeneration": 10 },
 			{"code": "selectionboxes", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 4 },
 			{"code": "rideableaccessories", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 4 },
+			{"code": "rideable", "enabledByType": {  "*-ampelosaurus-*":false,"*-baby-*": false, "*": true},"minGeneration": 4 },
             {"code": "repulseagents" },
             {"code": "controlledphysics","stepHeightByType":
 				{

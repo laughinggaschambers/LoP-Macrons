@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"collapsedPaths": "Root/Leg Back L,Root/Center/Body Back/Leg Back R,Root/Body Back/Body Back2,Root/Body Back/Body Back4,Root/Leg Back R,Root/Body Front/Body Front8,Root/Body Front/Body Front5,Root/Neck/Neck1/Neck2/Neck10/Neck11,Root/Center/Body/Spike23,Root/Body Front,Root/Center/Body Back/Tail,Root/Center/Body/Spike29,Root/Body Back/Tail,Root/Center/Body Back/Tail/Tail2/Cube7/Cube8/Spike102,Root/Center/Body/Spike26,Root/Center/Body Back/Tail/Spike81,Root/Center/Body Front/Neck/Neck1/Spike63,Root/Center/Body Front/Neck/Neck1/Spike60,Root/Body,Root/Head/Lower Jaw,Root/Center/Body Back/Tail/Cube6,Root/Center/Body Front/Neck/Neck1/Neck2/Spike66,Root/Center/Body Front/Neck/Neck1/Neck2/Spike63,Root/Center/Body Back/Tail/Spike84,Root/Center/Body Front/Body Front8,Root/Neck/Neck17/Neck18,Root/Center/Body Front/Body Front5,Root/Center/Body/Spike51,Root/Center/Body Back/Leg Back L,Root/Center/Body Front/Neck/Neck1/Spike54,Root/Leg Back L/Shin Back L/Foot Back L/Foot Back L2,Root/Center/Body Front/Neck/Spike81,Root/Body Back,Root/Tail,Root/Neck/Neck1/Neck2/Neck4/Neck5/Head/Creast,Root/Lower Jaw,Root/Center/Body/Spike41,Root/Center/Body Front/Neck/Neck1/Neck2/Neck4/Spike72,Root/Leg Front R,Root/Center/Body/Body2,Root/Head,Root/Center/Body/Body4,Root/Neck,Root/Creast,Root/Leg Front L,Root/Head9,Root/Center/Body Front/Neck/Spike54,Root/Center/Body Front/Neck/Neck1/Neck2/Neck4/Neck5/Head,Root/Center/Body/Spike32,Root/Top Jaw,Root/Center/Body/Spike35,Root/Body Front/Body Front5/Body Front6,Root/Center/Body/Spike38",
+		"collapsedPaths": "Root/Leg Back L,Root/Center/Body Back/Leg Back R,Root/Body Back/Body Back2,Root/Body Back/Body Back4,Root/Leg Back R,Root/Body Front/Body Front8,Root/Body Front/Body Front5,Root/Neck/Neck1/Neck2/Neck10/Neck11,Root/Center/Body/Spike23,Root/Body Front,Root/Center/Body Back/Tail,Root/Center/Body/Spike29,Root/Body Back/Tail,Root/Center/Body Back/Tail/Tail2/Cube7/Cube8/Spike102,Root/Center/Body/Spike26,Root/Center/Body Back/Tail/Spike81,Root/Center/Body Front/Neck/Neck1/Spike63,Root/Center/Body Front/Leg Front R,Root/Center/Body Front/Neck/Neck1/Spike60,Root/Body,Root/Head/Lower Jaw,Root/Center/Body Back/Tail/Cube6,Root/Center/Body Front/Neck/Neck1/Neck2/Spike66,Root/Center/Body Front/Neck/Neck1/Neck2/Spike63,Root/Center/Body Back/Tail/Spike84,Root/Center/Body Front/Body Front8,Root/Neck/Neck17/Neck18,Root/Center/Body Front/Body Front5,Root/Center/Body/Spike51,Root/Center/Body Back/Leg Back L,Root/Center/Body Front/Leg Front L,Root/Center/Body Front/Neck,Root/Center/Body Front/Neck/Neck1/Spike54,Root/Leg Back L/Shin Back L/Foot Back L/Foot Back L2,Root/Center/Body Back,Root/Center/Body Front/Neck/Spike81,Root/Body Back,Root/Tail,Root/Neck/Neck1/Neck2/Neck4/Neck5/Head/Creast,Root/Lower Jaw,Root/Center/Body/Spike41,Root/Center/Body Front/Neck/Neck1/Neck2/Neck4/Spike72,Root/Leg Front R,Root/Center/Body/Body2,Root/Head,Root/Center/Body/Body4,Root/Neck,Root/Creast,Root/Leg Front L,Root/Head9,Root/Center/Body Front/Neck/Spike54,Root/Center/Body Front/Neck/Neck1/Neck2/Neck4/Neck5/Head,Root/Center/Body/Spike32,Root/Top Jaw,Root/Center/Body/Spike35,Root/Body Front/Body Front5/Body Front6,Root/Center/Body/Spike38",
 		"allAngles": true,
 		"entityTextureMode": true
 	},
@@ -213,6 +213,149 @@
 								"up": { "texture": "#argentinosaurus-adult", "uv": [ 86.0, 2.0, 95.0, 7.0 ] },
 								"down": { "texture": "#argentinosaurus-adult", "uv": [ 95.0, 2.0, 104.0, 7.0 ] }
 							}
+						},
+						{
+							"name": "BackStorage1",
+							"from": [ 46.0, 17.0, -9.5 ],
+							"to": [ 62.0, 33.0, 6.5 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ 51.0, 17.0, -4.5 ],
+							"rotationX": -180.0,
+							"rotationY": 0.0,
+							"rotationZ": -180.0,
+							"faces": {
+							},
+							"attachmentpoints": [
+								{
+									"code": "BStore1AP",
+									"posX": "8.0","posY": "8.0","posZ": "8.0",
+									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+								}
+							]
+						},
+						{
+							"name": "BackStorage3",
+							"from": [ 40.0, 0.0, 53.5 ],
+							"to": [ 56.0, 16.0, 69.5 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ 48.0, 0.0, 62.5 ],
+							"faces": {
+							},
+							"attachmentpoints": [
+								{
+									"code": "BStore3AP",
+									"posX": "8.0","posY": "8.0","posZ": "8.0",
+									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+								}
+							]
+						},
+						{
+							"name": "BackStorage4",
+							"from": [ 46.0, 0.0, -9.5 ],
+							"to": [ 62.0, 16.0, 6.5 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ 51.0, 0.0, -4.5 ],
+							"rotationX": -180.0,
+							"rotationY": 0.0,
+							"rotationZ": -180.0,
+							"faces": {
+							},
+							"attachmentpoints": [
+								{
+									"code": "BStore4AP",
+									"posX": "8.0","posY": "8.0","posZ": "8.0",
+									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+								}
+							]
+						},
+						{
+							"name": "BackStorage2",
+							"from": [ 40.0, 17.0, 53.5 ],
+							"to": [ 56.0, 33.0, 69.5 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ 45.0, 17.0, 58.5 ],
+							"rotationX": 0.0,
+							"rotationY": 0.0,
+							"rotationZ": 0.0,
+							"faces": {
+							},
+							"attachmentpoints": [
+								{
+									"code": "BStore2AP",
+									"posX": "8.0","posY": "8.0","posZ": "8.0",
+									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+								}
+							]
+						},
+						{
+							"name": "FrontStorage1",
+							"from": [ 7.0, 0.0, -9.5 ],
+							"to": [ 23.0, 16.0, 6.5 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ 12.0, 0.0, -4.5 ],
+							"rotationX": -180.0,
+							"rotationY": 0.0,
+							"rotationZ": -180.0,
+							"faces": {
+							},
+							"attachmentpoints": [
+								{
+									"code": "FStore1AP",
+									"posX": "8.0","posY": "8.0","posZ": "8.0",
+									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+								}
+							]
+						},
+						{
+							"name": "FrontStorage2",
+							"from": [ 7.0, 17.0, -9.5 ],
+							"to": [ 23.0, 33.0, 6.5 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ 12.0, 17.0, -4.5 ],
+							"rotationX": -180.0,
+							"rotationY": 0.0,
+							"rotationZ": -180.0,
+							"faces": {
+							},
+							"attachmentpoints": [
+								{
+									"code": "FStore2AP",
+									"posX": "8.0","posY": "8.0","posZ": "8.0",
+									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+								}
+							]
+						},
+						{
+							"name": "FrontStorage3",
+							"from": [ 7.0, 0.0, 53.5 ],
+							"to": [ 23.0, 16.0, 69.5 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ 12.0, 0.0, 58.5 ],
+							"faces": {
+							},
+							"attachmentpoints": [
+								{
+									"code": "FStore3AP",
+									"posX": "8.0","posY": "8.0","posZ": "8.0",
+									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+								}
+							]
+						},
+						{
+							"name": "FrontStorage4",
+							"from": [ 7.0, 17.0, 53.5 ],
+							"to": [ 23.0, 33.0, 69.5 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ 12.0, 17.0, 58.5 ],
+							"faces": {
+							},
+							"attachmentpoints": [
+								{
+									"code": "FStore4AP",
+									"posX": "8.0","posY": "8.0","posZ": "8.0",
+									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+								}
+							]
 						}
 					],
 					"attachmentpoints": [
@@ -1307,72 +1450,6 @@
 								{
 									"code": "RLegAP",
 									"posX": "0.0","posY": "0.0","posZ": "0.0",
-									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
-								}
-							]
-						},
-						{
-							"name": "BackStorage1",
-							"from": [ 15.0, 52.0, 10.5 ],
-							"to": [ 31.0, 68.0, 26.5 ],
-							"uv": [ 0.0, 0.0 ],
-							"rotationOrigin": [ 21.0, 52.0, 15.5 ],
-							"rotationY": -180.0,
-							"faces": {
-							},
-							"attachmentpoints": [
-								{
-									"code": "BStore1AP",
-									"posX": "5.0","posY": "0.0","posZ": "5.0",
-									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
-								}
-							]
-						},
-						{
-							"name": "BackStorage2",
-							"from": [ 11.0, 52.0, 18.5 ],
-							"to": [ 27.0, 68.0, 34.5 ],
-							"uv": [ 0.0, 0.0 ],
-							"rotationOrigin": [ 16.0, 52.0, 23.5 ],
-							"faces": {
-							},
-							"attachmentpoints": [
-								{
-									"code": "BStore2AP",
-									"posX": "5.0","posY": "0.0","posZ": "5.0",
-									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
-								}
-							]
-						},
-						{
-							"name": "BackStorage3",
-							"from": [ 25.0, 52.0, 18.5 ],
-							"to": [ 41.0, 68.0, 34.5 ],
-							"uv": [ 0.0, 0.0 ],
-							"rotationOrigin": [ 30.0, 52.0, 23.5 ],
-							"faces": {
-							},
-							"attachmentpoints": [
-								{
-									"code": "BStore3AP",
-									"posX": "8.0","posY": "8.0","posZ": "8.0",
-									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
-								}
-							]
-						},
-						{
-							"name": "BackStorage4",
-							"from": [ 31.0, 52.0, 10.5 ],
-							"to": [ 47.0, 68.0, 26.5 ],
-							"uv": [ 0.0, 0.0 ],
-							"rotationOrigin": [ 36.0, 52.0, 15.5 ],
-							"rotationY": -180.0,
-							"faces": {
-							},
-							"attachmentpoints": [
-								{
-									"code": "BStore4AP",
-									"posX": "5.0","posY": "0.0","posZ": "5.0",
 									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
 								}
 							]
@@ -2549,72 +2626,6 @@
 								},
 								{
 									"code": "NeckAP",
-									"posX": "0.0","posY": "0.0","posZ": "0.0",
-									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
-								}
-							]
-						},
-						{
-							"name": "FrontStorage1",
-							"from": [ 22.0, 54.0, 10.5 ],
-							"to": [ 38.0, 70.0, 26.5 ],
-							"uv": [ 0.0, 0.0 ],
-							"rotationOrigin": [ 27.0, 54.0, 15.5 ],
-							"rotationY": 180.0,
-							"faces": {
-							},
-							"attachmentpoints": [
-								{
-									"code": "FStore1AP",
-									"posX": "0.0","posY": "0.0","posZ": "0.0",
-									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
-								}
-							]
-						},
-						{
-							"name": "FrontStorage2",
-							"from": [ 8.0, 54.0, 10.5 ],
-							"to": [ 24.0, 70.0, 26.5 ],
-							"uv": [ 0.0, 0.0 ],
-							"rotationOrigin": [ 13.0, 54.0, 15.5 ],
-							"rotationY": 180.0,
-							"faces": {
-							},
-							"attachmentpoints": [
-								{
-									"code": "FStore2AP",
-									"posX": "0.0","posY": "0.0","posZ": "0.0",
-									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
-								}
-							]
-						},
-						{
-							"name": "FrontStorage3",
-							"from": [ 16.0, 54.0, 18.5 ],
-							"to": [ 32.0, 70.0, 34.5 ],
-							"uv": [ 0.0, 0.0 ],
-							"rotationOrigin": [ 21.0, 54.0, 23.5 ],
-							"faces": {
-							},
-							"attachmentpoints": [
-								{
-									"code": "FStore3AP",
-									"posX": "0.0","posY": "0.0","posZ": "0.0",
-									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
-								}
-							]
-						},
-						{
-							"name": "FrontStorage4",
-							"from": [ 2.0, 54.0, 18.5 ],
-							"to": [ 18.0, 70.0, 34.5 ],
-							"uv": [ 0.0, 0.0 ],
-							"rotationOrigin": [ 7.0, 54.0, 23.5 ],
-							"faces": {
-							},
-							"attachmentpoints": [
-								{
-									"code": "FStore4AP",
 									"posX": "0.0","posY": "0.0","posZ": "0.0",
 									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
 								}
